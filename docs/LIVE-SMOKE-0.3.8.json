@@ -1,0 +1,228 @@
+{
+  "kind": "synthetic live smoke test, not user research",
+  "at": "2026-10-05T06:01:14.427Z",
+  "base": "https://lahza-discovery.stemlama.chatgpt.site",
+  "blocked": null,
+  "scenarios": [
+    {
+      "id": "adhan-ar",
+      "description": "سمعت صوتًا بالعربية في مكان عام",
+      "turns": [
+        {
+          "input": "سمعت صوتًا بالعربية في مكان عام",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت صوتًا بالعربية في مكان عام"
+            ],
+            "why_this_question": "مصدر الصوت يساعد على فهم السياق، لكنه لا يحدد محتواه وحده.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "من أين جاء الصوت؟ مكبرات خارج مبنى، داخل المكان، هاتف أو جهاز؟"
+          },
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_0444f7d69fed4546ba6f344b627c2257",
+          "version": "0.3.8"
+        },
+        {
+          "input": "مكبرات خارج مبنى له برج",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "مكبرات خارج مبنى له برج"
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_2e3bb0a78b6d471da0314759795e67ab",
+          "version": "0.3.8"
+        },
+        {
+          "input": "صوت واحد بعبارات منغمة بينها وقفات",
+          "action": "reply",
+          "decision": {
+            "decision": "confirm",
+            "question_id": null,
+            "hypothesis": "adhan",
+            "hypothesis_text": "الأذان",
+            "evidence": [
+              "سمعت صوتًا بالعربية في مكان عام",
+              "مكبرات خارج مبنى له برج",
+              "صوت واحد بعبارات منغمة بينها وقفات"
+            ],
+            "why_this_question": "",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "قد يكون ما تصفه الأذان. هل تقصد هذا النوع من النداء، أم أنك غير متأكد؟"
+          },
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_dc51a6c750b64f09810866ec5621f2b0",
+          "version": "0.3.8"
+        },
+        {
+          "action": "purpose",
+          "answer": "الأذان نداءٌ للصلاة عند دخول وقتها.",
+          "claims": [
+            {
+              "claimId": "adhan-purpose",
+              "sourceId": "BUK-631",
+              "text": "الأذان نداءٌ للصلاة عند دخول وقتها.",
+              "url": "https://sunnah.com/bukhari:631"
+            }
+          ],
+          "gate": {
+            "decision": "Pass",
+            "checks": [
+              "Source allowlist",
+              "Claim linked to retrieved evidence",
+              "Citation matches",
+              "No added claims",
+              "No universal generalisation",
+              "In-scope descriptive content"
+            ],
+            "repairs": 0
+          },
+          "model": "gpt-4.1-mini",
+          "requestId": null,
+          "version": "0.3.8"
+        },
+        {
+          "action": "words",
+          "answer": "تتضمن كلمات الأذان تعظيم الله والدعوة إلى الصلاة والفلاح.",
+          "claims": [
+            {
+              "claimId": "adhan-words",
+              "sourceId": "MUS-385",
+              "text": "تتضمن كلمات الأذان تعظيم الله والدعوة إلى الصلاة والفلاح.",
+              "url": "https://sunnah.com/muslim:385"
+            }
+          ],
+          "gate": {
+            "decision": "Pass",
+            "checks": [
+              "Source allowlist",
+              "Claim linked to retrieved evidence",
+              "Citation matches",
+              "No added claims",
+              "No universal generalisation",
+              "In-scope descriptive content"
+            ],
+            "repairs": 0
+          },
+          "model": "gpt-4.1-mini",
+          "requestId": null,
+          "version": "0.3.8"
+        },
+        {
+          "action": "response",
+          "answer": "يذكر الحديث الردّ بـ«لا حول ولا قوة إلا بالله» عند سماع «حيّ على الصلاة» و«حيّ على الفلاح».",
+          "claims": [
+            {
+              "claimId": "adhan-response",
+              "sourceId": "MUS-385",
+              "text": "يذكر الحديث الردّ بـ«لا حول ولا قوة إلا بالله» عند سماع «حيّ على الصلاة» و«حيّ على الفلاح».",
+              "url": "https://sunnah.com/muslim:385"
+            }
+          ],
+          "gate": {
+            "decision": "Pass",
+            "checks": [
+              "Source allowlist",
+              "Claim linked to retrieved evidence",
+              "Citation matches",
+              "No added claims",
+              "No universal generalisation",
+              "In-scope descriptive content"
+            ],
+            "repairs": 0
+          },
+          "model": "gpt-4.1-mini",
+          "requestId": null,
+          "version": "0.3.8"
+        }
+      ],
+      "outcome": "confirmed_and_three_topics_explored"
+    },
+    {
+      "id": "shop-ar",
+      "description": "رجل يرتل بالعربية داخل متجر",
+      "turns": [
+        {
+          "input": "رجل يرتل بالعربية داخل متجر",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "رجل يرتل بالعربية داخل متجر"
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_7aa56223e0014e82b9d009a267266d9a",
+          "version": "0.3.8"
+        },
+        {
+          "input": "قراءة متصلة",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "رجل يرتل بالعربية داخل متجر",
+              "قراءة متصلة"
+            ],
+            "why_this_question": "مصدر الصوت يساعد على فهم السياق، لكنه لا يحدد محتواه وحده.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "من أين جاء الصوت؟ مكبرات خارج مبنى، داخل المكان، هاتف أو جهاز؟"
+          },
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_d2a9facbdd1b4ae1a9dd522cdd948a20",
+          "version": "0.3.8"
+        },
+        {
+          "input": "من جهاز داخل المتجر",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "رجل يرتل بالعربية داخل متجر",
+              "قراءة متصلة",
+              "من جهاز داخل المتجر"
+            ],
+            "why_this_question": "",
+            "stop_type": "out_of_scope",
+            "offer_example": false,
+            "message": "هذا الوصف خارج نطاق لحظة المتاح حاليًا. يمكنك بدء وصف جديد."
+          },
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_a1c75be4f04943c9a91b5c3c9c15e272",
+          "version": "0.3.8"
+        }
+      ],
+      "outcome": "stopped_out_of_scope"
+    }
+  ]
+}

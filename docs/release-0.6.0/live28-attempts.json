@@ -1,0 +1,322 @@
+{
+  "version": "0.6.0",
+  "at": "2026-10-05T18:07:17.433Z",
+  "kind": "Integration invocation of the new POST handler; live model unavailable because this runtime has no configured provider key",
+  "remoteProbe": {
+    "url": "https://lahza-discovery.stemlama.chatgpt.site/api/health",
+    "status": 403,
+    "body": "error code: 1010",
+    "provider": "Cloudflare",
+    "note": "No evasion or alternate network path attempted"
+  },
+  "attempts": [
+    {
+      "caseId": 1,
+      "request": {
+        "action": "start",
+        "text": "سمعت صوتًا عاليًا بالعربية من مبنى له برج، والناس بدأت تمشي نحوه.",
+        "language": "ar"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 2,
+      "request": {
+        "action": "start",
+        "text": "سمعت صوتًا بالعربية في مكان عام.",
+        "language": "ar"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 3,
+      "request": {
+        "action": "start",
+        "text": "سمعت نداءً قصيرًا من مكبرات المسجد، وكنت سمعت نداءً أطول قبله بربع ساعة.",
+        "language": "ar"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 4,
+      "request": {
+        "action": "start",
+        "text": "سمعت رجلًا يرتل بالعربية داخل متجر.",
+        "language": "ar"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 5,
+      "request": {
+        "action": "start",
+        "text": "سمعت رجلًا يتحدث طويلًا بصوت عالٍ من المسجد.",
+        "language": "ar"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 6,
+      "request": {
+        "action": "start",
+        "text": "سمعت عبارة تتكرر كثيرًا من مكبرات في الصباح الباكر، والناس بملابس جديدة.",
+        "language": "ar"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 7,
+      "request": {
+        "action": "start",
+        "text": "هاتف رجل بجانبي أصدر صوتًا منغّمًا بالعربية ثم أسكته.",
+        "language": "ar"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 8,
+      "request": {
+        "action": "start",
+        "text": "رأيت أشخاصًا يقفون في صفوف وينحنون معًا في ممر مركز تجاري.",
+        "language": "ar"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 9,
+      "request": {
+        "action": "start",
+        "text": "رأيت كتابة عربية جميلة على واجهة مبنى.",
+        "language": "ar"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 10,
+      "request": {
+        "action": "start",
+        "text": "سمعت نداءً من مكبرات في الشارع.",
+        "language": "ar"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 11,
+      "request": {
+        "action": "start",
+        "text": "Around sunset a man's voice started echoing over the neighbourhood. It wasn't music, but it had a melody.",
+        "language": "en"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 12,
+      "request": {
+        "action": "start",
+        "text": "I woke up before sunrise because of a voice outside my hotel window.",
+        "language": "en"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 13,
+      "request": {
+        "action": "start",
+        "text": "From the tower of the mosque next to my hotel, one voice called out for about three minutes. Short phrases with pauses. I caught \"Allahu Akbar\" several times, then people walked in.",
+        "language": "en"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 14,
+      "request": {
+        "action": "start",
+        "text": "At the opening of a conference in Riyadh, a man recited something melodic in Arabic for about two minutes and everyone stayed silent.",
+        "language": "en"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 15,
+      "request": {
+        "action": "start",
+        "text": "Outside the building, men were washing their hands, faces and feet at a row of taps before going in.",
+        "language": "en"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 16,
+      "request": {
+        "action": "start",
+        "text": "Inside the mosque in the evening, a man sat on a chair talking to a small group sitting on the floor. He had a book open.",
+        "language": "en"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 17,
+      "request": {
+        "action": "start",
+        "text": "At the airport, a group of men wrapped in white cloth were repeating the same phrase together as they walked.",
+        "language": "en"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 18,
+      "request": {
+        "action": "start",
+        "text": "The taxi driver was playing a man's voice chanting in Arabic. I heard the word \"Allah\" many times.",
+        "language": "en"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 19,
+      "request": {
+        "action": "start",
+        "text": "My phone and everyone else's made a loud alarm sound at the same moment, with Arabic text on the screen.",
+        "language": "en"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 20,
+      "request": {
+        "action": "start",
+        "text": "A van drove slowly down the street with a speaker repeating something in Arabic, and people came out of their houses.",
+        "language": "en"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 101,
+      "request": {
+        "action": "start",
+        "text": "في المطار رأيت رجالًا يقفون كتفًا إلى كتف في صف ورجل أمامهم، ثم انحنوا كلهم في لحظة واحدة.",
+        "language": "ar"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 102,
+      "request": {
+        "action": "start",
+        "text": "In a park at sunrise, a group stood in rows and bent forward together, following a woman at the front.",
+        "language": "en"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 103,
+      "request": {
+        "action": "start",
+        "text": "Next to the prayer room in the mall, a man was washing his arms up to the elbows and then his feet in a low sink.",
+        "language": "en"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 104,
+      "request": {
+        "action": "start",
+        "text": "رأيت رجلًا يغسل يديه ووجهه في مغسلة المطعم قبل الأكل.",
+        "language": "ar"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 105,
+      "request": {
+        "action": "start",
+        "text": "كنت داخل المسجد زائرًا والناس جالسون، ثم قال رجل عبارات سريعة بصوت مرتفع فقام الجميع واصطفوا.",
+        "language": "ar"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 106,
+      "request": {
+        "action": "start",
+        "text": "I heard a short announcement from the mosque loudspeaker in the afternoon, spoken in a normal voice, not melodic.",
+        "language": "en"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 107,
+      "request": {
+        "action": "start",
+        "text": "On Friday around noon the mosque near my hotel was full, and a man stood on raised steps giving a long speech while everyone sat and listened.",
+        "language": "en"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    },
+    {
+      "caseId": 108,
+      "request": {
+        "action": "start",
+        "text": "مساء الثلاثاء سمعت من المسجد رجلًا يتحدث بهدوء لنحو نصف ساعة.",
+        "language": "ar"
+      },
+      "status": 503,
+      "response": "{\"error\":\"model_not_configured\",\"technical\":true,\"version\":\"0.6.0\"}",
+      "verdict": "blocked_not_a_pass"
+    }
+  ]
+}

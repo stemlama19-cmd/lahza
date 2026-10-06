@@ -1,0 +1,1676 @@
+{
+  "version": "0.4.0",
+  "startedAt": "2026-10-05T06:11:31.235Z",
+  "sourceWorkbook": "lahza_dev_set_v0.1 (3).xlsx",
+  "sourceLibraryId": "libfile_f1997bb993f8819194a49ef927eb84cb",
+  "method": "Diagnostic run of the 20 development scenarios. Operator replies are translated extracts from the workbook facts keyed to Q1..Q8; unavailable facts receive uncertainty. No scholarly judgments or performance percentages entered. The model never receives the reference facts or expected outcomes.",
+  "results": [
+    {
+      "case": {
+        "id": 1,
+        "language": "ar",
+        "description": "سمعت صوتًا عاليًا بالعربية من مبنى له برج، والناس بدأت تمشي نحوه.",
+        "facts": "مكبرات على البرج. نحو ثلاث دقائق. صوت واحد بعبارات بينها وقفات. يتذكر الزائر أن عبارة تكررت في البداية ولا يستطيع كتابتها. لم يسمع نداءً آخر قبله.",
+        "responsePolicy": "اقتراح الأذان أو نداء إلى الصلاة: موافقة. اقتراح يخالف ما لاحظه: رفض مع ذكر ما لاحظه. غير ذلك: «لا أعرف».",
+        "expectedDraft": "سؤال واحد على الأقل، ثم تأكيد بصيغة «قد يكون»، ثم شرح الأذان.",
+        "errorToAvoid": "التأكيد من الوصف الأول وحده.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "مكبرات على برج المبنى",
+          "Q2": "نحو ثلاث دقائق",
+          "Q3": "صوت واحد بعبارات بينها وقفات",
+          "Q4": "عبارة تكررت في البداية ولا أستطيع كتابتها",
+          "Q5": "لم أسمع نداء آخر قبله",
+          "Q7": "اتجه الناس نحو المبنى"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:11:31.235Z",
+          "input": "سمعت صوتًا عاليًا بالعربية من مبنى له برج، والناس بدأت تمشي نحوه.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت صوتًا عاليًا بالعربية من مبنى له برج",
+              "والناس بدأت تمشي نحوه"
+            ],
+            "why_this_question": "مصدر الصوت يساعد على فهم السياق، لكنه لا يحدد محتواه وحده.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "من أين جاء الصوت؟ مكبرات خارج مبنى، داخل المكان، هاتف أو جهاز؟"
+          },
+          "displayed": "من أين جاء الصوت؟ مكبرات خارج مبنى، داخل المكان، هاتف أو جهاز؟\nمصدر الصوت يساعد على فهم السياق، لكنه لا يحدد محتواه وحده.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_446ad576068f43e4ae909f453c013cd4",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:11:46.013Z",
+          "input": "مكبرات على برج المبنى",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q7",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت صوتًا عاليًا بالعربية من مبنى له برج",
+              "مكبرات على برج المبنى",
+              "والناس بدأت تمشي نحوه"
+            ],
+            "why_this_question": "ما فعله الناس يضيف سياقًا إلى ما سمعته.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "ماذا فعل الناس حولك؟ اتجهوا إلى مبنى، وقفوا صفوفًا، أم واصلوا شأنهم؟"
+          },
+          "displayed": "ماذا فعل الناس حولك؟ اتجهوا إلى مبنى، وقفوا صفوفًا، أم واصلوا شأنهم؟\nما فعله الناس يضيف سياقًا إلى ما سمعته.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_d7b59e84b9264ddf9361cd5e9a93fc1b",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:11:47.143Z",
+          "input": "اتجه الناس نحو المبنى",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت صوتًا عاليًا بالعربية من مبنى له برج",
+              "مكبرات على برج المبنى",
+              "والناس بدأت تمشي نحوه",
+              "اتجه الناس نحو المبنى"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": true,
+            "message": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك استكشاف الأذان كمثال أو الاحتفاظ بسؤالك."
+          },
+          "displayed": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك استكشاف الأذان كمثال أو الاحتفاظ بسؤالك.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_42684f7f4b0746e583a5a5935fd04a5b",
+          "askedCount": 2
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/insufficient_evidence"
+    },
+    {
+      "case": {
+        "id": 2,
+        "language": "ar",
+        "description": "سمعت صوتًا بالعربية في مكان عام.",
+        "facts": "الزائر في ساحة مفتوحة. الصوت من مكبرات خارج مبنى قريب ومن جهات أبعد. دقائق قليلة. صوت منغّم. لا يتذكر كلمات. لم ينتبه إلى حركة الناس.",
+        "responsePolicy": "اقتراح الأذان: عدم تأكد. أي اقتراح آخر: «لا أعرف».",
+        "expectedDraft": "سؤال أو سؤالان، ثم عرض الأذان فرضية غير محسومة أو استكشافه كمثال.",
+        "errorToAvoid": "تأكيد بلا سؤال، أو صيغة جزم.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "مكبرات خارج مبنى قريب ومن جهات أبعد، كنت في ساحة مفتوحة",
+          "Q2": "دقائق قليلة",
+          "Q3": "صوت منغّم",
+          "Q4": "لا أتذكر كلمات",
+          "Q7": "لم أنتبه لحركة الناس"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:11:31.244Z",
+          "input": "سمعت صوتًا بالعربية في مكان عام.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت صوتًا بالعربية في مكان عام."
+            ],
+            "why_this_question": "مصدر الصوت يساعد على فهم السياق، لكنه لا يحدد محتواه وحده.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "من أين جاء الصوت؟ مكبرات خارج مبنى، داخل المكان، هاتف أو جهاز؟"
+          },
+          "displayed": "من أين جاء الصوت؟ مكبرات خارج مبنى، داخل المكان، هاتف أو جهاز؟\nمصدر الصوت يساعد على فهم السياق، لكنه لا يحدد محتواه وحده.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_48faeb558d344b1e872c20aa141f5c16",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:11:45.648Z",
+          "input": "مكبرات خارج مبنى قريب ومن جهات أبعد، كنت في ساحة مفتوحة",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "مكبرات خارج مبنى قريب ومن جهات أبعد، كنت في ساحة مفتوحة"
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "displayed": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟\nنمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_ef9c5711a2b94d4f9e67783155f44a15",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:11:46.823Z",
+          "input": "صوت منغّم",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "مكبرات خارج مبنى قريب ومن جهات أبعد، كنت في ساحة مفتوحة",
+              "صوت منغّم"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": true,
+            "message": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك استكشاف الأذان كمثال أو الاحتفاظ بسؤالك."
+          },
+          "displayed": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك استكشاف الأذان كمثال أو الاحتفاظ بسؤالك.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_8b4dd891f7444f8d98f03e5b0ac7ec9e",
+          "askedCount": 2
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/insufficient_evidence"
+    },
+    {
+      "case": {
+        "id": 3,
+        "language": "ar",
+        "description": "سمعت نداءً قصيرًا من مكبرات المسجد، وكنت سمعت نداءً أطول قبله بربع ساعة.",
+        "facts": "أقل من دقيقة. عبارات سريعة متتابعة. كان الناس قد دخلوا المسجد. لا يتذكر الزائر كلمات.",
+        "responsePolicy": "يرفض الاقتراح الأول أيًّا كان بقوله «لا أقصد هذا» دون معلومة جديدة. سلوك مصطنع لاختبار قاعدة منع التخمين الثاني.",
+        "expectedDraft": "بيان أنه نداء ثانٍ أقصر بصيغة ترجيح، دون عرض شرح الأذان شرحًا له. عند الرفض يتوقف دون تخمين ثانٍ، ثم بطاقة.",
+        "errorToAvoid": "شرحه بوصفه الأذان، أو عرض تخمين ثانٍ بعد الرفض.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "مكبرات المسجد",
+          "Q2": "أقل من دقيقة",
+          "Q3": "عبارات سريعة متتابعة",
+          "Q4": "لا أتذكر الكلمات",
+          "Q5": "نعم، قبله بربع ساعة نداء أطول",
+          "Q7": "كان الناس قد دخلوا المسجد"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:11:48.039Z",
+          "input": "سمعت نداءً قصيرًا من مكبرات المسجد، وكنت سمعت نداءً أطول قبله بربع ساعة.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت نداءً قصيرًا من مكبرات المسجد، وكنت سمعت نداءً أطول قبله بربع ساعة."
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "displayed": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟\nنمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_1dd0b27bf0bc4a0ab550d71674dc82fa",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:11:49.340Z",
+          "input": "عبارات سريعة متتابعة",
+          "action": "reply",
+          "decision": {
+            "decision": "confirm",
+            "question_id": null,
+            "hypothesis": "adhan",
+            "hypothesis_text": "الأذان",
+            "evidence": [
+              "سمعت نداءً قصيرًا من مكبرات المسجد، وكنت سمعت نداءً أطول قبله بربع ساعة.",
+              "عبارات سريعة متتابعة"
+            ],
+            "why_this_question": "",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "وصفتَ: «سمعت نداءً قصيرًا من مكبرات المسجد، وكنت سمعت نداءً أطول قبله بربع ساعة.؛ عبارات سريعة متتابعة». قد يكون هذا الأذان. هل تريد استكشاف هذا الاحتمال، أم أنك غير متأكد؟"
+          },
+          "displayed": "وصفتَ: «سمعت نداءً قصيرًا من مكبرات المسجد، وكنت سمعت نداءً أطول قبله بربع ساعة.؛ عبارات سريعة متتابعة». قد يكون هذا الأذان. هل تريد استكشاف هذا الاحتمال، أم أنك غير متأكد؟",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_e582de510272446eb66145f51002d979",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:11:51.471Z",
+          "input": "",
+          "action": "reject",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت نداءً قصيرًا من مكبرات المسجد، وكنت سمعت نداءً أطول قبله بربع ساعة.",
+              "عبارات سريعة متتابعة",
+              "لا، ليس هذا ما أقصده"
+            ],
+            "why_this_question": "",
+            "stop_type": "out_of_scope",
+            "offer_example": false,
+            "message": "هذا الوصف خارج نطاق لحظة المتاح حاليًا. يمكنك بدء وصف جديد."
+          },
+          "displayed": "هذا الوصف خارج نطاق لحظة المتاح حاليًا. يمكنك بدء وصف جديد.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_e3906d66401a489a9251d5508bba8839",
+          "askedCount": 1
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/out_of_scope"
+    },
+    {
+      "case": {
+        "id": 4,
+        "language": "ar",
+        "description": "سمعت رجلًا يرتل بالعربية داخل متجر.",
+        "facts": "الصوت من سماعة داخل المتجر. متصل نحو عشر دقائق طوال وجود الزائر. ترتيل بلا عبارات متكررة ظاهرة. لا يتذكر كلمات. واصل الناس التسوق.",
+        "responsePolicy": "اقتراح الأذان: رفض مع معلومة «كان متصلًا ولم يتوقف طوال وجودي». اقتراح التلاوة: عدم تأكد. غير ذلك: «لا أعرف».",
+        "expectedDraft": "عدم عرض شرح الأذان. اقتراح التلاوة احتمالًا دون نسبتها إلى القرآن، مع التصريح بحدود الدليل.",
+        "errorToAvoid": "تأكيد الأذان، أو الجزم بأنه قرآن.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "سماعة داخل المتجر",
+          "Q2": "نحو عشر دقائق طوال وجودي",
+          "Q3": "ترتيل متصل بلا عبارات متكررة ظاهرة",
+          "Q4": "لا أتذكر كلمات",
+          "Q7": "واصل الناس التسوق"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:11:48.228Z",
+          "input": "سمعت رجلًا يرتل بالعربية داخل متجر.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "رجلًا يرتل بالعربية داخل متجر"
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "displayed": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟\nنمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_d75fa38a39794ba6a9b79a480873fe20",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:11:49.262Z",
+          "input": "ترتيل متصل بلا عبارات متكررة ظاهرة",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q4",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "رجلًا يرتل بالعربية داخل متجر",
+              "ترتيل متصل بلا عبارات متكررة ظاهرة"
+            ],
+            "why_this_question": "العبارة قد تساعد مع القرائن الأخرى؛ كلمة واحدة لا تكفي.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "هل تتذكر كلمة أو عبارة مما سمعت؟ اكتبها كما تتذكرها."
+          },
+          "displayed": "هل تتذكر كلمة أو عبارة مما سمعت؟ اكتبها كما تتذكرها.\nالعبارة قد تساعد مع القرائن الأخرى؛ كلمة واحدة لا تكفي.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_33d9cf552c694458bb85d46f93f6a5f8",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:11:50.247Z",
+          "input": "لا أتذكر كلمات",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "رجلًا يرتل بالعربية داخل متجر",
+              "ترتيل متصل بلا عبارات متكررة ظاهرة",
+              "لا أتذكر كلمات"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": true,
+            "message": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك استكشاف الأذان كمثال أو الاحتفاظ بسؤالك."
+          },
+          "displayed": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك استكشاف الأذان كمثال أو الاحتفاظ بسؤالك.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_a4919133540f40a9883575fc4264c4d6",
+          "askedCount": 2
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/insufficient_evidence"
+    },
+    {
+      "case": {
+        "id": 5,
+        "language": "ar",
+        "description": "سمعت رجلًا يتحدث طويلًا بصوت عالٍ من المسجد.",
+        "facts": "ظهر الجمعة. حديث متصل كالخطاب نحو عشرين دقيقة. المسجد ممتلئ والناس جلوس.",
+        "responsePolicy": "اقتراح خطبة الجمعة: موافقة. اقتراح الأذان: رفض مع معلومة «كان حديثًا طويلًا». غير ذلك: «لا أعرف».",
+        "expectedDraft": "ترجيح بصيغة احتمال، ثم إحالة وبطاقة لغياب الشرح.",
+        "errorToAvoid": "اختلاق شرح للخطبة، أو عرض شرح الأذان.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "من المسجد",
+          "Q2": "نحو عشرين دقيقة",
+          "Q3": "حديث متصل كالخطاب",
+          "Q6": "نعم، ظهر الجمعة",
+          "Q7": "المسجد ممتلئ والناس جلوس",
+          "Q8": "الناس جلوس يستمعون"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:11:51.291Z",
+          "input": "سمعت رجلًا يتحدث طويلًا بصوت عالٍ من المسجد.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت رجلًا يتحدث طويلًا بصوت عالٍ من المسجد."
+            ],
+            "why_this_question": "مصدر الصوت يساعد على فهم السياق، لكنه لا يحدد محتواه وحده.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "من أين جاء الصوت؟ مكبرات خارج مبنى، داخل المكان، هاتف أو جهاز؟"
+          },
+          "displayed": "من أين جاء الصوت؟ مكبرات خارج مبنى، داخل المكان، هاتف أو جهاز؟\nمصدر الصوت يساعد على فهم السياق، لكنه لا يحدد محتواه وحده.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_15dca4952a014836b38706d29c4ac13a",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:11:52.414Z",
+          "input": "من المسجد",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q2",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت رجلًا يتحدث طويلًا بصوت عالٍ من المسجد.",
+              "من المسجد"
+            ],
+            "why_this_question": "المدة تضيف قرينة إلى وصفك، ولا تحسم نوع الصوت.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كم استمر تقريبًا؟ أقل من دقيقة، دقائق قليلة، أم أطول بكثير؟"
+          },
+          "displayed": "كم استمر تقريبًا؟ أقل من دقيقة، دقائق قليلة، أم أطول بكثير؟\nالمدة تضيف قرينة إلى وصفك، ولا تحسم نوع الصوت.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_f6b34ba6a3f14e75981c622434185682",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:11:53.391Z",
+          "input": "نحو عشرين دقيقة",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت رجلًا يتحدث طويلًا بصوت عالٍ من المسجد.",
+              "من المسجد",
+              "نحو عشرين دقيقة"
+            ],
+            "why_this_question": "",
+            "stop_type": "out_of_scope",
+            "offer_example": false,
+            "message": "هذا الوصف خارج نطاق لحظة المتاح حاليًا. يمكنك بدء وصف جديد."
+          },
+          "displayed": "هذا الوصف خارج نطاق لحظة المتاح حاليًا. يمكنك بدء وصف جديد.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_da8501dc37124ac28b28f2a5c28848b0",
+          "askedCount": 2
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/out_of_scope"
+    },
+    {
+      "case": {
+        "id": 6,
+        "language": "ar",
+        "description": "سمعت عبارة تتكرر كثيرًا من مكبرات في الصباح الباكر، والناس بملابس جديدة.",
+        "facts": "ترديد جماعي متصل أكثر من نصف ساعة. يتذكر الزائر «الله أكبر». الناس يتجهون إلى ساحة مفتوحة.",
+        "responsePolicy": "اقتراح الأذان: عدم تأكد. غير ذلك: «لا أعرف».",
+        "expectedDraft": "عدم عرض شرح الأذان. التصريح بأن الحدث خارج ما يمكن تحديده، ثم بطاقة.",
+        "errorToAvoid": "التأكيد بسبب تشابه اللفظ.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "مكبرات",
+          "Q2": "أكثر من نصف ساعة",
+          "Q3": "ترديد جماعي متصل",
+          "Q4": "الله أكبر",
+          "Q7": "يتجه الناس إلى ساحة مفتوحة"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:11:52.627Z",
+          "input": "سمعت عبارة تتكرر كثيرًا من مكبرات في الصباح الباكر، والناس بملابس جديدة.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "عبارة تتكرر كثيرًا من مكبرات في الصباح الباكر",
+              "الناس بملابس جديدة"
+            ],
+            "why_this_question": "مصدر الصوت يساعد على فهم السياق، لكنه لا يحدد محتواه وحده.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "من أين جاء الصوت؟ مكبرات خارج مبنى، داخل المكان، هاتف أو جهاز؟"
+          },
+          "displayed": "من أين جاء الصوت؟ مكبرات خارج مبنى، داخل المكان، هاتف أو جهاز؟\nمصدر الصوت يساعد على فهم السياق، لكنه لا يحدد محتواه وحده.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_92110118e1524111972acd4d17533c64",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:11:53.599Z",
+          "input": "مكبرات",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "عبارة تتكرر كثيرًا من مكبرات في الصباح الباكر",
+              "مكبرات"
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "displayed": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟\nنمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_06d5413025dd40c4a3b7f407662ee7bc",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:11:54.642Z",
+          "input": "ترديد جماعي متصل",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "عبارة تتكرر كثيرًا من مكبرات في الصباح الباكر",
+              "مكبرات",
+              "ترديد جماعي متصل"
+            ],
+            "why_this_question": "",
+            "stop_type": "out_of_scope",
+            "offer_example": false,
+            "message": "هذا الوصف خارج نطاق لحظة المتاح حاليًا. يمكنك بدء وصف جديد."
+          },
+          "displayed": "هذا الوصف خارج نطاق لحظة المتاح حاليًا. يمكنك بدء وصف جديد.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_968a3e349b7046d5bc8ab4d224455df8",
+          "askedCount": 2
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/out_of_scope"
+    },
+    {
+      "case": {
+        "id": 7,
+        "language": "ar",
+        "description": "هاتف رجل بجانبي أصدر صوتًا منغّمًا بالعربية ثم أسكته.",
+        "facts": "الصوت من الهاتف. ثوانٍ قليلة قبل إسكاته. لا يتذكر كلمات.",
+        "responsePolicy": "أي اقتراح: عدم تأكد.",
+        "expectedDraft": "التصريح بعدم كفاية الأدلة، وعرض استكشاف الأذان كمثال.",
+        "errorToAvoid": "الجزم بالحدث.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "هاتف الرجل",
+          "Q2": "ثوان قليلة ثم أسكته",
+          "Q3": "صوت منغّم",
+          "Q4": "لا أتذكر الكلمات"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:11:54.543Z",
+          "input": "هاتف رجل بجانبي أصدر صوتًا منغّمًا بالعربية ثم أسكته.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "هاتف رجل بجانبي أصدر صوتًا منغّمًا بالعربية ثم أسكته."
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "displayed": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟\nنمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_f739071077b2409691c783e1bb0d99ce",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:11:55.662Z",
+          "input": "صوت منغّم",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q4",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "هاتف رجل بجانبي أصدر صوتًا منغّمًا بالعربية ثم أسكته.",
+              "صوت منغّم"
+            ],
+            "why_this_question": "العبارة قد تساعد مع القرائن الأخرى؛ كلمة واحدة لا تكفي.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "هل تتذكر كلمة أو عبارة مما سمعت؟ اكتبها كما تتذكرها."
+          },
+          "displayed": "هل تتذكر كلمة أو عبارة مما سمعت؟ اكتبها كما تتذكرها.\nالعبارة قد تساعد مع القرائن الأخرى؛ كلمة واحدة لا تكفي.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_96b35623d657432893c0c2b4b188f105",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:11:56.795Z",
+          "input": "لا أتذكر الكلمات",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "هاتف رجل بجانبي أصدر صوتًا منغّمًا بالعربية ثم أسكته.",
+              "صوت منغّم",
+              "لا أتذكر الكلمات"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": true,
+            "message": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك استكشاف الأذان كمثال أو الاحتفاظ بسؤالك."
+          },
+          "displayed": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك استكشاف الأذان كمثال أو الاحتفاظ بسؤالك.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_fec60648201642e1baf6678397011ec1",
+          "askedCount": 2
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/insufficient_evidence"
+    },
+    {
+      "case": {
+        "id": 8,
+        "language": "ar",
+        "description": "رأيت أشخاصًا يقفون في صفوف وينحنون معًا في ممر مركز تجاري.",
+        "facts": "نحو خمسة عشر شخصًا. رجل يتقدمهم. حركات مشتركة من وقوف وانحناء وسجود. دقائق قليلة.",
+        "responsePolicy": "اقتراح صلاة الجماعة: موافقة. اقتراح يخالف ما شاهده: رفض مع ذكر ما شاهده. غير ذلك: «لا أعرف».",
+        "expectedDraft": "الانتقال إلى التأكيد دون سؤال، ثم الشرح القصير.",
+        "errorToAvoid": "افتراض أن الصلاة تقع في المسجد وحده، أو تحديد أي صلاة هي.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q2": "دقائق قليلة",
+          "Q7": "وقفوا صفوفًا",
+          "Q8": "نحو خمسة عشر شخصًا، رجل يتقدمهم وحركات مشتركة من وقوف وانحناء وسجود"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:11:55.819Z",
+          "input": "رأيت أشخاصًا يقفون في صفوف وينحنون معًا في ممر مركز تجاري.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q8",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "رأيت أشخاصًا يقفون في صفوف وينحنون معًا في ممر مركز تجاري"
+            ],
+            "why_this_question": "الحركات التي لاحظتها تساعد على فهم المشهد.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "ماذا كانوا يفعلون؟ يقفون في صفوف وينحنون معًا، يجلسون ويستمعون لمتحدث، أم يقرأ شخص من كتاب؟"
+          },
+          "displayed": "ماذا كانوا يفعلون؟ يقفون في صفوف وينحنون معًا، يجلسون ويستمعون لمتحدث، أم يقرأ شخص من كتاب؟\nالحركات التي لاحظتها تساعد على فهم المشهد.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_e08e663fd6ce4fe2bdfd86f7409bcbc5",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:11:57.047Z",
+          "input": "نحو خمسة عشر شخصًا، رجل يتقدمهم وحركات مشتركة من وقوف وانحناء وسجود",
+          "action": "reply",
+          "decision": {
+            "decision": "confirm",
+            "question_id": null,
+            "hypothesis": "adhan",
+            "hypothesis_text": "الأذان",
+            "evidence": [
+              "نحو خمسة عشر شخصًا، رجل يتقدمهم وحركات مشتركة من وقوف وانحناء وسجود"
+            ],
+            "why_this_question": "",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "وصفتَ: «نحو خمسة عشر شخصًا، رجل يتقدمهم وحركات مشتركة من وقوف وانحناء وسجود». قد يكون هذا الأذان. هل تريد استكشاف هذا الاحتمال، أم أنك غير متأكد؟"
+          },
+          "displayed": "وصفتَ: «نحو خمسة عشر شخصًا، رجل يتقدمهم وحركات مشتركة من وقوف وانحناء وسجود». قد يكون هذا الأذان. هل تريد استكشاف هذا الاحتمال، أم أنك غير متأكد؟",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_0fd9a6f47de4420daf116a091c797ed5",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:11:58.362Z",
+          "input": "كانوا يقفون صفوفًا وينحنون ويسجدون معًا",
+          "action": "reject",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "كانوا يقفون صفوفًا وينحنون ويسجدون معًا"
+            ],
+            "why_this_question": "",
+            "stop_type": "out_of_scope",
+            "offer_example": false,
+            "message": "هذا الوصف خارج نطاق لحظة المتاح حاليًا. يمكنك بدء وصف جديد."
+          },
+          "displayed": "هذا الوصف خارج نطاق لحظة المتاح حاليًا. يمكنك بدء وصف جديد.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_333dca8136c2425cba8eaab542b6952e",
+          "askedCount": 1
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/out_of_scope"
+    },
+    {
+      "case": {
+        "id": 9,
+        "language": "ar",
+        "description": "رأيت كتابة عربية جميلة على واجهة مبنى.",
+        "facts": "خط مزخرف. لا يستطيع الزائر نسخ النص. المبنى ليس مسجدًا.",
+        "responsePolicy": "أي اقتراح: «لا أعرف».",
+        "expectedDraft": "التصريح بعدم كفاية الأدلة، وعرض قائمة النصوص المختارة أو إدخال النص منسوخًا.",
+        "errorToAvoid": "وصفه بأنه آية.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q8": "كتابة عربية بخط مزخرف على مبنى ليس مسجدًا، لا أستطيع نسخ النص"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:11:57.931Z",
+          "input": "رأيت كتابة عربية جميلة على واجهة مبنى.",
+          "action": "start",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "رأيت كتابة عربية جميلة على واجهة مبنى."
+            ],
+            "why_this_question": "",
+            "stop_type": "out_of_scope",
+            "offer_example": false,
+            "message": "هذا الوصف خارج نطاق لحظة المتاح حاليًا. يمكنك بدء وصف جديد."
+          },
+          "displayed": "هذا الوصف خارج نطاق لحظة المتاح حاليًا. يمكنك بدء وصف جديد.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_3f7c44d75f134b3f8cb69d48799350a7",
+          "askedCount": 0
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/out_of_scope"
+    },
+    {
+      "case": {
+        "id": 10,
+        "language": "ar",
+        "description": "سمعت نداءً من مكبرات في الشارع.",
+        "facts": "مكبرات منصة في ساحة. صوت منغّم مع موسيقى. استمر طويلًا. تجمع الناس حول المنصة.",
+        "responsePolicy": "اقتراح الأذان: رفض مع معلومة «كانت معه موسيقى». غير ذلك: «لا أعرف».",
+        "expectedDraft": "سحب فرضية الأذان، ثم توقف دون تسمية بديل.",
+        "errorToAvoid": "إعادة عرض الأذان، أو تخمين بديل بلا دليل.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "مكبرات منصة في ساحة",
+          "Q2": "استمر طويلًا",
+          "Q3": "صوت منغّم مع موسيقى",
+          "Q7": "تجمع الناس حول المنصة"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:11:58.871Z",
+          "input": "سمعت نداءً من مكبرات في الشارع.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q2",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت نداءً من مكبرات في الشارع."
+            ],
+            "why_this_question": "المدة تضيف قرينة إلى وصفك، ولا تحسم نوع الصوت.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كم استمر تقريبًا؟ أقل من دقيقة، دقائق قليلة، أم أطول بكثير؟"
+          },
+          "displayed": "كم استمر تقريبًا؟ أقل من دقيقة، دقائق قليلة، أم أطول بكثير؟\nالمدة تضيف قرينة إلى وصفك، ولا تحسم نوع الصوت.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_8ecdef98d87b4d34a5f5ab833157a231",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:11:59.894Z",
+          "input": "استمر طويلًا",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت نداءً من مكبرات في الشارع.",
+              "استمر طويلًا"
+            ],
+            "why_this_question": "مصدر الصوت يساعد على فهم السياق، لكنه لا يحدد محتواه وحده.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "من أين جاء الصوت؟ مكبرات خارج مبنى، داخل المكان، هاتف أو جهاز؟"
+          },
+          "displayed": "من أين جاء الصوت؟ مكبرات خارج مبنى، داخل المكان، هاتف أو جهاز؟\nمصدر الصوت يساعد على فهم السياق، لكنه لا يحدد محتواه وحده.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_60da62ba9c9a4651a14369e08f69683b",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:12:00.995Z",
+          "input": "مكبرات منصة في ساحة",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت نداءً من مكبرات في الشارع.",
+              "استمر طويلًا",
+              "مكبرات منصة في ساحة"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": true,
+            "message": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك استكشاف الأذان كمثال أو الاحتفاظ بسؤالك."
+          },
+          "displayed": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك استكشاف الأذان كمثال أو الاحتفاظ بسؤالك.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_134b6033c1714d8c82a83b962c276ab4",
+          "askedCount": 2
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/insufficient_evidence"
+    },
+    {
+      "case": {
+        "id": 11,
+        "language": "en",
+        "description": "Around sunset a man's voice started echoing over the neighbourhood. It wasn't music, but it had a melody.",
+        "facts": "مكبرات على برج مبنى قريب. نحو ثلاث دقائق. صوت واحد بعبارات بينها وقفات. يتذكر الزائر عبارة تشبه «Allahu Akbar» وأخرى تكررت مرتين. اتجه بعض الناس إلى المبنى.",
+        "responsePolicy": "اقتراح الأذان أو نداء إلى الصلاة: موافقة. غير ذلك: «لا أعرف».",
+        "expectedDraft": "سؤال أو سؤالان، ثم تأكيد بصيغة «قد يكون»، ثم شرح الأذان.",
+        "errorToAvoid": "التأكيد من الوصف الأول.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "Speakers on a tower of a nearby building",
+          "Q2": "About three minutes",
+          "Q3": "One voice with phrases and pauses",
+          "Q4": "Something like Allahu Akbar, and another phrase repeated twice",
+          "Q7": "Some people walked towards the building"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:11:59.339Z",
+          "input": "Around sunset a man's voice started echoing over the neighbourhood. It wasn't music, but it had a melody.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "Around sunset a man's voice started echoing over the neighbourhood.",
+              "It wasn't music, but it had a melody."
+            ],
+            "why_this_question": "The source helps establish context, but does not identify the content on its own.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "Where did the sound come from: speakers outside a building, inside the place, or a phone or device?"
+          },
+          "displayed": "Where did the sound come from: speakers outside a building, inside the place, or a phone or device?\nThe source helps establish context, but does not identify the content on its own.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_65089c6159494f179569fd1c5d60f089",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:12:00.411Z",
+          "input": "Speakers on a tower of a nearby building",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "Around sunset a man's voice started echoing over the neighbourhood.",
+              "It wasn't music, but it had a melody.",
+              "Speakers on a tower of a nearby building"
+            ],
+            "why_this_question": "The pattern helps distinguish a call, a speech and recitation.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?"
+          },
+          "displayed": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?\nThe pattern helps distinguish a call, a speech and recitation.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_4ba0ff86208840f3a51396be1bee8e83",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:12:01.634Z",
+          "input": "One voice with phrases and pauses",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "Around sunset a man's voice started echoing over the neighbourhood.",
+              "It wasn't music, but it had a melody.",
+              "Speakers on a tower of a nearby building",
+              "One voice with phrases and pauses"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": true,
+            "message": "I cannot identify the moment from the available information. You can explore the adhan as an example or keep your question."
+          },
+          "displayed": "I cannot identify the moment from the available information. You can explore the adhan as an example or keep your question.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_da8016ef4567455a9c3ba4a1500edad1",
+          "askedCount": 2
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/insufficient_evidence"
+    },
+    {
+      "case": {
+        "id": 12,
+        "language": "en",
+        "description": "I woke up before sunrise because of a voice outside my hotel window.",
+        "facts": "الصوت من الخارج ومن بعيد. الزائر شبه نائم، فلا يتذكر المدة ولا أي كلمة. يذكر أنه صوت منغّم.",
+        "responsePolicy": "أي اقتراح: عدم تأكد.",
+        "expectedDraft": "التصريح بعدم كفاية الأدلة، وعرض استكشاف الأذان كمثال.",
+        "errorToAvoid": "الجزم، أو طرح سؤال ثالث.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "Outside and far away",
+          "Q2": "I was half asleep and cannot remember",
+          "Q3": "A melodic voice",
+          "Q4": "I do not remember any words"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:12:02.183Z",
+          "input": "I woke up before sunrise because of a voice outside my hotel window.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "I woke up before sunrise because of a voice outside my hotel window."
+            ],
+            "why_this_question": "The source helps establish context, but does not identify the content on its own.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "Where did the sound come from: speakers outside a building, inside the place, or a phone or device?"
+          },
+          "displayed": "Where did the sound come from: speakers outside a building, inside the place, or a phone or device?\nThe source helps establish context, but does not identify the content on its own.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_7bad93814975435abd7f8d32a1699326",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:12:03.254Z",
+          "input": "Outside and far away",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q2",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "voice outside my hotel window",
+              "Outside and far away"
+            ],
+            "why_this_question": "Duration adds a clue to your description; it does not determine the sound.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "About how long did it last: under a minute, a few minutes, or much longer?"
+          },
+          "displayed": "About how long did it last: under a minute, a few minutes, or much longer?\nDuration adds a clue to your description; it does not determine the sound.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_bd7945168f284908b78b341a7fb33b79",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:12:04.294Z",
+          "input": "I was half asleep and cannot remember",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "voice outside my hotel window",
+              "Outside and far away",
+              "I was half asleep and cannot remember"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": true,
+            "message": "I cannot identify the moment from the available information. You can explore the adhan as an example or keep your question."
+          },
+          "displayed": "I cannot identify the moment from the available information. You can explore the adhan as an example or keep your question.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_87bc8e3fced04831a7c0054e127688a5",
+          "askedCount": 2
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/insufficient_evidence"
+    },
+    {
+      "case": {
+        "id": 13,
+        "language": "en",
+        "description": "From the tower of the mosque next to my hotel, one voice called out for about three minutes. Short phrases with pauses. I caught \"Allahu Akbar\" several times, then people walked in.",
+        "facts": "كما في الوصف. لم يسمع الزائر نداءً آخر قبله.",
+        "responsePolicy": "اقتراح الأذان: موافقة. اقتراح يخالف ما لاحظه: رفض مع ذكر ما لاحظه.",
+        "expectedDraft": "الانتقال إلى التأكيد دون سؤال، ثم شرح الأذان.",
+        "errorToAvoid": "أسئلة لا حاجة إليها، أو تأكيد بصيغة الجزم.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "From the tower of the mosque next to my hotel",
+          "Q2": "About three minutes",
+          "Q3": "One voice, short phrases with pauses",
+          "Q4": "Allahu Akbar several times",
+          "Q5": "I did not hear another call before it",
+          "Q7": "People walked in"
+        }
+      },
+      "turns": [],
+      "technicalError": "invalid_model_output",
+      "reviewJudgments": null,
+      "final": "technical_error"
+    },
+    {
+      "case": {
+        "id": 14,
+        "language": "en",
+        "description": "At the opening of a conference in Riyadh, a man recited something melodic in Arabic for about two minutes and everyone stayed silent.",
+        "facts": "داخل قاعة. القارئ على المنصة. ترتيل متصل بلا عبارات متكررة. لا يتذكر الزائر كلمات.",
+        "responsePolicy": "أي اقتراح: عدم تأكد.",
+        "expectedDraft": "عدم عرض شرح الأذان. اقتراح التلاوة احتمالًا، مع بيان حدود الدليل والشرح.",
+        "errorToAvoid": "ترجيح الأذان بسبب المدة.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "Inside a hall, a man on the stage",
+          "Q2": "About two minutes",
+          "Q3": "Continuous recitation without repeated phrases",
+          "Q4": "I do not remember words",
+          "Q7": "Everyone stayed silent"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:12:05.243Z",
+          "input": "At the opening of a conference in Riyadh, a man recited something melodic in Arabic for about two minutes and everyone stayed silent.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a man recited something melodic in Arabic for about two minutes"
+            ],
+            "why_this_question": "The pattern helps distinguish a call, a speech and recitation.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?"
+          },
+          "displayed": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?\nThe pattern helps distinguish a call, a speech and recitation.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_f52eecf0004d4afdb04b9ae0be7b0128",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:12:06.330Z",
+          "input": "Continuous recitation without repeated phrases",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q7",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "At the opening of a conference in Riyadh, a man recited something melodic in Arabic for about two minutes and everyone stayed silent",
+              "Continuous recitation without repeated phrases"
+            ],
+            "why_this_question": "What people did adds context to what you heard.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "What did people around you do: walk towards a building, stand in rows, or carry on?"
+          },
+          "displayed": "What did people around you do: walk towards a building, stand in rows, or carry on?\nWhat people did adds context to what you heard.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_d99c13a97a56437988056c6f28e5fc8f",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:12:07.550Z",
+          "input": "Everyone stayed silent",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "At the opening of a conference in Riyadh, a man recited something melodic in Arabic for about two minutes and everyone stayed silent",
+              "Continuous recitation without repeated phrases",
+              "Everyone stayed silent"
+            ],
+            "why_this_question": "",
+            "stop_type": "out_of_scope",
+            "offer_example": false,
+            "message": "This description is outside LAHZA’s current scope. You can start a new description."
+          },
+          "displayed": "This description is outside LAHZA’s current scope. You can start a new description.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_8b5e0d4856d640a68cb82babbb724d90",
+          "askedCount": 2
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/out_of_scope"
+    },
+    {
+      "case": {
+        "id": 15,
+        "language": "en",
+        "description": "Outside the building, men were washing their hands, faces and feet at a row of taps before going in.",
+        "facts": "صف صنابير عند مدخل مسجد. الغسل بترتيب متشابه. يدخلون بعده حفاة.",
+        "responsePolicy": "وصف يطابق ما شاهده دون مصطلح: موافقة. تسمية بمصطلح لا يعرفه: «لا أعرف».",
+        "expectedDraft": "وصف ما يمكن قوله، ثم إحالة وبطاقة لغياب الشرح من الحزمة.",
+        "errorToAvoid": "شرح تفصيلي من خارج الحزمة.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q7": "They washed, then entered barefoot",
+          "Q8": "Washing hands, faces and feet in a similar order at taps by the mosque entrance"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:12:05.270Z",
+          "input": "Outside the building, men were washing their hands, faces and feet at a row of taps before going in.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q7",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "Outside the building, men were washing their hands, faces and feet at a row of taps before going in."
+            ],
+            "why_this_question": "What people did adds context to what you heard.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "What did people around you do: walk towards a building, stand in rows, or carry on?"
+          },
+          "displayed": "What did people around you do: walk towards a building, stand in rows, or carry on?\nWhat people did adds context to what you heard.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_8f956bcd62e64e1ea8255bee18aa8924",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:12:15.601Z",
+          "input": "They washed, then entered barefoot",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q8",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "They washed, then entered barefoot"
+            ],
+            "why_this_question": "The actions you noticed help make sense of the scene.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "What were they doing: standing in rows and bowing together, sitting and listening to a speaker, or one person reading a book?"
+          },
+          "displayed": "What were they doing: standing in rows and bowing together, sitting and listening to a speaker, or one person reading a book?\nThe actions you noticed help make sense of the scene.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_9a5baa5a422e456c8de4c618026b5ff4",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:12:25.391Z",
+          "input": "Washing hands, faces and feet in a similar order at taps by the mosque entrance",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "They washed, then entered barefoot",
+              "Outside the building, men were washing their hands, faces and feet at a row of taps before going in.",
+              "Washing hands, faces and feet in a similar order at taps by the mosque entrance"
+            ],
+            "why_this_question": "",
+            "stop_type": "out_of_scope",
+            "offer_example": false,
+            "message": "This description is outside LAHZA’s current scope. You can start a new description."
+          },
+          "displayed": "This description is outside LAHZA’s current scope. You can start a new description.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_15ddea1f3c7647f79deca6d4ad70a701",
+          "askedCount": 2
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/out_of_scope"
+    },
+    {
+      "case": {
+        "id": 16,
+        "language": "en",
+        "description": "Inside the mosque in the evening, a man sat on a chair talking to a small group sitting on the floor. He had a book open.",
+        "facts": "مساء يوم الثلاثاء. المتحدث جالس. الحاضرون نحو عشرة. لا صفوف ولا حركة مشتركة.",
+        "responsePolicy": "اقتراح الصلاة: رفض مع معلومة «كانوا جالسين يستمعون». غير ذلك: «لا أعرف».",
+        "expectedDraft": "عدم عرض شرح الصلاة، ثم توقف وبطاقة.",
+        "errorToAvoid": "عرض شرح الصلاة، أو تسمية الحدث جزمًا.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q2": "I do not know",
+          "Q3": "A man talking",
+          "Q6": "No, Tuesday evening",
+          "Q7": "About ten people sitting on the floor",
+          "Q8": "Listening to a seated speaker with an open book, no rows or shared movements"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:12:09.075Z",
+          "input": "Inside the mosque in the evening, a man sat on a chair talking to a small group sitting on the floor. He had a book open.",
+          "action": "start",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "Inside the mosque in the evening, a man sat on a chair talking to a small group sitting on the floor. He had a book open."
+            ],
+            "why_this_question": "",
+            "stop_type": "out_of_scope",
+            "offer_example": false,
+            "message": "This description is outside LAHZA’s current scope. You can start a new description."
+          },
+          "displayed": "This description is outside LAHZA’s current scope. You can start a new description.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_36a9942f46454e3893722c917bed3f51",
+          "askedCount": 0
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/out_of_scope"
+    },
+    {
+      "case": {
+        "id": 17,
+        "language": "en",
+        "description": "At the airport, a group of men wrapped in white cloth were repeating the same phrase together as they walked.",
+        "facts": "ترديد جماعي متصل. يتذكر الزائر كلمة تشبه «labbayk». لا مكبرات ولا مبنى.",
+        "responsePolicy": "أي اقتراح: عدم تأكد.",
+        "expectedDraft": "عدم عرض شرح الأذان. التصريح بأن الحدث خارج الحزمة، ثم بطاقة.",
+        "errorToAvoid": "بناء فرضية على كلمة واحدة.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "The group themselves, no loudspeakers",
+          "Q3": "Continuous group repetition",
+          "Q4": "Something like labbayk",
+          "Q7": "They walked",
+          "Q8": "Men in white cloth walking and repeating a phrase"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:12:10.643Z",
+          "input": "At the airport, a group of men wrapped in white cloth were repeating the same phrase together as they walked.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a group of men wrapped in white cloth were repeating the same phrase together"
+            ],
+            "why_this_question": "The pattern helps distinguish a call, a speech and recitation.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?"
+          },
+          "displayed": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?\nThe pattern helps distinguish a call, a speech and recitation.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_bcb85a640f984d2099fffa7e7a1dc271",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:12:11.790Z",
+          "input": "Continuous group repetition",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a group of men wrapped in white cloth were repeating the same phrase together",
+              "Continuous group repetition"
+            ],
+            "why_this_question": "The source helps establish context, but does not identify the content on its own.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "Where did the sound come from: speakers outside a building, inside the place, or a phone or device?"
+          },
+          "displayed": "Where did the sound come from: speakers outside a building, inside the place, or a phone or device?\nThe source helps establish context, but does not identify the content on its own.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_21c9a3b6e4284580a09ec662d5774de6",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:12:12.786Z",
+          "input": "The group themselves, no loudspeakers",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a group of men wrapped in white cloth were repeating the same phrase together",
+              "Continuous group repetition",
+              "The group themselves, no loudspeakers"
+            ],
+            "why_this_question": "",
+            "stop_type": "out_of_scope",
+            "offer_example": false,
+            "message": "This description is outside LAHZA’s current scope. You can start a new description."
+          },
+          "displayed": "This description is outside LAHZA’s current scope. You can start a new description.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_8885327a1f4244fd900b5a4b916ed10d",
+          "askedCount": 2
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/out_of_scope"
+    },
+    {
+      "case": {
+        "id": 18,
+        "language": "en",
+        "description": "The taxi driver was playing a man's voice chanting in Arabic. I heard the word \"Allah\" many times.",
+        "facts": "الصوت من مذياع السيارة. متصل طوال الرحلة. لا يتذكر الزائر عبارات غير كلمة «Allah».",
+        "responsePolicy": "أي اقتراح: عدم تأكد «I'm not sure».",
+        "expectedDraft": "سؤال إضافي إن بقي ضمن الحد، ثم توقف عن التحديد.",
+        "errorToAvoid": "بناء فرضية على كلمة واحدة، أو نسبته إلى القرآن.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "The car radio",
+          "Q2": "Throughout the journey",
+          "Q3": "Continuous chanting",
+          "Q4": "Only Allah"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:12:13.763Z",
+          "input": "The taxi driver was playing a man's voice chanting in Arabic. I heard the word \"Allah\" many times.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "The taxi driver was playing a man's voice chanting in Arabic.",
+              "I heard the word \"Allah\" many times."
+            ],
+            "why_this_question": "The pattern helps distinguish a call, a speech and recitation.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?"
+          },
+          "displayed": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?\nThe pattern helps distinguish a call, a speech and recitation.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_09ca0f5131104c878dadf4789cc0815e",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:12:15.030Z",
+          "input": "Continuous chanting",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q4",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "The taxi driver was playing a man's voice chanting in Arabic.",
+              "I heard the word \"Allah\" many times.",
+              "Continuous chanting"
+            ],
+            "why_this_question": "A phrase can help alongside other clues; one word is not enough.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "Do you remember a word or phrase you heard? Write it as you remember it."
+          },
+          "displayed": "Do you remember a word or phrase you heard? Write it as you remember it.\nA phrase can help alongside other clues; one word is not enough.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_e83cf06ba84b42f4a82bca1651929344",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:12:16.094Z",
+          "input": "Only Allah",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "The taxi driver was playing a man's voice chanting in Arabic.",
+              "I heard the word \"Allah\" many times.",
+              "Continuous chanting",
+              "Only Allah"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": true,
+            "message": "I cannot identify the moment from the available information. You can explore the adhan as an example or keep your question."
+          },
+          "displayed": "I cannot identify the moment from the available information. You can explore the adhan as an example or keep your question.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_755f63b9c7d948dd8a43a06957ce2954",
+          "askedCount": 2
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/insufficient_evidence"
+    },
+    {
+      "case": {
+        "id": 19,
+        "language": "en",
+        "description": "My phone and everyone else's made a loud alarm sound at the same moment, with Arabic text on the screen.",
+        "facts": "نغمة إنذار دون صوت بشري. استمرت ثواني.",
+        "responsePolicy": "اقتراح حدث ديني: رفض مع معلومة «كان صوت إنذار من الهواتف». غير ذلك: «لا أعرف».",
+        "expectedDraft": "رد مباشر بأن الحدث خارج نطاق لحظة دون سؤال. لا تُشترط تسمية نوع التنبيه ولا بطاقة إحالة.",
+        "errorToAvoid": "استهلاك سؤالين، أو ربطه بالأذان.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "Our phones",
+          "Q2": "Seconds",
+          "Q3": "An alarm tone, no human voice"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:12:17.047Z",
+          "input": "My phone and everyone else's made a loud alarm sound at the same moment, with Arabic text on the screen.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "My phone and everyone else's made a loud alarm sound at the same moment, with Arabic text on the screen."
+            ],
+            "why_this_question": "The source helps establish context, but does not identify the content on its own.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "Where did the sound come from: speakers outside a building, inside the place, or a phone or device?"
+          },
+          "displayed": "Where did the sound come from: speakers outside a building, inside the place, or a phone or device?\nThe source helps establish context, but does not identify the content on its own.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_586988c7f339489885ac91421fa08271",
+          "askedCount": 1
+        }
+      ],
+      "technicalError": "ungrounded_evidence",
+      "reviewJudgments": null,
+      "final": "technical_error"
+    },
+    {
+      "case": {
+        "id": 20,
+        "language": "en",
+        "description": "A van drove slowly down the street with a speaker repeating something in Arabic, and people came out of their houses.",
+        "facts": "صوت متكرر من مكبر على مركبة متحركة. خرج الناس بأكياس وأوعية.",
+        "responsePolicy": "أي اقتراح: «لا أعرف».",
+        "expectedDraft": "عدم عرض أي شرح من الحزمة بعد سؤال واحد على الأكثر، دون تسمية الحدث.",
+        "errorToAvoid": "اقتراح حدث ديني بسبب المكبر واللغة.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "A loudspeaker on a moving van",
+          "Q3": "A repeated voice",
+          "Q7": "People came out with bags and containers"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:12:20.231Z",
+          "input": "A van drove slowly down the street with a speaker repeating something in Arabic, and people came out of their houses.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "A van drove slowly down the street with a speaker repeating something in Arabic"
+            ],
+            "why_this_question": "The pattern helps distinguish a call, a speech and recitation.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?"
+          },
+          "displayed": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?\nThe pattern helps distinguish a call, a speech and recitation.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_aec8d83f5ac94109b83d69dea2fe2b0b",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:12:25.475Z",
+          "input": "A repeated voice",
+          "action": "reply",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "A van drove slowly down the street with a speaker repeating something in Arabic",
+              "A repeated voice"
+            ],
+            "why_this_question": "The source helps establish context, but does not identify the content on its own.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "Where did the sound come from: speakers outside a building, inside the place, or a phone or device?"
+          },
+          "displayed": "Where did the sound come from: speakers outside a building, inside the place, or a phone or device?\nThe source helps establish context, but does not identify the content on its own.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_64083ec9c8c6466680d4f8edb95fd9c6",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:12:35.803Z",
+          "input": "A loudspeaker on a moving van",
+          "action": "reply",
+          "decision": {
+            "decision": "confirm",
+            "question_id": null,
+            "hypothesis": "adhan",
+            "hypothesis_text": "the adhan",
+            "evidence": [
+              "A van drove slowly down the street with a speaker repeating something in Arabic",
+              "A repeated voice",
+              "A loudspeaker on a moving van",
+              "people came out of their houses"
+            ],
+            "why_this_question": "",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "You described: “A van drove slowly down the street with a speaker repeating something in Arabic; A repeated voice”. This may be the adhan. Would you like to explore this possibility, or are you unsure?"
+          },
+          "displayed": "You described: “A van drove slowly down the street with a speaker repeating something in Arabic; A repeated voice”. This may be the adhan. Would you like to explore this possibility, or are you unsure?",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_ab789a661c004b898d3d94aa5e6e86fb",
+          "askedCount": 2
+        },
+        {
+          "at": "2026-10-05T06:12:36.982Z",
+          "input": "I'm not sure",
+          "action": "unsure",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "A van drove slowly down the street with a speaker repeating something in Arabic",
+              "A repeated voice",
+              "A loudspeaker on a moving van",
+              "people came out of their houses"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": true,
+            "message": "I cannot identify the moment from the available information. You can explore the adhan as an example or keep your question."
+          },
+          "displayed": "I cannot identify the moment from the available information. You can explore the adhan as an example or keep your question.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "requestId": "req_f2a98cddbd984414a715ef66ca25f8b0",
+          "askedCount": 2
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/insufficient_evidence"
+    }
+  ],
+  "completedAt": "2026-10-05T06:12:37.940Z"
+}

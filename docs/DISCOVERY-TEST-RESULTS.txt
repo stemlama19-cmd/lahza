@@ -1,0 +1,41 @@
+Version 0.4.11. Runtime timestamp: 2026-10-05T14:15:11.589Z
+Provider responses MOCKED. These are contract/guard tests, NOT live-model performance or a run of the 20-case development set.
+✔ bank wording replaces generated question and rationale (2.108627ms)
+✔ unknown and repeated IDs cannot be used (0.455479ms)
+✔ third clarification question is rejected (0.249808ms)
+✔ fabricated evidence is rejected (0.210478ms)
+✔ assistant text is not accepted as user evidence (0.295357ms)
+✔ confirmation requires a nonempty evidence quote (0.282697ms)
+✔ stop reason and decision fields are validated (0.227874ms)
+{"event":"discovery_failure","code":"invalid_session","version":"0.4.11"}
+✔ session tokens round-trip and reject tampering and expiry (8.170159ms)
+✔ every valid discovery call invokes the provider, with strict output and untrusted history (3.794716ms)
+✔ provider errors and malformed outputs remain technical errors (1.51563ms)
+✔ missing key returns 503 without a fake decision (1.383821ms)
+✔ accept without a signed confirmation cannot retrieve explanation (0.881332ms)
+{"event":"discovery_failure","code":"invalid_question_choice","version":"0.4.11"}
+✔ two model calls create two questions, and a third is rejected (4.2346ms)
+{"event":"discovery_failure","code":"confirmation_evidence_gate","version":"0.4.11"}
+✔ reject without new detail cannot produce another hypothesis (3.169831ms)
+✔ accepted adhan uses a provider-selected retrieved claim and passing citation gate (2.37512ms)
+{"event":"discovery_failure","code":"explanation_service_failed","version":"0.4.11"}
+✔ an unsupported model-selected claim prevents explanation (1.192242ms)
+✔ question-budget violation is repaired by a second real provider call (1.242959ms)
+✔ Arabic response topic retrieves response evidence and repeated exploration does not exhaust discovery (19.992588ms)
+✔ confirmation includes answered pattern before the tentative hypothesis (0.315897ms)
+✔ a second revision after rejection stops even when new detail is supplied (1.522081ms)
+✔ evidence selection disables response storage and preserves provider request ID (1.274937ms)
+✔ downloadable card escapes visitor markup and deduplicates explored explanations (0.540167ms)
+✔ code gate rejects confirmation for each contrary clue (0.327786ms)
+✔ visual writing cannot offer an adhan example and has stable stop type (0.514608ms)
+✔ recitation cannot offer an adhan example (0.121183ms)
+✔ known source prioritizes unknown sound pattern (0.167103ms)
+✔ a moving source alone cannot establish a religious event without content (0.132009ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 134.122791

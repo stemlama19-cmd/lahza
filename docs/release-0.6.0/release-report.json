@@ -1,0 +1,75 @@
+{
+  "version": "0.6.0",
+  "createdAt": "2026-10-05T18:33:23.377269+00:00",
+  "status": "built; approval-dependent content and new live-model evaluation remain blocked",
+  "sourceContent": {
+    "file": "data/moments-batch1.json",
+    "sha256": "698771cda51b9013c292239bc32affb32fdeec590f03676f54dbc80d7867526d",
+    "total": 21,
+    "approved": 0,
+    "pending": 20,
+    "needs_source": 1,
+    "unchanged": true
+  },
+  "verification": {
+    "deterministicPassed": 26,
+    "deterministicFailed": 0,
+    "original20HistoricalReplay": "20 cases processed, no rejected replay decisions; original technical failure preserved; not a fresh model run",
+    "new8": "observable gates pass; live semantic outcomes not verified",
+    "live28": "28 integration attempts blocked by missing local provider key; remote probe Cloudflare 403/1010",
+    "chat10": "10 actual handler responses, zero unsupported sentences; five approved-answer cases blocked because no approved content",
+    "typescript": "passed",
+    "productionBuild": "passed",
+    "visual": "44 paired states at 375 by 900 per language; functional interactions and additional development-only seeded visual states",
+    "passportExport": "1080x1350 PNG rendered in both languages, explicit Save image link; cloud-browser file transfer could not be verified",
+    "serverRetention": "No application text database; hosting and provider retention settings not available, no invented duration"
+  },
+  "works": [
+    "Arabic/English RTL/LTR UI and onboarding",
+    "Device Umm al-Qura clock and six simulated scenarios",
+    "Source approval filtering and reviewer preview",
+    "Chat abstention and source verifier",
+    "Preserved 0.4.11 discovery core plus new moment wrapper",
+    "Device passport storage and PNG generation",
+    "Conversation card and local logs",
+    "Sequential journey UI and approval-controlled stamp logic",
+    "Demo booking flow and separated demo visit stamp"
+  ],
+  "demo": [
+    "Sample experiences, five booking steps and tickets",
+    "Visit stamp",
+    "Simulated clock"
+  ],
+  "notAvailable": [
+    "Visitor learning explanations and learning stamps until content is approved",
+    "Adhan audio and approved per-phrase meanings",
+    "Real reservations, external providers and payments",
+    "Fresh live-model 20+8 evaluation and five approved-answer chat evaluation",
+    "Verified hosting/provider retention duration"
+  ],
+  "rollback": {
+    "version": "0.4.11",
+    "id": "appgprj_6ac1a9cc50288191842255ed92d1e8e7~appgver_34b111f20b60819193dc9f360b1d9695",
+    "project_id": "appgprj_6ac1a9cc50288191842255ed92d1e8e7",
+    "version_number": 24,
+    "source": {
+      "commit_sha": "ef72a9a67416d6b6648cc34b35cbd64a7855b871"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000a1688211ad430a33c0989a08",
+      "content_hash": "sha256:0eced9dcdb2a1290f766aae01db635fc1ecd6f2579e48370be888f3673ec726d",
+      "size_bytes": 9318400,
+      "file_count": 99
+    },
+    "deployment_id": "appgdep_6ac3b32044b48191bf0f0b4193ce6979"
+  },
+  "failureLogs": [
+    "deterministic-run-1.json",
+    "deterministic-run-2.json",
+    "deterministic-run-3.json",
+    "network-attempt-1.json",
+    "ui-failures.json",
+    "live28-attempts.json"
+  ]
+}

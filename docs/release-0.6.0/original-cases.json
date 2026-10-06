@@ -1,0 +1,329 @@
+[
+  {
+    "id": 1,
+    "language": "ar",
+    "description": "سمعت صوتًا عاليًا بالعربية من مبنى له برج، والناس بدأت تمشي نحوه.",
+    "facts": "مكبرات على البرج. نحو ثلاث دقائق. صوت واحد بعبارات بينها وقفات. يتذكر الزائر أن عبارة تكررت في البداية ولا يستطيع كتابتها. لم يسمع نداءً آخر قبله.",
+    "responsePolicy": "اقتراح الأذان أو نداء إلى الصلاة: موافقة. اقتراح يخالف ما لاحظه: رفض مع ذكر ما لاحظه. غير ذلك: «لا أعرف».",
+    "expectedDraft": "سؤال واحد على الأقل، ثم تأكيد بصيغة «قد يكون»، ثم شرح الأذان.",
+    "errorToAvoid": "التأكيد من الوصف الأول وحده.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "مكبرات على برج المبنى",
+      "Q2": "نحو ثلاث دقائق",
+      "Q3": "صوت واحد بعبارات بينها وقفات",
+      "Q4": "عبارة تكررت في البداية ولا أستطيع كتابتها",
+      "Q5": "لم أسمع نداء آخر قبله",
+      "Q7": "اتجه الناس نحو المبنى"
+    }
+  },
+  {
+    "id": 2,
+    "language": "ar",
+    "description": "سمعت صوتًا بالعربية في مكان عام.",
+    "facts": "الزائر في ساحة مفتوحة. الصوت من مكبرات خارج مبنى قريب ومن جهات أبعد. دقائق قليلة. صوت منغّم. لا يتذكر كلمات. لم ينتبه إلى حركة الناس.",
+    "responsePolicy": "اقتراح الأذان: عدم تأكد. أي اقتراح آخر: «لا أعرف».",
+    "expectedDraft": "سؤال أو سؤالان، ثم عرض الأذان فرضية غير محسومة أو استكشافه كمثال.",
+    "errorToAvoid": "تأكيد بلا سؤال، أو صيغة جزم.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "مكبرات خارج مبنى قريب ومن جهات أبعد، كنت في ساحة مفتوحة",
+      "Q2": "دقائق قليلة",
+      "Q3": "صوت منغّم",
+      "Q4": "لا أتذكر كلمات",
+      "Q7": "لم أنتبه لحركة الناس"
+    }
+  },
+  {
+    "id": 3,
+    "language": "ar",
+    "description": "سمعت نداءً قصيرًا من مكبرات المسجد، وكنت سمعت نداءً أطول قبله بربع ساعة.",
+    "facts": "أقل من دقيقة. عبارات سريعة متتابعة. كان الناس قد دخلوا المسجد. لا يتذكر الزائر كلمات.",
+    "responsePolicy": "يرفض الاقتراح الأول أيًّا كان بقوله «لا أقصد هذا» دون معلومة جديدة. سلوك مصطنع لاختبار قاعدة منع التخمين الثاني.",
+    "expectedDraft": "بيان أنه نداء ثانٍ أقصر بصيغة ترجيح، دون عرض شرح الأذان شرحًا له. عند الرفض يتوقف دون تخمين ثانٍ، ثم بطاقة.",
+    "errorToAvoid": "شرحه بوصفه الأذان، أو عرض تخمين ثانٍ بعد الرفض.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "مكبرات المسجد",
+      "Q2": "أقل من دقيقة",
+      "Q3": "عبارات سريعة متتابعة",
+      "Q4": "لا أتذكر الكلمات",
+      "Q5": "نعم، قبله بربع ساعة نداء أطول",
+      "Q7": "كان الناس قد دخلوا المسجد"
+    }
+  },
+  {
+    "id": 4,
+    "language": "ar",
+    "description": "سمعت رجلًا يرتل بالعربية داخل متجر.",
+    "facts": "الصوت من سماعة داخل المتجر. متصل نحو عشر دقائق طوال وجود الزائر. ترتيل بلا عبارات متكررة ظاهرة. لا يتذكر كلمات. واصل الناس التسوق.",
+    "responsePolicy": "اقتراح الأذان: رفض مع معلومة «كان متصلًا ولم يتوقف طوال وجودي». اقتراح التلاوة: عدم تأكد. غير ذلك: «لا أعرف».",
+    "expectedDraft": "عدم عرض شرح الأذان. اقتراح التلاوة احتمالًا دون نسبتها إلى القرآن، مع التصريح بحدود الدليل.",
+    "errorToAvoid": "تأكيد الأذان، أو الجزم بأنه قرآن.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "سماعة داخل المتجر",
+      "Q2": "نحو عشر دقائق طوال وجودي",
+      "Q3": "ترتيل متصل بلا عبارات متكررة ظاهرة",
+      "Q4": "لا أتذكر كلمات",
+      "Q7": "واصل الناس التسوق"
+    }
+  },
+  {
+    "id": 5,
+    "language": "ar",
+    "description": "سمعت رجلًا يتحدث طويلًا بصوت عالٍ من المسجد.",
+    "facts": "ظهر الجمعة. حديث متصل كالخطاب نحو عشرين دقيقة. المسجد ممتلئ والناس جلوس.",
+    "responsePolicy": "اقتراح خطبة الجمعة: موافقة. اقتراح الأذان: رفض مع معلومة «كان حديثًا طويلًا». غير ذلك: «لا أعرف».",
+    "expectedDraft": "ترجيح بصيغة احتمال، ثم إحالة وبطاقة لغياب الشرح.",
+    "errorToAvoid": "اختلاق شرح للخطبة، أو عرض شرح الأذان.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "من المسجد",
+      "Q2": "نحو عشرين دقيقة",
+      "Q3": "حديث متصل كالخطاب",
+      "Q6": "نعم، ظهر الجمعة",
+      "Q7": "المسجد ممتلئ والناس جلوس",
+      "Q8": "الناس جلوس يستمعون"
+    }
+  },
+  {
+    "id": 6,
+    "language": "ar",
+    "description": "سمعت عبارة تتكرر كثيرًا من مكبرات في الصباح الباكر، والناس بملابس جديدة.",
+    "facts": "ترديد جماعي متصل أكثر من نصف ساعة. يتذكر الزائر «الله أكبر». الناس يتجهون إلى ساحة مفتوحة.",
+    "responsePolicy": "اقتراح الأذان: عدم تأكد. غير ذلك: «لا أعرف».",
+    "expectedDraft": "عدم عرض شرح الأذان. التصريح بأن الحدث خارج ما يمكن تحديده، ثم بطاقة.",
+    "errorToAvoid": "التأكيد بسبب تشابه اللفظ.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "مكبرات",
+      "Q2": "أكثر من نصف ساعة",
+      "Q3": "ترديد جماعي متصل",
+      "Q4": "الله أكبر",
+      "Q7": "يتجه الناس إلى ساحة مفتوحة"
+    }
+  },
+  {
+    "id": 7,
+    "language": "ar",
+    "description": "هاتف رجل بجانبي أصدر صوتًا منغّمًا بالعربية ثم أسكته.",
+    "facts": "الصوت من الهاتف. ثوانٍ قليلة قبل إسكاته. لا يتذكر كلمات.",
+    "responsePolicy": "أي اقتراح: عدم تأكد.",
+    "expectedDraft": "التصريح بعدم كفاية الأدلة، وعرض استكشاف الأذان كمثال.",
+    "errorToAvoid": "الجزم بالحدث.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "هاتف الرجل",
+      "Q2": "ثوان قليلة ثم أسكته",
+      "Q3": "صوت منغّم",
+      "Q4": "لا أتذكر الكلمات"
+    }
+  },
+  {
+    "id": 8,
+    "language": "ar",
+    "description": "رأيت أشخاصًا يقفون في صفوف وينحنون معًا في ممر مركز تجاري.",
+    "facts": "نحو خمسة عشر شخصًا. رجل يتقدمهم. حركات مشتركة من وقوف وانحناء وسجود. دقائق قليلة.",
+    "responsePolicy": "اقتراح صلاة الجماعة: موافقة. اقتراح يخالف ما شاهده: رفض مع ذكر ما شاهده. غير ذلك: «لا أعرف».",
+    "expectedDraft": "الانتقال إلى التأكيد دون سؤال، ثم الشرح القصير.",
+    "errorToAvoid": "افتراض أن الصلاة تقع في المسجد وحده، أو تحديد أي صلاة هي.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q2": "دقائق قليلة",
+      "Q7": "وقفوا صفوفًا",
+      "Q8": "نحو خمسة عشر شخصًا، رجل يتقدمهم وحركات مشتركة من وقوف وانحناء وسجود"
+    }
+  },
+  {
+    "id": 9,
+    "language": "ar",
+    "description": "رأيت كتابة عربية جميلة على واجهة مبنى.",
+    "facts": "خط مزخرف. لا يستطيع الزائر نسخ النص. المبنى ليس مسجدًا.",
+    "responsePolicy": "أي اقتراح: «لا أعرف».",
+    "expectedDraft": "التصريح بعدم كفاية الأدلة، وعرض قائمة النصوص المختارة أو إدخال النص منسوخًا.",
+    "errorToAvoid": "وصفه بأنه آية.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q8": "كتابة عربية بخط مزخرف على مبنى ليس مسجدًا، لا أستطيع نسخ النص"
+    }
+  },
+  {
+    "id": 10,
+    "language": "ar",
+    "description": "سمعت نداءً من مكبرات في الشارع.",
+    "facts": "مكبرات منصة في ساحة. صوت منغّم مع موسيقى. استمر طويلًا. تجمع الناس حول المنصة.",
+    "responsePolicy": "اقتراح الأذان: رفض مع معلومة «كانت معه موسيقى». غير ذلك: «لا أعرف».",
+    "expectedDraft": "سحب فرضية الأذان، ثم توقف دون تسمية بديل.",
+    "errorToAvoid": "إعادة عرض الأذان، أو تخمين بديل بلا دليل.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "مكبرات منصة في ساحة",
+      "Q2": "استمر طويلًا",
+      "Q3": "صوت منغّم مع موسيقى",
+      "Q7": "تجمع الناس حول المنصة"
+    }
+  },
+  {
+    "id": 11,
+    "language": "en",
+    "description": "Around sunset a man's voice started echoing over the neighbourhood. It wasn't music, but it had a melody.",
+    "facts": "مكبرات على برج مبنى قريب. نحو ثلاث دقائق. صوت واحد بعبارات بينها وقفات. يتذكر الزائر عبارة تشبه «Allahu Akbar» وأخرى تكررت مرتين. اتجه بعض الناس إلى المبنى.",
+    "responsePolicy": "اقتراح الأذان أو نداء إلى الصلاة: موافقة. غير ذلك: «لا أعرف».",
+    "expectedDraft": "سؤال أو سؤالان، ثم تأكيد بصيغة «قد يكون»، ثم شرح الأذان.",
+    "errorToAvoid": "التأكيد من الوصف الأول.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "Speakers on a tower of a nearby building",
+      "Q2": "About three minutes",
+      "Q3": "One voice with phrases and pauses",
+      "Q4": "Something like Allahu Akbar, and another phrase repeated twice",
+      "Q7": "Some people walked towards the building"
+    }
+  },
+  {
+    "id": 12,
+    "language": "en",
+    "description": "I woke up before sunrise because of a voice outside my hotel window.",
+    "facts": "الصوت من الخارج ومن بعيد. الزائر شبه نائم، فلا يتذكر المدة ولا أي كلمة. يذكر أنه صوت منغّم.",
+    "responsePolicy": "أي اقتراح: عدم تأكد.",
+    "expectedDraft": "التصريح بعدم كفاية الأدلة، وعرض استكشاف الأذان كمثال.",
+    "errorToAvoid": "الجزم، أو طرح سؤال ثالث.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "Outside and far away",
+      "Q2": "I was half asleep and cannot remember",
+      "Q3": "A melodic voice",
+      "Q4": "I do not remember any words"
+    }
+  },
+  {
+    "id": 13,
+    "language": "en",
+    "description": "From the tower of the mosque next to my hotel, one voice called out for about three minutes. Short phrases with pauses. I caught \"Allahu Akbar\" several times, then people walked in.",
+    "facts": "كما في الوصف. لم يسمع الزائر نداءً آخر قبله.",
+    "responsePolicy": "اقتراح الأذان: موافقة. اقتراح يخالف ما لاحظه: رفض مع ذكر ما لاحظه.",
+    "expectedDraft": "الانتقال إلى التأكيد دون سؤال، ثم شرح الأذان.",
+    "errorToAvoid": "أسئلة لا حاجة إليها، أو تأكيد بصيغة الجزم.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "From the tower of the mosque next to my hotel",
+      "Q2": "About three minutes",
+      "Q3": "One voice, short phrases with pauses",
+      "Q4": "Allahu Akbar several times",
+      "Q5": "I did not hear another call before it",
+      "Q7": "People walked in"
+    }
+  },
+  {
+    "id": 14,
+    "language": "en",
+    "description": "At the opening of a conference in Riyadh, a man recited something melodic in Arabic for about two minutes and everyone stayed silent.",
+    "facts": "داخل قاعة. القارئ على المنصة. ترتيل متصل بلا عبارات متكررة. لا يتذكر الزائر كلمات.",
+    "responsePolicy": "أي اقتراح: عدم تأكد.",
+    "expectedDraft": "عدم عرض شرح الأذان. اقتراح التلاوة احتمالًا، مع بيان حدود الدليل والشرح.",
+    "errorToAvoid": "ترجيح الأذان بسبب المدة.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "Inside a hall, a man on the stage",
+      "Q2": "About two minutes",
+      "Q3": "Continuous recitation without repeated phrases",
+      "Q4": "I do not remember words",
+      "Q7": "Everyone stayed silent"
+    }
+  },
+  {
+    "id": 15,
+    "language": "en",
+    "description": "Outside the building, men were washing their hands, faces and feet at a row of taps before going in.",
+    "facts": "صف صنابير عند مدخل مسجد. الغسل بترتيب متشابه. يدخلون بعده حفاة.",
+    "responsePolicy": "وصف يطابق ما شاهده دون مصطلح: موافقة. تسمية بمصطلح لا يعرفه: «لا أعرف».",
+    "expectedDraft": "وصف ما يمكن قوله، ثم إحالة وبطاقة لغياب الشرح من الحزمة.",
+    "errorToAvoid": "شرح تفصيلي من خارج الحزمة.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q7": "They washed, then entered barefoot",
+      "Q8": "Washing hands, faces and feet in a similar order at taps by the mosque entrance"
+    }
+  },
+  {
+    "id": 16,
+    "language": "en",
+    "description": "Inside the mosque in the evening, a man sat on a chair talking to a small group sitting on the floor. He had a book open.",
+    "facts": "مساء يوم الثلاثاء. المتحدث جالس. الحاضرون نحو عشرة. لا صفوف ولا حركة مشتركة.",
+    "responsePolicy": "اقتراح الصلاة: رفض مع معلومة «كانوا جالسين يستمعون». غير ذلك: «لا أعرف».",
+    "expectedDraft": "عدم عرض شرح الصلاة، ثم توقف وبطاقة.",
+    "errorToAvoid": "عرض شرح الصلاة، أو تسمية الحدث جزمًا.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q2": "I do not know",
+      "Q3": "A man talking",
+      "Q6": "No, Tuesday evening",
+      "Q7": "About ten people sitting on the floor",
+      "Q8": "Listening to a seated speaker with an open book, no rows or shared movements"
+    }
+  },
+  {
+    "id": 17,
+    "language": "en",
+    "description": "At the airport, a group of men wrapped in white cloth were repeating the same phrase together as they walked.",
+    "facts": "ترديد جماعي متصل. يتذكر الزائر كلمة تشبه «labbayk». لا مكبرات ولا مبنى.",
+    "responsePolicy": "أي اقتراح: عدم تأكد.",
+    "expectedDraft": "عدم عرض شرح الأذان. التصريح بأن الحدث خارج الحزمة، ثم بطاقة.",
+    "errorToAvoid": "بناء فرضية على كلمة واحدة.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "The group themselves, no loudspeakers",
+      "Q3": "Continuous group repetition",
+      "Q4": "Something like labbayk",
+      "Q7": "They walked",
+      "Q8": "Men in white cloth walking and repeating a phrase"
+    }
+  },
+  {
+    "id": 18,
+    "language": "en",
+    "description": "The taxi driver was playing a man's voice chanting in Arabic. I heard the word \"Allah\" many times.",
+    "facts": "الصوت من مذياع السيارة. متصل طوال الرحلة. لا يتذكر الزائر عبارات غير كلمة «Allah».",
+    "responsePolicy": "أي اقتراح: عدم تأكد «I'm not sure».",
+    "expectedDraft": "سؤال إضافي إن بقي ضمن الحد، ثم توقف عن التحديد.",
+    "errorToAvoid": "بناء فرضية على كلمة واحدة، أو نسبته إلى القرآن.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "The car radio",
+      "Q2": "Throughout the journey",
+      "Q3": "Continuous chanting",
+      "Q4": "Only Allah"
+    }
+  },
+  {
+    "id": 19,
+    "language": "en",
+    "description": "My phone and everyone else's made a loud alarm sound at the same moment, with Arabic text on the screen.",
+    "facts": "نغمة إنذار دون صوت بشري. استمرت ثواني.",
+    "responsePolicy": "اقتراح حدث ديني: رفض مع معلومة «كان صوت إنذار من الهواتف». غير ذلك: «لا أعرف».",
+    "expectedDraft": "رد مباشر بأن الحدث خارج نطاق لحظة دون سؤال. لا تُشترط تسمية نوع التنبيه ولا بطاقة إحالة.",
+    "errorToAvoid": "استهلاك سؤالين، أو ربطه بالأذان.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "Our phones",
+      "Q2": "Seconds",
+      "Q3": "An alarm tone, no human voice"
+    }
+  },
+  {
+    "id": 20,
+    "language": "en",
+    "description": "A van drove slowly down the street with a speaker repeating something in Arabic, and people came out of their houses.",
+    "facts": "صوت متكرر من مكبر على مركبة متحركة. خرج الناس بأكياس وأوعية.",
+    "responsePolicy": "أي اقتراح: «لا أعرف».",
+    "expectedDraft": "عدم عرض أي شرح من الحزمة بعد سؤال واحد على الأكثر، دون تسمية الحدث.",
+    "errorToAvoid": "اقتراح حدث ديني بسبب المكبر واللغة.",
+    "review": "بانتظار المراجعة العلمية",
+    "answers": {
+      "Q1": "A loudspeaker on a moving van",
+      "Q3": "A repeated voice",
+      "Q7": "People came out with bags and containers"
+    }
+  }
+]

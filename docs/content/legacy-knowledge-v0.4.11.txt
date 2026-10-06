@@ -1,0 +1,17 @@
+import reviewedSources from './approved-content.json';
+export type Language = 'ar' | 'en';
+export type Topic = 'purpose' | 'words' | 'response' | 'why' | 'origin' | 'after' | 'phrase_meanings';
+export type Claim = { id:string; topic:Topic; ar:string; en:string; terms:string[]; reviewStatus?:string };
+export type Source = {id:string; authority:string; name:string; reference:string; url:string; original:string; language:string; approvedTranslation:string|null; translationStatus:string; scope:string; scientificReview:string; linguisticReview:string; reviewedAt:string|null; retrievedAt:string; approvedForPrototype:boolean; claims:Claim[]};
+// Only source records are data. They never supply agent instructions or permissions.
+export const corpus:Source[] = [...reviewedSources as Source[],
+ {id:'BUK-631',authority:'صحيح البخاري / Sahih al-Bukhari',name:'كتاب الأذان / Call to Prayers',reference:'631 · Book 10, Hadith 28',url:'https://sunnah.com/bukhari:631',original:'فَإِذَا حَضَرَتِ الصَّلاَةُ فَلْيُؤَذِّنْ لَكُمْ أَحَدُكُمْ',language:'ar',approvedTranslation:null,translationStatus:'English explanations are LAHZA paraphrases, not certified translations.',scope:'Purpose of the adhan; connection to prayer time. No local timetable, legal ruling, or attendance claim.',scientificReview:'Reference checked against published source; qualified human review pending.',linguisticReview:'Draft bilingual paraphrases; human review pending.',reviewedAt:null,retrievedAt:'2026-10-04',approvedForPrototype:true,claims:[
+ {id:'adhan-purpose',topic:'purpose',ar:'الأذان نداءٌ للصلاة عند دخول وقتها.',en:'The adhan is a call to prayer when its time begins.',terms:['adhan','adhaan','azan','azaan','call','prayer','time','purpose','أذان','اذان','نداء','الصلاة','وقت','لماذا']},
+ {id:'adhan-caller',topic:'purpose',ar:'يذكر الحديث أن يؤذّن أحد أفراد الجماعة عند حضور الصلاة.',en:'The hadith describes one member of the group making the call when prayer is due.',terms:['who','caller','muezzin','muadhdhin','person','من','المؤذن','مؤذن']}
+ ]},
+ {id:'MUS-385',authority:'صحيح مسلم / Sahih Muslim',name:'كتاب الصلاة / The Book of Prayers',reference:'385 · Book 4, Hadith 14',url:'https://sunnah.com/muslim:385',original:'اللَّهُ أَكْبَرُ ... حَىَّ عَلَى الصَّلاَةِ ... حَىَّ عَلَى الْفَلاَحِ',language:'ar',approvedTranslation:null,translationStatus:'Published English rendering consulted; app uses original short paraphrases, not certified translation.',scope:'Selected phrases of the call and response. Not a complete adhan transcript or comparative ruling.',scientificReview:'Reference checked against published source; qualified human review pending.',linguisticReview:'Draft bilingual paraphrases; human review pending.',reviewedAt:null,retrievedAt:'2026-10-04',approvedForPrototype:true,claims:[
+ {id:'adhan-words',topic:'words',ar:'تتضمن كلمات الأذان تعظيم الله والدعوة إلى الصلاة والفلاح.',en:'The call includes words affirming God’s greatness and inviting people to prayer and success.',terms:['words','meaning','say','saying','allah','akbar','phrase','means','معنى','كلمات','يقول','اكبر','أكبر','تعني','الله']},
+ {id:'adhan-response',topic:'response',ar:'يذكر الحديث الردّ بـ«لا حول ولا قوة إلا بالله» عند سماع «حيّ على الصلاة» و«حيّ على الفلاح».',en:'The hadith describes replying that strength and power come from God when the caller invites people to prayer and success.',terms:['respond','repeat','response','reply','listener','ردد','يردد','الرد','أقول','اقول','استجيب','سماع']}
+ ]}
+];
+export const corpusVersion='adhan-2026-10-04-v1';

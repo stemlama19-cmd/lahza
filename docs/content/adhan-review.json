@@ -1,0 +1,82 @@
+{
+  "sourceWorkbook": "lahza_adhan_content_draft.xlsx",
+  "claims": [
+    {
+      "id": "adhan-why-1",
+      "topic": "why",
+      "ar": "الأذان إعلان بدخول وقت الصلاة ودعوة إليها.",
+      "en": "The adhan announces that the time for prayer has begun and invites people to it.",
+      "sourceId": "BUK-631",
+      "sourceName": "صحيح البخاري 631",
+      "url": "https://sunnah.com/bukhari:631",
+      "reviewStatus": "بانتظار المراجعة",
+      "reviewerNote": ""
+    },
+    {
+      "id": "adhan-why-2",
+      "topic": "why",
+      "ar": "يُرفع بصوت إنسان، فيعرف من يسمعه أن وقت الصلاة قد حان.",
+      "en": "It is called out by a human voice, so that those who hear it know the time for prayer has come.",
+      "sourceId": "BUK-604",
+      "sourceName": "صحيح البخاري 604",
+      "url": "https://sunnah.com/bukhari:604",
+      "reviewStatus": "بانتظار المراجعة",
+      "reviewerNote": ""
+    },
+    {
+      "id": "adhan-origin-1",
+      "topic": "origin",
+      "ar": "حين استقر المسلمون الأوائل في المدينة كانوا يجتمعون للصلاة بتقدير وقتها، ولم يكن لها نداء.",
+      "en": "When the first Muslims settled in Madinah, they gathered for prayer by estimating its time. There was no call.",
+      "sourceId": "BUK-604",
+      "sourceName": "صحيح البخاري 604",
+      "url": "https://sunnah.com/bukhari:604",
+      "reviewStatus": "بانتظار المراجعة",
+      "reviewerNote": ""
+    },
+    {
+      "id": "adhan-origin-2",
+      "topic": "origin",
+      "ar": "تشاوروا يومًا في طريقة تجمعهم. اقترح بعضهم ناقوسًا، واقترح آخرون بوقًا.",
+      "en": "One day they discussed how to gather people. Some suggested a bell, others a horn.",
+      "sourceId": "BUK-604",
+      "sourceName": "صحيح البخاري 604",
+      "url": "https://sunnah.com/bukhari:604",
+      "reviewStatus": "بانتظار المراجعة",
+      "reviewerNote": ""
+    },
+    {
+      "id": "adhan-origin-3",
+      "topic": "origin",
+      "ar": "ثم اقترح عمر أن يُبعث رجل ينادي بالصلاة، فأمر النبي محمد ﷺ بلالًا أن ينادي.",
+      "en": "Then Umar suggested sending a man to call out for prayer, and the Prophet Muhammad asked Bilal to make the call.",
+      "sourceId": "BUK-604",
+      "sourceName": "صحيح البخاري 604",
+      "url": "https://sunnah.com/bukhari:604",
+      "reviewStatus": "بانتظار المراجعة",
+      "reviewerNote": ""
+    },
+    {
+      "id": "adhan-origin-4",
+      "topic": "origin",
+      "ar": "وتروي المصادر أن صيغة الأذان جاءت في رؤيا رآها أحد الصحابة، فأقرّها النبي ﷺ.",
+      "en": "Sources also relate that the wording of the call came in a dream seen by one of the Prophet's companions, which the Prophet approved.",
+      "sourceId": "ABD-499",
+      "sourceName": "سنن أبي داود 499",
+      "url": "https://sunnah.com/abudawud:499",
+      "reviewStatus": "بانتظار المراجعة",
+      "reviewerNote": ""
+    },
+    {
+      "id": "adhan-after-1",
+      "topic": "after",
+      "ar": "بعد الأذان يُرفع نداء ثانٍ أقصر يسمى الإقامة، يعلن أن الصلاة ستبدأ.",
+      "en": "After the adhan, a second, shorter call known as the iqamah announces that the prayer is about to begin.",
+      "sourceId": "يحدده المختص",
+      "sourceName": "يحدده المختص. سنن أبي داود 499 يتضمن صيغة الإقامة",
+      "url": "https://sunnah.com/abudawud:499",
+      "reviewStatus": "بانتظار المراجعة",
+      "reviewerNote": ""
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "version": "0.4.1",
+  "startedAt": "2026-10-05T06:17:36.510Z",
+  "sourceWorkbook": "lahza_dev_set_v0.1 (3).xlsx",
+  "sourceLibraryId": "libfile_f1997bb993f8819194a49ef927eb84cb",
+  "method": "Retest of six affected development cases after diagnostic repairs. This is not an independent test set. Operator replies are translated extracts from the workbook facts keyed to Q1..Q8; unavailable facts receive uncertainty. No scholarly judgments or performance percentages entered. The model never receives the reference facts or expected outcomes.",
+  "results": [
+    {
+      "case": {
+        "id": 1,
+        "language": "ar",
+        "description": "سمعت صوتًا عاليًا بالعربية من مبنى له برج، والناس بدأت تمشي نحوه.",
+        "facts": "مكبرات على البرج. نحو ثلاث دقائق. صوت واحد بعبارات بينها وقفات. يتذكر الزائر أن عبارة تكررت في البداية ولا يستطيع كتابتها. لم يسمع نداءً آخر قبله.",
+        "responsePolicy": "اقتراح الأذان أو نداء إلى الصلاة: موافقة. اقتراح يخالف ما لاحظه: رفض مع ذكر ما لاحظه. غير ذلك: «لا أعرف».",
+        "expectedDraft": "سؤال واحد على الأقل، ثم تأكيد بصيغة «قد يكون»، ثم شرح الأذان.",
+        "errorToAvoid": "التأكيد من الوصف الأول وحده.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "مكبرات على برج المبنى",
+          "Q2": "نحو ثلاث دقائق",
+          "Q3": "صوت واحد بعبارات بينها وقفات",
+          "Q4": "عبارة تكررت في البداية ولا أستطيع كتابتها",
+          "Q5": "لم أسمع نداء آخر قبله",
+          "Q7": "اتجه الناس نحو المبنى"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:17:36.511Z",
+          "input": "سمعت صوتًا عاليًا بالعربية من مبنى له برج، والناس بدأت تمشي نحوه.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت صوتًا عاليًا بالعربية من مبنى له برج",
+              "الناس بدأت تمشي نحوه"
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "displayed": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟\nنمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+          "model": "gpt-4.1-2025-04-14",
+          "requestId": "req_2080602e93b34ff39f133618f776b7ba",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:17:47.900Z",
+          "input": "صوت واحد بعبارات بينها وقفات",
+          "action": "reply",
+          "decision": {
+            "decision": "confirm",
+            "question_id": null,
+            "hypothesis": "adhan",
+            "hypothesis_text": "الأذان",
+            "evidence": [
+              "سمعت صوتًا عاليًا بالعربية من مبنى له برج",
+              "الناس بدأت تمشي نحوه",
+              "صوت واحد بعبارات بينها وقفات"
+            ],
+            "why_this_question": "",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "وصفتَ: «سمعت صوتًا عاليًا بالعربية من مبنى له برج؛ الناس بدأت تمشي نحوه». قد يكون هذا الأذان. هل تريد استكشاف هذا الاحتمال، أم أنك غير متأكد؟"
+          },
+          "displayed": "وصفتَ: «سمعت صوتًا عاليًا بالعربية من مبنى له برج؛ الناس بدأت تمشي نحوه». قد يكون هذا الأذان. هل تريد استكشاف هذا الاحتمال، أم أنك غير متأكد؟",
+          "model": "gpt-4.1-2025-04-14",
+          "requestId": "req_2b2e8bc845b24767a36ef9219f76f464",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:17:49.015Z",
+          "input": "نعم، أريد استكشاف الأذان",
+          "action": "accept",
+          "decision": null,
+          "displayed": "الأذان نداءٌ للصلاة عند دخول وقتها.",
+          "claims": [
+            {
+              "claimId": "adhan-purpose",
+              "sourceId": "BUK-631",
+              "text": "الأذان نداءٌ للصلاة عند دخول وقتها.",
+              "url": "https://sunnah.com/bukhari:631"
+            }
+          ],
+          "model": "gpt-4.1-2025-04-14",
+          "requestId": "req_ce80d6cecb524382ad8c0937b9bbab67",
+          "askedCount": 1
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "explanation"
+    },
+    {
+      "case": {
+        "id": 8,
+        "language": "ar",
+        "description": "رأيت أشخاصًا يقفون في صفوف وينحنون معًا في ممر مركز تجاري.",
+        "facts": "نحو خمسة عشر شخصًا. رجل يتقدمهم. حركات مشتركة من وقوف وانحناء وسجود. دقائق قليلة.",
+        "responsePolicy": "اقتراح صلاة الجماعة: موافقة. اقتراح يخالف ما شاهده: رفض مع ذكر ما شاهده. غير ذلك: «لا أعرف».",
+        "expectedDraft": "الانتقال إلى التأكيد دون سؤال، ثم الشرح القصير.",
+        "errorToAvoid": "افتراض أن الصلاة تقع في المسجد وحده، أو تحديد أي صلاة هي.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q2": "دقائق قليلة",
+          "Q7": "وقفوا صفوفًا",
+          "Q8": "نحو خمسة عشر شخصًا، رجل يتقدمهم وحركات مشتركة من وقوف وانحناء وسجود"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:17:36.519Z",
+          "input": "رأيت أشخاصًا يقفون في صفوف وينحنون معًا في ممر مركز تجاري.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "يقفون في صفوف وينحنون معًا"
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "displayed": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟\nنمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+          "model": "gpt-4.1-2025-04-14",
+          "requestId": "req_d25395630e96453998fc058226bf905e",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:17:47.982Z",
+          "input": "لا أعرف",
+          "action": "reply",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "يقفون في صفوف وينحنون معًا"
+            ],
+            "why_this_question": "",
+            "stop_type": "no_content",
+            "offer_example": false,
+            "message": "لا تتوفر في الحزمة الحالية مادة موثّقة كافية لشرح هذه اللحظة. يمكنك تجهيز بطاقة للحوار."
+          },
+          "displayed": "لا تتوفر في الحزمة الحالية مادة موثّقة كافية لشرح هذه اللحظة. يمكنك تجهيز بطاقة للحوار.",
+          "model": "gpt-4.1-2025-04-14",
+          "requestId": "req_038668c6ff624b04ac91c91a5fc4c115",
+          "askedCount": 1
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/no_content"
+    },
+    {
+      "case": {
+        "id": 9,
+        "language": "ar",
+        "description": "رأيت كتابة عربية جميلة على واجهة مبنى.",
+        "facts": "خط مزخرف. لا يستطيع الزائر نسخ النص. المبنى ليس مسجدًا.",
+        "responsePolicy": "أي اقتراح: «لا أعرف».",
+        "expectedDraft": "التصريح بعدم كفاية الأدلة، وعرض قائمة النصوص المختارة أو إدخال النص منسوخًا.",
+        "errorToAvoid": "وصفه بأنه آية.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q8": "كتابة عربية بخط مزخرف على مبنى ليس مسجدًا، لا أستطيع نسخ النص"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:17:48.883Z",
+          "input": "رأيت كتابة عربية جميلة على واجهة مبنى.",
+          "action": "start",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "رأيت كتابة عربية جميلة على واجهة مبنى."
+            ],
+            "why_this_question": "",
+            "stop_type": "no_content",
+            "offer_example": false,
+            "message": "لا تتوفر في الحزمة الحالية مادة موثّقة كافية لشرح هذه اللحظة. يمكنك تجهيز بطاقة للحوار."
+          },
+          "displayed": "لا تتوفر في الحزمة الحالية مادة موثّقة كافية لشرح هذه اللحظة. يمكنك تجهيز بطاقة للحوار.",
+          "model": "gpt-4.1-2025-04-14",
+          "requestId": "req_120abbad79f144e0820994f0132c4d3e",
+          "askedCount": 0
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/no_content"
+    },
+    {
+      "case": {
+        "id": 11,
+        "language": "en",
+        "description": "Around sunset a man's voice started echoing over the neighbourhood. It wasn't music, but it had a melody.",
+        "facts": "مكبرات على برج مبنى قريب. نحو ثلاث دقائق. صوت واحد بعبارات بينها وقفات. يتذكر الزائر عبارة تشبه «Allahu Akbar» وأخرى تكررت مرتين. اتجه بعض الناس إلى المبنى.",
+        "responsePolicy": "اقتراح الأذان أو نداء إلى الصلاة: موافقة. غير ذلك: «لا أعرف».",
+        "expectedDraft": "سؤال أو سؤالان، ثم تأكيد بصيغة «قد يكون»، ثم شرح الأذان.",
+        "errorToAvoid": "التأكيد من الوصف الأول.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "Speakers on a tower of a nearby building",
+          "Q2": "About three minutes",
+          "Q3": "One voice with phrases and pauses",
+          "Q4": "Something like Allahu Akbar, and another phrase repeated twice",
+          "Q7": "Some people walked towards the building"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:17:49.651Z",
+          "input": "Around sunset a man's voice started echoing over the neighbourhood. It wasn't music, but it had a melody.",
+          "action": "start",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a man's voice started echoing over the neighbourhood",
+              "it had a melody"
+            ],
+            "why_this_question": "The pattern helps distinguish a call, a speech and recitation.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?"
+          },
+          "displayed": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?\nThe pattern helps distinguish a call, a speech and recitation.",
+          "model": "gpt-4.1-2025-04-14",
+          "requestId": "req_80b4eba002764c308f7e75d706d12cf8",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:17:50.826Z",
+          "input": "One voice with phrases and pauses",
+          "action": "reply",
+          "decision": {
+            "decision": "confirm",
+            "question_id": null,
+            "hypothesis": "adhan",
+            "hypothesis_text": "the adhan",
+            "evidence": [
+              "Around sunset a man's voice started echoing over the neighbourhood.",
+              "it had a melody.",
+              "One voice with phrases and pauses"
+            ],
+            "why_this_question": "",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "You described: “Around sunset a man's voice started echoing over the neighbourhood.; it had a melody.”. This may be the adhan. Would you like to explore this possibility, or are you unsure?"
+          },
+          "displayed": "You described: “Around sunset a man's voice started echoing over the neighbourhood.; it had a melody.”. This may be the adhan. Would you like to explore this possibility, or are you unsure?",
+          "model": "gpt-4.1-2025-04-14",
+          "requestId": "req_9817f10a28a849c2961620a6d5cac53b",
+          "askedCount": 1
+        },
+        {
+          "at": "2026-10-05T06:17:51.803Z",
+          "input": "Yes, I want to explore the adhan",
+          "action": "accept",
+          "decision": null,
+          "displayed": "The adhan is a call to prayer when its time begins.",
+          "claims": [
+            {
+              "claimId": "adhan-purpose",
+              "sourceId": "BUK-631",
+              "text": "The adhan is a call to prayer when its time begins.",
+              "url": "https://sunnah.com/bukhari:631"
+            }
+          ],
+          "model": "gpt-4.1-2025-04-14",
+          "requestId": "req_db2c16b5f89b4423a7c5ec12e58eb4a7",
+          "askedCount": 1
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "explanation"
+    },
+    {
+      "case": {
+        "id": 13,
+        "language": "en",
+        "description": "From the tower of the mosque next to my hotel, one voice called out for about three minutes. Short phrases with pauses. I caught \"Allahu Akbar\" several times, then people walked in.",
+        "facts": "كما في الوصف. لم يسمع الزائر نداءً آخر قبله.",
+        "responsePolicy": "اقتراح الأذان: موافقة. اقتراح يخالف ما لاحظه: رفض مع ذكر ما لاحظه.",
+        "expectedDraft": "الانتقال إلى التأكيد دون سؤال، ثم شرح الأذان.",
+        "errorToAvoid": "أسئلة لا حاجة إليها، أو تأكيد بصيغة الجزم.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "From the tower of the mosque next to my hotel",
+          "Q2": "About three minutes",
+          "Q3": "One voice, short phrases with pauses",
+          "Q4": "Allahu Akbar several times",
+          "Q5": "I did not hear another call before it",
+          "Q7": "People walked in"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:17:49.655Z",
+          "input": "From the tower of the mosque next to my hotel, one voice called out for about three minutes. Short phrases with pauses. I caught \"Allahu Akbar\" several times, then people walked in.",
+          "action": "start",
+          "decision": {
+            "decision": "confirm",
+            "question_id": null,
+            "hypothesis": "adhan",
+            "hypothesis_text": "the adhan",
+            "evidence": [
+              "From the tower of the mosque next to my hotel, one voice called out for about three minutes. Short phrases with pauses. I caught \"Allahu Akbar\" several times, then people walked in."
+            ],
+            "why_this_question": "",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "You described: “From the tower of the mosque next to my hotel, one voice called out for about three minutes. Short phrases with pauses. I caught \"Allahu Akbar\" several times, then people walked in.”. This may be the adhan. Would you like to explore this possibility, or are you unsure?"
+          },
+          "displayed": "You described: “From the tower of the mosque next to my hotel, one voice called out for about three minutes. Short phrases with pauses. I caught \"Allahu Akbar\" several times, then people walked in.”. This may be the adhan. Would you like to explore this possibility, or are you unsure?",
+          "model": "gpt-4.1-2025-04-14",
+          "requestId": "req_8eb0ba2c1c1a4276b6b6ba2983ddd3df",
+          "askedCount": 0
+        },
+        {
+          "at": "2026-10-05T06:17:50.798Z",
+          "input": "Yes, I want to explore the adhan",
+          "action": "accept",
+          "decision": null,
+          "displayed": "The adhan is a call to prayer when its time begins.",
+          "claims": [
+            {
+              "claimId": "adhan-purpose",
+              "sourceId": "BUK-631",
+              "text": "The adhan is a call to prayer when its time begins.",
+              "url": "https://sunnah.com/bukhari:631"
+            }
+          ],
+          "model": "gpt-4.1-2025-04-14",
+          "requestId": "req_ed5007862a4f4d589af1e7107884706c",
+          "askedCount": 0
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "explanation"
+    },
+    {
+      "case": {
+        "id": 19,
+        "language": "en",
+        "description": "My phone and everyone else's made a loud alarm sound at the same moment, with Arabic text on the screen.",
+        "facts": "نغمة إنذار دون صوت بشري. استمرت ثواني.",
+        "responsePolicy": "اقتراح حدث ديني: رفض مع معلومة «كان صوت إنذار من الهواتف». غير ذلك: «لا أعرف».",
+        "expectedDraft": "رد مباشر بأن الحدث خارج نطاق لحظة دون سؤال. لا تُشترط تسمية نوع التنبيه ولا بطاقة إحالة.",
+        "errorToAvoid": "استهلاك سؤالين، أو ربطه بالأذان.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "Our phones",
+          "Q2": "Seconds",
+          "Q3": "An alarm tone, no human voice"
+        }
+      },
+      "turns": [
+        {
+          "at": "2026-10-05T06:17:51.383Z",
+          "input": "My phone and everyone else's made a loud alarm sound at the same moment, with Arabic text on the screen.",
+          "action": "start",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "My phone and everyone else's made a loud alarm sound at the same moment, with Arabic text on the screen."
+            ],
+            "why_this_question": "",
+            "stop_type": "out_of_scope",
+            "offer_example": false,
+            "message": "This description is outside LAHZA’s current scope. You can start a new description."
+          },
+          "displayed": "This description is outside LAHZA’s current scope. You can start a new description.",
+          "model": "gpt-4.1-2025-04-14",
+          "requestId": "req_fe4b2c4f3ccf43e9bf7693951a2b2da1",
+          "askedCount": 0
+        }
+      ],
+      "technicalError": null,
+      "reviewJudgments": null,
+      "final": "stop/out_of_scope"
+    }
+  ],
+  "completedAt": "2026-10-05T06:17:52.347Z"
+}

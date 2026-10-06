@@ -1,0 +1,103 @@
+{
+  "version": "0.6.1",
+  "at": "2026-10-06T06:42:58.388Z",
+  "kind": "Content, gate and service-failure integration checks, not live inference",
+  "checks": [
+    {
+      "name": "Uploaded bytes preserved",
+      "pass": true
+    },
+    {
+      "name": "Exactly 27 of 29 claims visible, only approved or approved_with_edits",
+      "pass": true
+    },
+    {
+      "name": "Rejected and needs_source hidden even in preview",
+      "pass": true
+    },
+    {
+      "name": "Status overrides old notes, published payload contains no adjudication notes",
+      "pass": true
+    },
+    {
+      "name": "Every bilingual claim has valid named source links",
+      "pass": true
+    },
+    {
+      "name": "Adhan source order and repetitions total 15",
+      "pass": true
+    },
+    {
+      "name": "All four first journey facts and matching relations are available",
+      "pass": true
+    },
+    {
+      "name": "Unverified or invented model selections are rejected",
+      "pass": true
+    },
+    {
+      "name": "All six demo scenarios remain pinned after two hours elapsed",
+      "pass": true
+    },
+    {
+      "name": "Case 101 observable gate",
+      "pass": true
+    },
+    {
+      "name": "Case 102 observable gate",
+      "pass": true
+    },
+    {
+      "name": "Case 103 observable gate",
+      "pass": true
+    },
+    {
+      "name": "Case 104 observable gate",
+      "pass": true
+    },
+    {
+      "name": "Case 105 observable gate",
+      "pass": true
+    },
+    {
+      "name": "Case 106 observable gate",
+      "pass": true
+    },
+    {
+      "name": "Case 107 observable gate",
+      "pass": true
+    },
+    {
+      "name": "Case 108 observable gate",
+      "pass": true
+    },
+    {
+      "name": "Meal washing and ordinary announcements stop with the requested uncertainty boundary",
+      "pass": true
+    },
+    {
+      "name": "Outdoor rows require context; exercise and Tuesday talk use supplied stopping categories",
+      "pass": true
+    },
+    {
+      "name": "Additional boundary rules preserve every observed turn in the 20-case baseline",
+      "pass": true
+    },
+    {
+      "name": "Missing provider gives one technical service response, no clarification or claim",
+      "pass": true
+    },
+    {
+      "name": "Discovery 0.4.11 core preserved: lib/discovery-guard.ts",
+      "pass": true
+    },
+    {
+      "name": "Discovery 0.4.11 core preserved: lib/discovery.ts",
+      "pass": true
+    },
+    {
+      "name": "Discovery 0.4.11 core preserved: lib/discovery-contract.ts",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"at":"2026-10-05","action":"Reach managed preview through localhost:4173 from scratch runtime","result":"ECONNREFUSED on IPv4 and IPv6","meaning":"Separate managed preview runtime. No model call made. Next integration run invokes the same route handler directly, not a live-model test."}

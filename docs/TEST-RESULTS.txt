@@ -1,0 +1,42 @@
+Execution: 2026-10-05T12:59:11.691Z
+✔ 01 unknown sound requires confirmation, no claims (1.319134ms)
+✔ 02 confirmed adhan retrieves evidence and passes (0.766308ms)
+✔ 03 Arabic explanation and citation (0.49615ms)
+✔ 04 deeper journey retrieves words (0.363399ms)
+✔ 05 source-poor question stops (0.280765ms)
+✔ 06 specialized ruling goes to specialist (0.182475ms)
+✔ 07 loudspeaker is local context (0.174754ms)
+✔ 08 outside scope stops (0.133813ms)
+✔ 09 source instructions cannot override rules (0.802133ms)
+✔ 10 empty trusted corpus means no answer (0.313354ms)
+✔ 11 unsupported claim triggers repair (0.246593ms)
+✔ 12 wrong citation triggers repair (0.21117ms)
+✔ 13 unpublished source is rejected (0.235936ms)
+✔ 14 explicit human request creates unsent context (0.111569ms)
+✔ 15 phrases retrieves correct source, not purpose (0.293534ms)
+✔ 16 answering a short question stays short (0.451523ms)
+✔ 17 unrecognized noise does not become adhan (0.116697ms)
+✔ 18 current timetable requires local evidence (0.147763ms)
+✔ 19 cultural practice not labelled religion (0.169486ms)
+✔ 20 next-step options are bilingual (0.254445ms)
+✔ 26 HTTP journey asks confirmation for unknown sound (4.70395ms)
+✔ 27 HTTP journey returns traceable Arabic source (1.665493ms)
+✔ 28 HTTP rejects invalid language (0.643854ms)
+✔ 29 HTTP rejects oversized request (0.487447ms)
+✔ 30 HTTP rejects malformed JSON (0.72133ms)
+✔ 21 model cannot introduce an unknown claim ID (3.156692ms)
+✔ 22 model evidence is data, with distinct system rules (1.2699ms)
+✔ 23 provider failure never returns a fabricated answer (0.365342ms)
+✔ 24 vector retrieval refuses malformed embeddings (0.210969ms)
+✔ 25 vector RPC is real HTTP contract with bounded count (0.677484ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 97.353242
+
+Exit status: 0
+Automated rules/citation checks only. Not scholarly approval, target-user research or general-assistant comparison.

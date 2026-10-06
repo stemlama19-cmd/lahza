@@ -1,0 +1,499 @@
+{
+  "appVersionExpected": "0.6.0",
+  "startedAt": "2026-10-06T06:15:57.794129+00:00",
+  "endpoint": "https://lahza-discovery.stemlama.chatgpt.site",
+  "phase": "Live discovery on deployed 0.6.0 before publishing the content update; content outcomes expected blocked in this baseline",
+  "runs": [
+    {
+      "id": 1,
+      "case": {
+        "id": 1,
+        "language": "ar",
+        "description": "سمعت صوتًا عاليًا بالعربية من مبنى له برج، والناس بدأت تمشي نحوه.",
+        "facts": "مكبرات على البرج. نحو ثلاث دقائق. صوت واحد بعبارات بينها وقفات. يتذكر الزائر أن عبارة تكررت في البداية ولا يستطيع كتابتها. لم يسمع نداءً آخر قبله.",
+        "responsePolicy": "اقتراح الأذان أو نداء إلى الصلاة: موافقة. اقتراح يخالف ما لاحظه: رفض مع ذكر ما لاحظه. غير ذلك: «لا أعرف».",
+        "expectedDraft": "سؤال واحد على الأقل، ثم تأكيد بصيغة «قد يكون»، ثم شرح الأذان.",
+        "errorToAvoid": "التأكيد من الوصف الأول وحده.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "مكبرات على برج المبنى",
+          "Q2": "نحو ثلاث دقائق",
+          "Q3": "صوت واحد بعبارات بينها وقفات",
+          "Q4": "عبارة تكررت في البداية ولا أستطيع كتابتها",
+          "Q5": "لم أسمع نداء آخر قبله",
+          "Q7": "اتجه الناس نحو المبنى"
+        }
+      },
+      "turns": [
+        {
+          "status": 502,
+          "seconds": 14.331,
+          "response": {
+            "error": "ungrounded_evidence",
+            "technical": true,
+            "version": "0.6.0"
+          },
+          "transportError": null,
+          "at": "2026-10-06T06:16:12.128577+00:00",
+          "action": "start",
+          "input": "سمعت صوتًا عاليًا بالعربية من مبنى له برج، والناس بدأت تمشي نحوه."
+        }
+      ],
+      "terminal": false,
+      "technicalErrors": [
+        {
+          "turn": 1,
+          "status": 502,
+          "error": "ungrounded_evidence"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "case": {
+        "id": 2,
+        "language": "ar",
+        "description": "سمعت صوتًا بالعربية في مكان عام.",
+        "facts": "الزائر في ساحة مفتوحة. الصوت من مكبرات خارج مبنى قريب ومن جهات أبعد. دقائق قليلة. صوت منغّم. لا يتذكر كلمات. لم ينتبه إلى حركة الناس.",
+        "responsePolicy": "اقتراح الأذان: عدم تأكد. أي اقتراح آخر: «لا أعرف».",
+        "expectedDraft": "سؤال أو سؤالان، ثم عرض الأذان فرضية غير محسومة أو استكشافه كمثال.",
+        "errorToAvoid": "تأكيد بلا سؤال، أو صيغة جزم.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "مكبرات خارج مبنى قريب ومن جهات أبعد، كنت في ساحة مفتوحة",
+          "Q2": "دقائق قليلة",
+          "Q3": "صوت منغّم",
+          "Q4": "لا أتذكر كلمات",
+          "Q7": "لم أنتبه لحركة الناس"
+        }
+      },
+      "turns": [
+        {
+          "status": 502,
+          "seconds": 29.768,
+          "response": {
+            "error": "model_connection_failed",
+            "technical": true,
+            "version": "0.6.0"
+          },
+          "transportError": null,
+          "at": "2026-10-06T06:16:27.565743+00:00",
+          "action": "start",
+          "input": "سمعت صوتًا بالعربية في مكان عام."
+        }
+      ],
+      "terminal": false,
+      "technicalErrors": [
+        {
+          "turn": 1,
+          "status": 502,
+          "error": "model_connection_failed"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "case": {
+        "id": 3,
+        "language": "ar",
+        "description": "سمعت نداءً قصيرًا من مكبرات المسجد، وكنت سمعت نداءً أطول قبله بربع ساعة.",
+        "facts": "أقل من دقيقة. عبارات سريعة متتابعة. كان الناس قد دخلوا المسجد. لا يتذكر الزائر كلمات.",
+        "responsePolicy": "يرفض الاقتراح الأول أيًّا كان بقوله «لا أقصد هذا» دون معلومة جديدة. سلوك مصطنع لاختبار قاعدة منع التخمين الثاني.",
+        "expectedDraft": "بيان أنه نداء ثانٍ أقصر بصيغة ترجيح، دون عرض شرح الأذان شرحًا له. عند الرفض يتوقف دون تخمين ثانٍ، ثم بطاقة.",
+        "errorToAvoid": "شرحه بوصفه الأذان، أو عرض تخمين ثانٍ بعد الرفض.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "مكبرات المسجد",
+          "Q2": "أقل من دقيقة",
+          "Q3": "عبارات سريعة متتابعة",
+          "Q4": "لا أتذكر الكلمات",
+          "Q5": "نعم، قبله بربع ساعة نداء أطول",
+          "Q7": "كان الناس قد دخلوا المسجد"
+        }
+      },
+      "turns": [
+        {
+          "status": 502,
+          "seconds": 19.548,
+          "response": {
+            "error": "ungrounded_evidence",
+            "technical": true,
+            "version": "0.6.0"
+          },
+          "transportError": null,
+          "at": "2026-10-06T06:16:31.676675+00:00",
+          "action": "start",
+          "input": "سمعت نداءً قصيرًا من مكبرات المسجد، وكنت سمعت نداءً أطول قبله بربع ساعة."
+        }
+      ],
+      "terminal": false,
+      "technicalErrors": [
+        {
+          "turn": 1,
+          "status": 502,
+          "error": "ungrounded_evidence"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "case": {
+        "id": 4,
+        "language": "ar",
+        "description": "سمعت رجلًا يرتل بالعربية داخل متجر.",
+        "facts": "الصوت من سماعة داخل المتجر. متصل نحو عشر دقائق طوال وجود الزائر. ترتيل بلا عبارات متكررة ظاهرة. لا يتذكر كلمات. واصل الناس التسوق.",
+        "responsePolicy": "اقتراح الأذان: رفض مع معلومة «كان متصلًا ولم يتوقف طوال وجودي». اقتراح التلاوة: عدم تأكد. غير ذلك: «لا أعرف».",
+        "expectedDraft": "عدم عرض شرح الأذان. اقتراح التلاوة احتمالًا دون نسبتها إلى القرآن، مع التصريح بحدود الدليل.",
+        "errorToAvoid": "تأكيد الأذان، أو الجزم بأنه قرآن.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "سماعة داخل المتجر",
+          "Q2": "نحو عشر دقائق طوال وجودي",
+          "Q3": "ترتيل متصل بلا عبارات متكررة ظاهرة",
+          "Q4": "لا أتذكر كلمات",
+          "Q7": "واصل الناس التسوق"
+        }
+      },
+      "turns": [
+        {
+          "status": 200,
+          "seconds": 14.314,
+          "response": {
+            "kind": "decision",
+            "decision": {
+              "decision": "stop",
+              "question_id": null,
+              "hypothesis": "none",
+              "hypothesis_text": "",
+              "evidence": [
+                "u0633u0645u0639u062a u0631u062cu0644u064bu0627 u064au0631u062au0644 u0628u0627u0644u0639u0631u0628u064au0629 u062fu0627u062eu0644 u0645u062au062cu0631."
+              ],
+              "why_this_question": "",
+              "stop_type": "no_content",
+              "offer_example": false,
+              "message": "لا تتوفر في الحزمة الحالية مادة موثّقة كافية لشرح هذه اللحظة. يمكنك تجهيز بطاقة للحوار."
+            },
+            "model": "gpt-4.1-2025-04-14",
+            "requestId": "req_abaaece583b644eeac48d6641904a8f3",
+            "version": "0.6.0",
+            "promptVersion": "discovery-2026-10-05-v8",
+            "askedCount": 0
+          },
+          "transportError": null,
+          "at": "2026-10-06T06:16:41.879861+00:00",
+          "action": "start",
+          "input": "سمعت رجلًا يرتل بالعربية داخل متجر."
+        }
+      ],
+      "terminal": true,
+      "technicalErrors": []
+    },
+    {
+      "id": 5,
+      "case": {
+        "id": 5,
+        "language": "ar",
+        "description": "سمعت رجلًا يتحدث طويلًا بصوت عالٍ من المسجد.",
+        "facts": "ظهر الجمعة. حديث متصل كالخطاب نحو عشرين دقيقة. المسجد ممتلئ والناس جلوس.",
+        "responsePolicy": "اقتراح خطبة الجمعة: موافقة. اقتراح الأذان: رفض مع معلومة «كان حديثًا طويلًا». غير ذلك: «لا أعرف».",
+        "expectedDraft": "ترجيح بصيغة احتمال، ثم إحالة وبطاقة لغياب الشرح.",
+        "errorToAvoid": "اختلاق شرح للخطبة، أو عرض شرح الأذان.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "من المسجد",
+          "Q2": "نحو عشرين دقيقة",
+          "Q3": "حديث متصل كالخطاب",
+          "Q6": "نعم، ظهر الجمعة",
+          "Q7": "المسجد ممتلئ والناس جلوس",
+          "Q8": "الناس جلوس يستمعون"
+        }
+      },
+      "turns": [
+        {
+          "status": 502,
+          "seconds": 8.265,
+          "response": {
+            "error": "ungrounded_evidence",
+            "technical": true,
+            "version": "0.6.0"
+          },
+          "transportError": null,
+          "at": "2026-10-06T06:16:39.941740+00:00",
+          "action": "start",
+          "input": "سمعت رجلًا يتحدث طويلًا بصوت عالٍ من المسجد."
+        }
+      ],
+      "terminal": false,
+      "technicalErrors": [
+        {
+          "turn": 1,
+          "status": 502,
+          "error": "ungrounded_evidence"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "case": {
+        "id": 6,
+        "language": "ar",
+        "description": "سمعت عبارة تتكرر كثيرًا من مكبرات في الصباح الباكر، والناس بملابس جديدة.",
+        "facts": "ترديد جماعي متصل أكثر من نصف ساعة. يتذكر الزائر «الله أكبر». الناس يتجهون إلى ساحة مفتوحة.",
+        "responsePolicy": "اقتراح الأذان: عدم تأكد. غير ذلك: «لا أعرف».",
+        "expectedDraft": "عدم عرض شرح الأذان. التصريح بأن الحدث خارج ما يمكن تحديده، ثم بطاقة.",
+        "errorToAvoid": "التأكيد بسبب تشابه اللفظ.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "مكبرات",
+          "Q2": "أكثر من نصف ساعة",
+          "Q3": "ترديد جماعي متصل",
+          "Q4": "الله أكبر",
+          "Q7": "يتجه الناس إلى ساحة مفتوحة"
+        }
+      },
+      "turns": [
+        {
+          "status": 502,
+          "seconds": 22.956,
+          "response": {
+            "error": "ungrounded_evidence",
+            "technical": true,
+            "version": "0.6.0"
+          },
+          "transportError": null,
+          "at": "2026-10-06T06:17:02.897836+00:00",
+          "action": "start",
+          "input": "سمعت عبارة تتكرر كثيرًا من مكبرات في الصباح الباكر، والناس بملابس جديدة."
+        }
+      ],
+      "terminal": false,
+      "technicalErrors": [
+        {
+          "turn": 1,
+          "status": 502,
+          "error": "ungrounded_evidence"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "case": {
+        "id": 7,
+        "language": "ar",
+        "description": "هاتف رجل بجانبي أصدر صوتًا منغّمًا بالعربية ثم أسكته.",
+        "facts": "الصوت من الهاتف. ثوانٍ قليلة قبل إسكاته. لا يتذكر كلمات.",
+        "responsePolicy": "أي اقتراح: عدم تأكد.",
+        "expectedDraft": "التصريح بعدم كفاية الأدلة، وعرض استكشاف الأذان كمثال.",
+        "errorToAvoid": "الجزم بالحدث.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "هاتف الرجل",
+          "Q2": "ثوان قليلة ثم أسكته",
+          "Q3": "صوت منغّم",
+          "Q4": "لا أتذكر الكلمات"
+        }
+      },
+      "turns": [
+        {
+          "status": 502,
+          "seconds": 10.695,
+          "response": {
+            "error": "ungrounded_evidence",
+            "technical": true,
+            "version": "0.6.0"
+          },
+          "transportError": null,
+          "at": "2026-10-06T06:16:52.574669+00:00",
+          "action": "start",
+          "input": "هاتف رجل بجانبي أصدر صوتًا منغّمًا بالعربية ثم أسكته."
+        }
+      ],
+      "terminal": false,
+      "technicalErrors": [
+        {
+          "turn": 1,
+          "status": 502,
+          "error": "ungrounded_evidence"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "case": {
+        "id": 8,
+        "language": "ar",
+        "description": "رأيت أشخاصًا يقفون في صفوف وينحنون معًا في ممر مركز تجاري.",
+        "facts": "نحو خمسة عشر شخصًا. رجل يتقدمهم. حركات مشتركة من وقوف وانحناء وسجود. دقائق قليلة.",
+        "responsePolicy": "اقتراح صلاة الجماعة: موافقة. اقتراح يخالف ما شاهده: رفض مع ذكر ما شاهده. غير ذلك: «لا أعرف».",
+        "expectedDraft": "الانتقال إلى التأكيد دون سؤال، ثم الشرح القصير.",
+        "errorToAvoid": "افتراض أن الصلاة تقع في المسجد وحده، أو تحديد أي صلاة هي.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q2": "دقائق قليلة",
+          "Q7": "وقفوا صفوفًا",
+          "Q8": "نحو خمسة عشر شخصًا، رجل يتقدمهم وحركات مشتركة من وقوف وانحناء وسجود"
+        }
+      },
+      "turns": [
+        {
+          "status": 502,
+          "seconds": 18.665,
+          "response": {
+            "error": "ungrounded_evidence",
+            "technical": true,
+            "version": "0.6.0"
+          },
+          "transportError": null,
+          "at": "2026-10-06T06:17:11.239779+00:00",
+          "action": "start",
+          "input": "رأيت أشخاصًا يقفون في صفوف وينحنون معًا في ممر مركز تجاري."
+        }
+      ],
+      "terminal": false,
+      "technicalErrors": [
+        {
+          "turn": 1,
+          "status": 502,
+          "error": "ungrounded_evidence"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "case": {
+        "id": 9,
+        "language": "ar",
+        "description": "رأيت كتابة عربية جميلة على واجهة مبنى.",
+        "facts": "خط مزخرف. لا يستطيع الزائر نسخ النص. المبنى ليس مسجدًا.",
+        "responsePolicy": "أي اقتراح: «لا أعرف».",
+        "expectedDraft": "التصريح بعدم كفاية الأدلة، وعرض قائمة النصوص المختارة أو إدخال النص منسوخًا.",
+        "errorToAvoid": "وصفه بأنه آية.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q8": "كتابة عربية بخط مزخرف على مبنى ليس مسجدًا، لا أستطيع نسخ النص"
+        }
+      },
+      "turns": [
+        {
+          "status": 200,
+          "seconds": 12.806,
+          "response": {
+            "kind": "decision",
+            "decision": {
+              "decision": "stop",
+              "question_id": null,
+              "hypothesis": "none",
+              "hypothesis_text": "",
+              "evidence": [
+                "u0631u0623u064au062a u0643u062au0627u0628u0629 u0639u0631u0628u064au0629 u062cu0645u064au0644u0629 u0639u0644u0649 u0648u0627u062cu0647u0629 u0645u0628u0646u0649."
+              ],
+              "why_this_question": "",
+              "stop_type": "insufficient_evidence",
+              "offer_example": false,
+              "message": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك الاحتفاظ بوصفك وسؤالك في بطاقة للحوار."
+            },
+            "model": "gpt-4.1-2025-04-14",
+            "requestId": "req_5af5ef1caa274c079a51d3071c589d74",
+            "version": "0.6.0",
+            "promptVersion": "discovery-2026-10-05-v8",
+            "askedCount": 0
+          },
+          "transportError": null,
+          "at": "2026-10-06T06:17:15.703817+00:00",
+          "action": "start",
+          "input": "رأيت كتابة عربية جميلة على واجهة مبنى."
+        }
+      ],
+      "terminal": true,
+      "technicalErrors": []
+    },
+    {
+      "id": 10,
+      "case": {
+        "id": 10,
+        "language": "ar",
+        "description": "سمعت نداءً من مكبرات في الشارع.",
+        "facts": "مكبرات منصة في ساحة. صوت منغّم مع موسيقى. استمر طويلًا. تجمع الناس حول المنصة.",
+        "responsePolicy": "اقتراح الأذان: رفض مع معلومة «كانت معه موسيقى». غير ذلك: «لا أعرف».",
+        "expectedDraft": "سحب فرضية الأذان، ثم توقف دون تسمية بديل.",
+        "errorToAvoid": "إعادة عرض الأذان، أو تخمين بديل بلا دليل.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "مكبرات منصة في ساحة",
+          "Q2": "استمر طويلًا",
+          "Q3": "صوت منغّم مع موسيقى",
+          "Q7": "تجمع الناس حول المنصة"
+        }
+      },
+      "turns": [
+        {
+          "status": 502,
+          "seconds": 13.122,
+          "response": {
+            "error": "ungrounded_evidence",
+            "technical": true,
+            "version": "0.6.0"
+          },
+          "transportError": null,
+          "at": "2026-10-06T06:17:24.361819+00:00",
+          "action": "start",
+          "input": "سمعت نداءً من مكبرات في الشارع."
+        }
+      ],
+      "terminal": false,
+      "technicalErrors": [
+        {
+          "turn": 1,
+          "status": 502,
+          "error": "ungrounded_evidence"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "case": {
+        "id": 11,
+        "language": "en",
+        "description": "Around sunset a man's voice started echoing over the neighbourhood. It wasn't music, but it had a melody.",
+        "facts": "مكبرات على برج مبنى قريب. نحو ثلاث دقائق. صوت واحد بعبارات بينها وقفات. يتذكر الزائر عبارة تشبه «Allahu Akbar» وأخرى تكررت مرتين. اتجه بعض الناس إلى المبنى.",
+        "responsePolicy": "اقتراح الأذان أو نداء إلى الصلاة: موافقة. غير ذلك: «لا أعرف».",
+        "expectedDraft": "سؤال أو سؤالان، ثم تأكيد بصيغة «قد يكون»، ثم شرح الأذان.",
+        "errorToAvoid": "التأكيد من الوصف الأول.",
+        "review": "بانتظار المراجعة العلمية",
+        "answers": {
+          "Q1": "Speakers on a tower of a nearby building",
+          "Q2": "About three minutes",
+          "Q3": "One voice with phrases and pauses",
+          "Q4": "Something like Allahu Akbar, and another phrase repeated twice",
+          "Q7": "Some people walked towards the building"
+        }
+      },
+      "turns": [
+        {
+          "status": 502,
+          "seconds": 25.001,
+          "response": {
+            "error": "model_connection_failed",
+            "technical": true,
+            "version": "0.6.0"
+          },
+          "transportError": null,
+          "at": "2026-10-06T06:17:40.704820+00:00",
+          "action": "start",
+          "input": "Around sunset a man's voice started echoing over the neighbourhood. It wasn't music, but it had a melody."
+        }
+      ],
+      "terminal": false,
+      "technicalErrors": [
+        {
+          "turn": 1,
+          "status": 502,
+          "error": "model_connection_failed"
+        }
+      ]
+    }
+  ],
+  "retriesAreSeparate": true,
+  "invalidated": true,
+  "reason": "Test runner curl config double-encoding used ASCII escapes for non-ASCII characters; curl config is not JSON and does not decode Unicode escapes. Initial Arabic inputs on the wire differed from intended input. Results do not establish application quality. This run is retained separately, then corrected and rerun."
+}

@@ -1,0 +1,334 @@
+{
+  "version": "0.6.0",
+  "policy": "IDs are proposals only; no religious wording is authored and no status has been approved automatically. N indicates one ID per supplied phrase.",
+  "items": [
+    {
+      "id": "adhan-purpose",
+      "area": "adhan",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "adhan-words",
+      "area": "adhan",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "adhan-response",
+      "area": "adhan",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "adhan-why-1",
+      "area": "adhan",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "adhan-why-2",
+      "area": "adhan",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "adhan-origin-1",
+      "area": "adhan",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "adhan-origin-2",
+      "area": "adhan",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "adhan-origin-3",
+      "area": "adhan",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "adhan-origin-4",
+      "area": "adhan",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "adhan-after-1",
+      "area": "adhan",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "iqamah-what-1",
+      "area": "iqamah",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "iqamah-shorter-1",
+      "area": "iqamah",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "jamaah-what-1",
+      "area": "congregational-prayer",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "jamaah-moves-1",
+      "area": "congregational-prayer",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "jamaah-value-1",
+      "area": "congregational-prayer",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "jamaah-rows-1",
+      "area": "congregational-prayer",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "jamaah-place-1",
+      "area": "congregational-prayer",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "needs_source",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "wudu-what-1",
+      "area": "wudu",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "khutbah-what-1",
+      "area": "khutbah",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "khutbah-standing-1",
+      "area": "khutbah",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "khutbah-friday-1",
+      "area": "khutbah",
+      "required": "مراجعة النص العربي والإنجليزي والمصدر المرفق",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": false
+    },
+    {
+      "id": "now-before-summary",
+      "area": "now",
+      "required": "سطر شرح معتمد للحالة بالعربية والإنجليزية مع مصدر",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "now-adhan-summary",
+      "area": "now",
+      "required": "سطر شرح معتمد للحالة بالعربية والإنجليزية مع مصدر",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "now-between-summary",
+      "area": "now",
+      "required": "سطر شرح معتمد للحالة بالعربية والإنجليزية مع مصدر",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "now-prayer-summary",
+      "area": "now",
+      "required": "سطر شرح معتمد للحالة بالعربية والإنجليزية مع مصدر",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "now-next-summary",
+      "area": "now",
+      "required": "سطر شرح معتمد للحالة بالعربية والإنجليزية مع مصدر",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "now-friday-summary",
+      "area": "now",
+      "required": "سطر شرح معتمد للحالة بالعربية والإنجليزية مع مصدر",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "purpose-general-context",
+      "area": "purpose-lines",
+      "required": "سطر ماذا يعني هذا لي، مرتبط بالغاية والحالة وبمصدر",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "purpose-visit-context",
+      "area": "purpose-lines",
+      "required": "سطر ماذا يعني هذا لي، مرتبط بالغاية والحالة وبمصدر",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "purpose-daily-life-context",
+      "area": "purpose-lines",
+      "required": "سطر ماذا يعني هذا لي، مرتبط بالغاية والحالة وبمصدر",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "purpose-colleagues-context",
+      "area": "purpose-lines",
+      "required": "سطر ماذا يعني هذا لي، مرتبط بالغاية والحالة وبمصدر",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "purpose-learn-context",
+      "area": "purpose-lines",
+      "required": "سطر ماذا يعني هذا لي، مرتبط بالغاية والحالة وبمصدر",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "purpose-history-context",
+      "area": "purpose-lines",
+      "required": "سطر ماذا يعني هذا لي، مرتبط بالغاية والحالة وبمصدر",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "purpose-places-context",
+      "area": "purpose-lines",
+      "required": "سطر ماذا يعني هذا لي، مرتبط بالغاية والحالة وبمصدر",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "adhan-phrase-N-transcript",
+      "area": "learning",
+      "required": "نص كل عبارة بمعرّف ثابت وترتيب وحالة اعتماد",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "adhan-phrase-N-meaning",
+      "area": "learning",
+      "required": "معنى كل عبارة بالعربية والإنجليزية ومصدرها واعتمادها",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "adhan-recording-001",
+      "area": "audio",
+      "required": "تسجيل بصوت مؤذن محدد، مكان، رابط مصدر، رخصة موثقة",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "adhan-recording-001-timings",
+      "area": "audio",
+      "required": "ملف مستقل يربط معرّف العبارة ببداية ونهاية زمنية في التسجيل",
+      "status": "missing",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "journey-call-to-prayer",
+      "area": "learning",
+      "required": "اعتماد رحلة من النداء إلى الصلاة وربطها بالجمل المعتمدة",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "journey-call-to-prayer-question-01",
+      "area": "learning",
+      "required": "مراجعة سؤال الاختيار والخيارات والإجابة الصحيحة",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": true
+    },
+    {
+      "id": "journey-call-to-prayer-matching-01",
+      "area": "learning",
+      "required": "مراجعة روابط النصوص باللحظات في المطابقة",
+      "status": "pending",
+      "priority": "blocking",
+      "proposed": true
+    }
+  ]
+}

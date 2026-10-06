@@ -1,0 +1,17 @@
+{
+  "version": "0.4.11",
+  "id": "appgprj_6ac1a9cc50288191842255ed92d1e8e7~appgver_34b111f20b60819193dc9f360b1d9695",
+  "project_id": "appgprj_6ac1a9cc50288191842255ed92d1e8e7",
+  "version_number": 24,
+  "source": {
+    "commit_sha": "ef72a9a67416d6b6648cc34b35cbd64a7855b871"
+  },
+  "archive_storage": {
+    "archive_format": "tar",
+    "sediment_file_id": "file_00000000a1688211ad430a33c0989a08",
+    "content_hash": "sha256:0eced9dcdb2a1290f766aae01db635fc1ecd6f2579e48370be888f3673ec726d",
+    "size_bytes": 9318400,
+    "file_count": 99
+  },
+  "deployment_id": "appgdep_6ac3b32044b48191bf0f0b4193ce6979"
+}

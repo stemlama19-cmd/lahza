@@ -1,0 +1,39 @@
+{
+  "failures": [
+    {
+      "id": "UI-01",
+      "area": "now hero",
+      "observed": "Illustration overlapped countdown at 375 px",
+      "fix": "Constrained illustration width and allowed text flex area",
+      "status": "visually rechecked"
+    },
+    {
+      "id": "UI-02",
+      "area": "bottom sheets",
+      "observed": "Sheet shrink-to-fit width cut content",
+      "fix": "Explicit width min(100%,520px)",
+      "status": "visually rechecked"
+    },
+    {
+      "id": "UI-03",
+      "area": "demo ticket",
+      "observed": "crypto.randomUUID unavailable in insecure HTTP preview",
+      "fix": "Fallback non-security demo identifier based on clock and random suffix; no authentication purpose",
+      "status": "retested: demo ticket generated in AR and EN, demo visit stamp added, learning total remained zero"
+    },
+    {
+      "id": "UI-04",
+      "area": "passport export",
+      "observed": "Download event timed out in cloud browser while file was generated",
+      "fix": "Added visible PNG preview and explicit Save image link. PNG dimensions observed as 1080 by 1350. Cloud download transfer remains unverified.",
+      "status": "preview verified; transfer blocked by browser automation"
+    },
+    {
+      "id": "UI-05",
+      "area": "time detail",
+      "observed": "Raw dhuhr ID in heading",
+      "fix": "Localized prayer name in title",
+      "status": "visually rechecked in Arabic and English"
+    }
+  ]
+}

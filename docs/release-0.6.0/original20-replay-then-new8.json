@@ -1,0 +1,1148 @@
+{
+  "version": "0.6.0",
+  "at": "2026-10-05T18:07:17.415Z",
+  "kind": "Replay of historical model decisions through current validation; NOT a new live-model run",
+  "original20": [
+    {
+      "id": 1,
+      "turns": [
+        {
+          "input": "سمعت صوتًا عاليًا بالعربية من مبنى له برج، والناس بدأت تمشي نحوه.",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت صوتًا عاليًا بالعربية من مبنى له برج"
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "pass": true
+        },
+        {
+          "input": "صوت واحد بعبارات بينها وقفات",
+          "decision": {
+            "decision": "confirm",
+            "question_id": null,
+            "hypothesis": "adhan",
+            "hypothesis_text": "الأذان",
+            "evidence": [
+              "سمعت صوتًا عاليًا بالعربية من مبنى له برج",
+              "والناس بدأت تمشي نحوه.",
+              "صوت واحد بعبارات بينها وقفات"
+            ],
+            "why_this_question": "",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "ما وصفته: صوت واحد بعبارات بينها وقفات، من مبنى. قد يكون هذا الأذان. هل تريد استكشاف هذا الاحتمال، أم أنك غير متأكد؟"
+          },
+          "pass": true
+        },
+        {
+          "input": "نعم، أريد استكشاف الأذان",
+          "kind": "historical explanation not replayed: uploaded review statuses supersede prior approval",
+          "priorClaims": [
+            "adhan-purpose"
+          ]
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 2,
+      "turns": [
+        {
+          "input": "سمعت صوتًا بالعربية في مكان عام.",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت صوتًا بالعربية في مكان عام."
+            ],
+            "why_this_question": "مصدر الصوت يساعد على فهم السياق، لكنه لا يحدد محتواه وحده.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "من أين جاء الصوت؟ مكبرات خارج مبنى، داخل المكان، هاتف أو جهاز؟"
+          },
+          "pass": true
+        },
+        {
+          "input": "مكبرات خارج مبنى قريب ومن جهات أبعد، كنت في ساحة مفتوحة",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت صوتًا بالعربية في مكان عام.",
+              "مكبرات خارج مبنى قريب ومن جهات أبعد، كنت في ساحة مفتوحة"
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "pass": true
+        },
+        {
+          "input": "صوت منغّم",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "صوت منغّم"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": true,
+            "message": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك الاحتفاظ بوصفك وسؤالك في بطاقة للحوار."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 3,
+      "turns": [
+        {
+          "input": "سمعت نداءً قصيرًا من مكبرات المسجد، وكنت سمعت نداءً أطول قبله بربع ساعة.",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت نداءً قصيرًا من مكبرات المسجد، وكنت سمعت نداءً أطول قبله بربع ساعة."
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "pass": true
+        },
+        {
+          "input": "عبارات سريعة متتابعة",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q4",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "عبارات سريعة متتابعة"
+            ],
+            "why_this_question": "العبارة قد تساعد مع القرائن الأخرى؛ كلمة واحدة لا تكفي.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "هل تتذكر كلمة أو عبارة مما سمعت؟ اكتبها كما تتذكرها."
+          },
+          "pass": true
+        },
+        {
+          "input": "لا أتذكر الكلمات",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "عبارات سريعة متتابعة",
+              "سمعت نداءً قصيرًا من مكبرات المسجد، وكنت سمعت نداءً أطول قبله بربع ساعة.",
+              "لا أتذكر الكلمات"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": false,
+            "message": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك الاحتفاظ بوصفك وسؤالك في بطاقة للحوار."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 4,
+      "turns": [
+        {
+          "input": "سمعت رجلًا يرتل بالعربية داخل متجر.",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q2",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت رجلًا يرتل بالعربية داخل متجر"
+            ],
+            "why_this_question": "المدة تضيف قرينة إلى وصفك، ولا تحسم نوع الصوت.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كم استمر تقريبًا؟ أقل من دقيقة، دقائق قليلة، أم أطول بكثير؟"
+          },
+          "pass": true
+        },
+        {
+          "input": "نحو عشر دقائق طوال وجودي",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت رجلًا يرتل بالعربية داخل متجر",
+              "نحو عشر دقائق طوال وجودي"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": false,
+            "message": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك الاحتفاظ بوصفك وسؤالك في بطاقة للحوار."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 5,
+      "turns": [
+        {
+          "input": "سمعت رجلًا يتحدث طويلًا بصوت عالٍ من المسجد.",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت رجلًا يتحدث طويلًا بصوت عالٍ من المسجد."
+            ],
+            "why_this_question": "",
+            "stop_type": "no_content",
+            "offer_example": false,
+            "message": "لا تتوفر في الحزمة الحالية مادة موثّقة كافية لشرح هذه اللحظة. يمكنك تجهيز بطاقة للحوار."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 6,
+      "turns": [
+        {
+          "input": "سمعت عبارة تتكرر كثيرًا من مكبرات في الصباح الباكر، والناس بملابس جديدة.",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت عبارة تتكرر كثيرًا من مكبرات في الصباح الباكر"
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "pass": true
+        },
+        {
+          "input": "ترديد جماعي متصل",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "ترديد جماعي متصل",
+              "سمعت عبارة تتكرر كثيرًا من مكبرات في الصباح الباكر"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": false,
+            "message": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك الاحتفاظ بوصفك وسؤالك في بطاقة للحوار."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 7,
+      "turns": [
+        {
+          "input": "هاتف رجل بجانبي أصدر صوتًا منغّمًا بالعربية ثم أسكته.",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "هاتف رجل بجانبي أصدر صوتًا منغّمًا بالعربية ثم أسكته."
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "pass": true
+        },
+        {
+          "input": "صوت منغّم",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q2",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "هاتف رجل بجانبي أصدر صوتًا منغّمًا بالعربية ثم أسكته.",
+              "صوت منغّم"
+            ],
+            "why_this_question": "المدة تضيف قرينة إلى وصفك، ولا تحسم نوع الصوت.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كم استمر تقريبًا؟ أقل من دقيقة، دقائق قليلة، أم أطول بكثير؟"
+          },
+          "pass": true
+        },
+        {
+          "input": "ثوان قليلة ثم أسكته",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "هاتف رجل بجانبي أصدر صوتًا منغّمًا بالعربية ثم أسكته.",
+              "ثوان قليلة ثم أسكته"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": true,
+            "message": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك الاحتفاظ بوصفك وسؤالك في بطاقة للحوار."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 8,
+      "turns": [
+        {
+          "input": "رأيت أشخاصًا يقفون في صفوف وينحنون معًا في ممر مركز تجاري.",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "يقفون في صفوف وينحنون معًا"
+            ],
+            "why_this_question": "",
+            "stop_type": "no_content",
+            "offer_example": false,
+            "message": "لا تتوفر في الحزمة الحالية مادة موثّقة كافية لشرح هذه اللحظة. يمكنك تجهيز بطاقة للحوار."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 9,
+      "turns": [
+        {
+          "input": "رأيت كتابة عربية جميلة على واجهة مبنى.",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "رأيت كتابة عربية جميلة على واجهة مبنى."
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": false,
+            "message": "لا أستطيع تحديد اللحظة من المعلومات المتاحة. يمكنك الاحتفاظ بوصفك وسؤالك في بطاقة للحوار."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 10,
+      "turns": [
+        {
+          "input": "سمعت نداءً من مكبرات في الشارع.",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "سمعت نداءً من مكبرات في الشارع."
+            ],
+            "why_this_question": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟"
+          },
+          "pass": true
+        },
+        {
+          "input": "صوت منغّم مع موسيقى",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "صوت منغّم مع موسيقى"
+            ],
+            "why_this_question": "",
+            "stop_type": "out_of_scope",
+            "offer_example": false,
+            "message": "هذا الوصف خارج نطاق لحظة المتاح حاليًا. يمكنك بدء وصف جديد."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 11,
+      "turns": [
+        {
+          "input": "Around sunset a man's voice started echoing over the neighbourhood. It wasn't music, but it had a melody.",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a man's voice started echoing over the neighbourhood",
+              "it had a melody"
+            ],
+            "why_this_question": "The source helps establish context, but does not identify the content on its own.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "Where did the sound come from: speakers outside a building, inside the place, or a phone or device?"
+          },
+          "pass": true
+        },
+        {
+          "input": "Speakers on a tower of a nearby building",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a man's voice started echoing over the neighbourhood",
+              "it had a melody",
+              "Speakers on a tower of a nearby building"
+            ],
+            "why_this_question": "The pattern helps distinguish a call, a speech and recitation.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?"
+          },
+          "pass": true
+        },
+        {
+          "input": "One voice with phrases and pauses",
+          "decision": {
+            "decision": "confirm",
+            "question_id": null,
+            "hypothesis": "adhan",
+            "hypothesis_text": "the adhan",
+            "evidence": [
+              "a man's voice started echoing over the neighbourhood",
+              "it had a melody",
+              "Speakers on a tower of a nearby building",
+              "One voice with phrases and pauses"
+            ],
+            "why_this_question": "",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "You described one voice with phrases and pauses, from a building. This may be the adhan. Would you like to explore this possibility, or are you unsure?"
+          },
+          "pass": true
+        },
+        {
+          "input": "Yes, I want to explore the adhan",
+          "kind": "historical explanation not replayed: uploaded review statuses supersede prior approval",
+          "priorClaims": [
+            "adhan-purpose"
+          ]
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 12,
+      "turns": [
+        {
+          "input": "I woke up before sunrise because of a voice outside my hotel window.",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a voice outside my hotel window"
+            ],
+            "why_this_question": "The pattern helps distinguish a call, a speech and recitation.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?"
+          },
+          "pass": true
+        },
+        {
+          "input": "A melodic voice",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q1",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a voice outside my hotel window",
+              "A melodic voice"
+            ],
+            "why_this_question": "The source helps establish context, but does not identify the content on its own.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "Where did the sound come from: speakers outside a building, inside the place, or a phone or device?"
+          },
+          "pass": true
+        },
+        {
+          "input": "Outside and far away",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a voice outside my hotel window",
+              "A melodic voice",
+              "Outside and far away"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": true,
+            "message": "I cannot identify the moment from the available information. You can keep your description and question in a conversation card."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 13,
+      "turns": [],
+      "priorTechnicalError": "invalid_model_output"
+    },
+    {
+      "id": 14,
+      "turns": [
+        {
+          "input": "At the opening of a conference in Riyadh, a man recited something melodic in Arabic for about two minutes and everyone stayed silent.",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q4",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a man recited something melodic in Arabic for about two minutes"
+            ],
+            "why_this_question": "A phrase can help alongside other clues; one word is not enough.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "Do you remember a word or phrase you heard? Write it as you remember it."
+          },
+          "pass": true
+        },
+        {
+          "input": "I do not remember words",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q8",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a man recited something melodic in Arabic for about two minutes",
+              "At the opening of a conference in Riyadh"
+            ],
+            "why_this_question": "The actions you noticed help make sense of the scene.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "What were they doing: standing in rows and bowing together, sitting and listening to a speaker, or one person reading a book?"
+          },
+          "pass": true
+        },
+        {
+          "input": "I'm not sure",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a man recited something melodic in Arabic for about two minutes",
+              "everyone stayed silent",
+              "At the opening of a conference in Riyadh"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": false,
+            "message": "I cannot identify the moment from the available information. You can keep your description and question in a conversation card."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 15,
+      "turns": [
+        {
+          "input": "Outside the building, men were washing their hands, faces and feet at a row of taps before going in.",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "men were washing their hands, faces and feet at a row of taps before going in"
+            ],
+            "why_this_question": "",
+            "stop_type": "no_content",
+            "offer_example": false,
+            "message": "The current knowledge pack does not have enough sourced material for this moment. You can prepare a conversation card."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 16,
+      "turns": [
+        {
+          "input": "Inside the mosque in the evening, a man sat on a chair talking to a small group sitting on the floor. He had a book open.",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a man sat on a chair talking to a small group sitting on the floor. He had a book open"
+            ],
+            "why_this_question": "",
+            "stop_type": "no_content",
+            "offer_example": false,
+            "message": "The current knowledge pack does not have enough sourced material for this moment. You can prepare a conversation card."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 17,
+      "turns": [
+        {
+          "input": "At the airport, a group of men wrapped in white cloth were repeating the same phrase together as they walked.",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "a group of men wrapped in white cloth were repeating the same phrase together as they walked"
+            ],
+            "why_this_question": "",
+            "stop_type": "no_content",
+            "offer_example": false,
+            "message": "The current knowledge pack does not have enough sourced material for this moment. You can prepare a conversation card."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 18,
+      "turns": [
+        {
+          "input": "The taxi driver was playing a man's voice chanting in Arabic. I heard the word \"Allah\" many times.",
+          "decision": {
+            "decision": "ask",
+            "question_id": "Q3",
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "The taxi driver was playing a man's voice chanting in Arabic.",
+              "I heard the word \"Allah\" many times."
+            ],
+            "why_this_question": "The pattern helps distinguish a call, a speech and recitation.",
+            "stop_type": null,
+            "offer_example": false,
+            "message": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?"
+          },
+          "pass": true
+        },
+        {
+          "input": "Continuous chanting",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "The taxi driver was playing a man's voice chanting in Arabic.",
+              "Continuous chanting"
+            ],
+            "why_this_question": "",
+            "stop_type": "insufficient_evidence",
+            "offer_example": false,
+            "message": "I cannot identify the moment from the available information. You can keep your description and question in a conversation card."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 19,
+      "turns": [
+        {
+          "input": "My phone and everyone else's made a loud alarm sound at the same moment, with Arabic text on the screen.",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "My phone and everyone else's made a loud alarm sound at the same moment, with Arabic text on the screen."
+            ],
+            "why_this_question": "",
+            "stop_type": "out_of_scope",
+            "offer_example": false,
+            "message": "This description is outside LAHZA’s current scope. You can start a new description."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    },
+    {
+      "id": 20,
+      "turns": [
+        {
+          "input": "A van drove slowly down the street with a speaker repeating something in Arabic, and people came out of their houses.",
+          "decision": {
+            "decision": "stop",
+            "question_id": null,
+            "hypothesis": "none",
+            "hypothesis_text": "",
+            "evidence": [
+              "A van drove slowly down the street with a speaker repeating something in Arabic"
+            ],
+            "why_this_question": "",
+            "stop_type": "out_of_scope",
+            "offer_example": false,
+            "message": "This description is outside LAHZA’s current scope. You can start a new description."
+          },
+          "pass": true
+        }
+      ],
+      "priorTechnicalError": null
+    }
+  ],
+  "new8": [
+    {
+      "id": 101,
+      "description": "في المطار رأيت رجالًا يقفون كتفًا إلى كتف في صف ورجل أمامهم، ثم انحنوا كلهم في لحظة واحدة.",
+      "candidates": [
+        {
+          "id": "congregational-prayer",
+          "name_ar": "صلاة الجماعة",
+          "name_en": "Congregational prayer",
+          "required": [
+            {
+              "id": "jamaah-rows",
+              "description_ar": "أشخاص يقفون في صف أو صفوف متراصة",
+              "examples_ar": [
+                "يقفون في صفوف",
+                "كتفًا إلى كتف"
+              ],
+              "examples_en": [
+                "standing in rows",
+                "shoulder to shoulder"
+              ]
+            },
+            {
+              "id": "jamaah-together",
+              "description_ar": "حركة مشتركة من انحناء أو سجود",
+              "examples_ar": [
+                "ينحنون معًا",
+                "يسجدون معًا"
+              ],
+              "examples_en": [
+                "bowing together",
+                "kneeling with foreheads to the ground together"
+              ]
+            }
+          ],
+          "contrary": [
+            {
+              "id": "jamaah-x-music",
+              "description_ar": "موسيقى أو تمرين رياضي",
+              "examples_ar": [
+                "موسيقى",
+                "تمرين",
+                "يوغا"
+              ],
+              "examples_en": [
+                "music",
+                "exercise class",
+                "yoga"
+              ]
+            },
+            {
+              "id": "jamaah-x-queue",
+              "description_ar": "طابور انتظار بلا حركة مشتركة",
+              "examples_ar": [
+                "طابور"
+              ],
+              "examples_en": [
+                "queue",
+                "waiting line"
+              ]
+            },
+            {
+              "id": "jamaah-x-seated",
+              "description_ar": "جلوس واستماع لمتحدث",
+              "examples_ar": [
+                "جالسون يستمعون"
+              ],
+              "examples_en": [
+                "sitting and listening"
+              ]
+            },
+            {
+              "id": "jamaah-x-single",
+              "description_ar": "شخص واحد",
+              "examples_ar": [
+                "رجل وحده"
+              ],
+              "examples_en": [
+                "one person alone"
+              ]
+            }
+          ],
+          "hasContent": false
+        }
+      ],
+      "kind": "observable data gate, not live-model outcome"
+    },
+    {
+      "id": 102,
+      "description": "In a park at sunrise, a group stood in rows and bent forward together, following a woman at the front.",
+      "candidates": [],
+      "kind": "observable data gate, not live-model outcome"
+    },
+    {
+      "id": 103,
+      "description": "Next to the prayer room in the mall, a man was washing his arms up to the elbows and then his feet in a low sink.",
+      "candidates": [
+        {
+          "id": "wudu",
+          "name_ar": "الوضوء",
+          "name_en": "Wudu (ablution)",
+          "required": [
+            {
+              "id": "wudu-parts",
+              "description_ar": "غسل عضوين على الأقل غير اليدين: الوجه أو الذراعان أو القدمان",
+              "examples_ar": [
+                "يغسل ذراعيه إلى المرفقين",
+                "يغسل قدميه"
+              ],
+              "examples_en": [
+                "washing arms up to the elbows",
+                "washing feet"
+              ]
+            },
+            {
+              "id": "wudu-context",
+              "description_ar": "عند مسجد أو مصلى، أو يعقبه دخول إلى الصلاة",
+              "examples_ar": [
+                "عند مدخل المسجد",
+                "بجانب المصلى",
+                "قبل الدخول"
+              ],
+              "examples_en": [
+                "by the mosque entrance",
+                "next to the prayer room",
+                "before going in"
+              ]
+            }
+          ],
+          "contrary": [
+            {
+              "id": "wudu-x-hands-only",
+              "description_ar": "غسل اليدين أو الوجه فقط",
+              "examples_ar": [
+                "يغسل يديه"
+              ],
+              "examples_en": [
+                "washing hands only"
+              ]
+            },
+            {
+              "id": "wudu-x-meal",
+              "description_ar": "سياق طعام أو دورة مياه عامة بلا صلة بالصلاة",
+              "examples_ar": [
+                "قبل الأكل",
+                "مغسلة المطعم"
+              ],
+              "examples_en": [
+                "before eating",
+                "restaurant sink"
+              ]
+            },
+            {
+              "id": "wudu-x-bathing",
+              "description_ar": "استحمام أو سباحة",
+              "examples_ar": [
+                "يستحم",
+                "مسبح"
+              ],
+              "examples_en": [
+                "shower",
+                "pool"
+              ]
+            }
+          ],
+          "hasContent": false
+        }
+      ],
+      "kind": "observable data gate, not live-model outcome"
+    },
+    {
+      "id": 104,
+      "description": "رأيت رجلًا يغسل يديه ووجهه في مغسلة المطعم قبل الأكل.",
+      "candidates": [],
+      "kind": "observable data gate, not live-model outcome"
+    },
+    {
+      "id": 105,
+      "description": "كنت داخل المسجد زائرًا والناس جالسون، ثم قال رجل عبارات سريعة بصوت مرتفع فقام الجميع واصطفوا.",
+      "candidates": [
+        {
+          "id": "iqamah",
+          "name_ar": "الإقامة",
+          "name_en": "The iqamah",
+          "required": [
+            {
+              "id": "iqamah-short-call",
+              "description_ar": "نداء قصير بعبارات سريعة من مصدر ثابت أو داخل المسجد",
+              "examples_ar": [
+                "نداء قصير",
+                "عبارات سريعة متتابعة",
+                "أقل من دقيقة"
+              ],
+              "examples_en": [
+                "a short call",
+                "quick phrases",
+                "under a minute"
+              ]
+            },
+            {
+              "id": "iqamah-after-first",
+              "description_ar": "سبقه نداء أطول من المكان نفسه، أو تلاه مباشرة قيام الناس واصطفافهم",
+              "examples_ar": [
+                "نداء أطول قبله",
+                "ثم قام الجميع واصطفوا"
+              ],
+              "examples_en": [
+                "a longer call earlier",
+                "then everyone stood up in rows"
+              ]
+            }
+          ],
+          "contrary": [
+            {
+              "id": "iqamah-x-only-call",
+              "description_ar": "النداء الوحيد المسموع ولا شيء قبله ولا اصطفاف بعده",
+              "examples_ar": [
+                "لم أسمع نداء قبله"
+              ],
+              "examples_en": [
+                "no earlier call"
+              ]
+            },
+            {
+              "id": "iqamah-x-moving",
+              "description_ar": "مصدر متحرك",
+              "examples_ar": [
+                "سيارة",
+                "مركبة"
+              ],
+              "examples_en": [
+                "van",
+                "car"
+              ]
+            },
+            {
+              "id": "iqamah-x-spoken",
+              "description_ar": "كلام عادي غير منغّم كإعلان",
+              "examples_ar": [
+                "إعلان بصوت عادي"
+              ],
+              "examples_en": [
+                "a spoken announcement",
+                "normal voice"
+              ]
+            },
+            {
+              "id": "iqamah-x-music",
+              "description_ar": "موسيقى مصاحبة",
+              "examples_ar": [
+                "موسيقى"
+              ],
+              "examples_en": [
+                "music"
+              ]
+            }
+          ],
+          "hasContent": false
+        }
+      ],
+      "kind": "observable data gate, not live-model outcome"
+    },
+    {
+      "id": 106,
+      "description": "I heard a short announcement from the mosque loudspeaker in the afternoon, spoken in a normal voice, not melodic.",
+      "candidates": [],
+      "kind": "observable data gate, not live-model outcome"
+    },
+    {
+      "id": 107,
+      "description": "On Friday around noon the mosque near my hotel was full, and a man stood on raised steps giving a long speech while everyone sat and listened.",
+      "candidates": [
+        {
+          "id": "khutbah",
+          "name_ar": "خطبة الجمعة",
+          "name_en": "The Friday sermon",
+          "required": [
+            {
+              "id": "khutbah-speech",
+              "description_ar": "حديث طويل كالخطاب من شخص واحد",
+              "examples_ar": [
+                "يتحدث طويلًا",
+                "خطاب"
+              ],
+              "examples_en": [
+                "a long speech",
+                "one man speaking"
+              ]
+            },
+            {
+              "id": "khutbah-mosque",
+              "description_ar": "من مسجد، أو أمام مصلين جالسين يستمعون",
+              "examples_ar": [
+                "من المسجد",
+                "الناس جالسون يستمعون"
+              ],
+              "examples_en": [
+                "from the mosque",
+                "everyone sat and listened"
+              ]
+            },
+            {
+              "id": "khutbah-friday",
+              "description_ar": "يوم الجمعة قرابة الظهر",
+              "examples_ar": [
+                "ظهر الجمعة"
+              ],
+              "examples_en": [
+                "Friday around noon"
+              ]
+            }
+          ],
+          "contrary": [
+            {
+              "id": "khutbah-x-other-day",
+              "description_ar": "يوم أو وقت آخر",
+              "examples_ar": [
+                "مساء الثلاثاء"
+              ],
+              "examples_en": [
+                "Tuesday evening"
+              ]
+            },
+            {
+              "id": "khutbah-x-call",
+              "description_ar": "نمط نداء منغّم قصير",
+              "examples_ar": [
+                "عبارات منغّمة بينها وقفات"
+              ],
+              "examples_en": [
+                "melodic phrases with pauses"
+              ]
+            },
+            {
+              "id": "khutbah-x-group",
+              "description_ar": "ترديد جماعي",
+              "examples_ar": [
+                "يرددون معًا"
+              ],
+              "examples_en": [
+                "chanting together"
+              ]
+            }
+          ],
+          "hasContent": false
+        }
+      ],
+      "kind": "observable data gate, not live-model outcome"
+    },
+    {
+      "id": 108,
+      "description": "مساء الثلاثاء سمعت من المسجد رجلًا يتحدث بهدوء لنحو نصف ساعة.",
+      "candidates": [],
+      "kind": "observable data gate, not live-model outcome"
+    }
+  ],
+  "core": [
+    {
+      "path": "lib/discovery-guard.ts",
+      "identicalExceptDeclaredVersionAndTransportAudit": true,
+      "sha256Normalized": "3060d9728e8f0731b032ee62483ebaee02b4ea2270a9e3825b9fa889c15c8ec8"
+    },
+    {
+      "path": "lib/discovery.ts",
+      "identicalExceptDeclaredVersionAndTransportAudit": true,
+      "sha256Normalized": "ba704381c44c6e5f8bb280d9bcc6e40e12af33e8d2f49ff235ea78f8c4ed2dd4"
+    },
+    {
+      "path": "lib/discovery-contract.ts",
+      "identicalExceptDeclaredVersionAndTransportAudit": true,
+      "sha256Normalized": "8a5f80a8f27016a2545a5624aed59c085b5ce5b3366527eeaf04fb8861227316"
+    }
+  ]
+}
