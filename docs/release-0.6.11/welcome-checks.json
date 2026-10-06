@@ -1,0 +1,44 @@
+{
+  "version": "0.6.11",
+  "at": "2026-10-06T16:51:45.884Z",
+  "scope": "Controlled component-event checks with local storage and content fixture; not a browser or live model.",
+  "checks": [
+    {
+      "name": "Returning Arabic and English visitors remain on welcome after loading, content fetch and clock ticks",
+      "pass": true
+    },
+    {
+      "name": "Continue enters real-time Now in one explicit step and retains stored preferences and records",
+      "pass": true
+    },
+    {
+      "name": "First-time visitor explicitly advances from welcome to interests and then Now",
+      "pass": true
+    },
+    {
+      "name": "Skip introduction enters Now only on explicit activation",
+      "pass": true
+    },
+    {
+      "name": "Navigation stays inside the app, while reopening with the same storage shows welcome again",
+      "pass": true
+    },
+    {
+      "name": "Clear data restores the first-time welcome and clears local reflections",
+      "pass": true
+    },
+    {
+      "name": "Fresh and returning /judge visits bypass welcome and display Question impact directly",
+      "pass": true
+    },
+    {
+      "name": "A valid moment deep link is preserved when continuing past welcome",
+      "pass": true
+    }
+  ],
+  "summary": {
+    "checks": 8,
+    "passed": 8,
+    "failed": 0
+  }
+}

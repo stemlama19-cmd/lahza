@@ -121,8 +121,9 @@ html[lang=en] .prayer-timeline strong{font-size:.75rem}
 .now-below-fold{padding:24px 22px 20px;border-top:1px solid var(--line)}
 .now-below-fold>.panel{margin-top:0;margin-bottom:22px}
 .now-below-fold .moment-previews{margin-block:26px}
-.welcome-art{height:225px;margin:22px -26px 22px;overflow:hidden;background:#102e49}
-.welcome-art img{width:100%;height:100%;object-fit:cover;object-position:19% 58%;transform:scale(1.03);display:block}
+.welcome-art{height:clamp(220px,64vw,280px);margin:22px -26px 22px;overflow:hidden;background:#102e49}
+/* The supplied artwork has an unused text panel on the right. Frame only the conversation. */
+.welcome-art svg{width:100%;height:100%;display:block;overflow:hidden}
 .onboarding-step-0{padding-top:20px}
 .onboarding-step-0 h1{font-size:29px;margin-top:6px}
 .onboarding-step-0 .lead{margin-bottom:20px}
@@ -131,7 +132,7 @@ html[lang=en] .prayer-timeline strong{font-size:.75rem}
 @keyframes stamp-drop{0%{transform:translateY(-48px) rotate(-12deg) scale(1.12);opacity:0}64%{transform:translateY(3px) rotate(-7deg) scale(.98);opacity:1}100%{transform:translateY(0) rotate(-8deg) scale(1);opacity:1}}
 @keyframes stamp-gold-flash{0%{box-shadow:0 0 0 0 #e5b75800}30%{box-shadow:0 0 0 13px #e5b75838,0 0 45px #ecc87875}100%{box-shadow:0 0 0 23px #e5b75800,0 0 25px #ecc87800}}
 @media(min-width:768px){.now-scene{min-height:calc(100svh - 96px)}.welcome-art{margin-inline:-34px}}
-@media(max-height:740px){.now-scene{min-height:calc(100svh - 72px)}.city-scene{height:40svh;min-height:225px}.scene-copy{padding-block:15px 20px}.scene-copy h1{font-size:26px;line-height:1.28}.scene-question{font-size:16px;margin-bottom:14px}.scene-place{margin-bottom:7px}.welcome-art{height:180px;margin-block:16px}.onboarding-step-0 .lead{margin-bottom:14px}}
+@media(max-height:740px){.now-scene{min-height:calc(100svh - 72px)}.city-scene{height:40svh;min-height:225px}.scene-copy{padding-block:15px 20px}.scene-copy h1{font-size:26px;line-height:1.28}.scene-question{font-size:16px;margin-bottom:14px}.scene-place{margin-bottom:7px}.welcome-art{height:220px;margin-block:16px}.onboarding-step-0 .lead{margin-bottom:14px}}
 @media(max-width:374px){.scene-copy{padding-inline:19px}.scene-copy h1{font-size:24px}.welcome-art{margin-inline:-21px}.now-below-fold{padding-inline:17px}}
 @media(prefers-reduced-motion:reduce){.call-ring{animation:none;transform:none;opacity:.2}.call-ring-second{r:45px}.minaret-glow{transition:none}.celebration-stamp,.passport-stamp.just-earned .stamp-ring{animation:none;transform:none;box-shadow:0 0 0 3px #d5ab5640}}
 

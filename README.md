@@ -1,9 +1,13 @@
-# لَحْظَة | LAHZA 0.6.10
+# لَحْظَة | LAHZA 0.6.12
 
 A bilingual web app using source-verified sentences supplied by the project owner.
 
 Live site: https://lahza-discovery.stemlama.chatgpt.site
 Direct question-impact page: https://lahza-discovery.stemlama.chatgpt.site/judge
+
+Opening the app now keeps the welcome screen visible until the visitor explicitly continues or skips it, including on return visits. Saved language, interests and local records are retained; returning visitors continue in one step. `/judge` remains directly accessible.
+
+The 0.6.12 welcome artwork frames the visitor and host with a responsive SVG viewport, excluding the original empty text panel. The original image, welcome copy and navigation behavior are unchanged.
 
 ## Current behavior
 
@@ -41,7 +45,7 @@ See [the capability table](docs/CAPABILITIES.md) and its [CSV](docs/capabilities
 
 Each moment card puts its supplied `-meaning` branch after the scene description. Spiritual / Values / Character labels come from displayGuidance.labels. Quotation marks and all words remain verbatim; quoted spans are bold. Book names, numbers and the source-verification badge are inside initially collapsed Learn more sections. Links open their supplied source in a new tab. Source matching is not scholarly approval; interpretiveLink is preserved as supplied metadata.
 
-Chat retrieval prioritizes a named moment’s new meaning claims when the visitor asks about meaning or impact, or selects that branch. It still uses only eligible evidence, the existing selection-only model prompt and exact-text citation gate. The chat endpoint now accepts the last answer’s canonical claim IDs and preceding question as bounded context, reconstructing religious evidence from the supplied file. Invalid, excluded or mixed-moment context is ignored; a refusal clears context. The discovery backend, selection-only system prompt and exact-text validation gate are unchanged. A failed request shows one service-unavailable message without clarification questions. Retry reuses the original request without adding another question bubble. UI version is 0.6.10; chat remains 0.6.5 and unchanged discovery endpoints retain their earlier engine-version labels.
+Chat retrieval prioritizes a named moment’s new meaning claims when the visitor asks about meaning or impact, or selects that branch. It still uses only eligible evidence, the existing selection-only model prompt and exact-text citation gate. The chat endpoint now accepts the last answer’s canonical claim IDs and preceding question as bounded context, reconstructing religious evidence from the supplied file. Invalid, excluded or mixed-moment context is ignored; a refusal clears context. The discovery backend, selection-only system prompt and exact-text validation gate are unchanged. A failed request shows one service-unavailable message without clarification questions. Retry reuses the original request without adding another question bubble. UI version is 0.6.12; chat remains 0.6.5 and unchanged discovery endpoints retain their earlier engine-version labels.
 
 No image/recording recognition, live partner bookings, operational guided visits, payments, accounts or cross-device sync is implemented. The complete booking and ticket interaction is a labelled prototype. Personalized purpose text was not supplied and remains hidden.
 
@@ -62,6 +66,8 @@ The model key is a Sites runtime secret and is excluded from client code, source
 Preferences, progress, learning stamps, the conversation card, prototype tickets and booking drafts, and up to 200 interaction records stay on the device. The city is selected manually. Prototype booking details are not sent to an external party. Clear my data removes current and legacy local records, resets in-memory journey progress and conversations, removes prototype tickets and drafts, and cancels pending requests. Late responses cannot recreate cleared records.
 
 ## Validation
+
+The 0.6.11 welcome fix passed eight focused component-event checks and TypeScript validation. Tests cover fresh/returning visits in Arabic and English, explicit continuation, retained data, reload, clearing data, deep links and direct `/judge` access. Run `node scripts/test-v0611-welcome.mjs`; results are in `docs/release-0.6.11/`. These are controlled local checks, not browser or live-model verification.
 
 For 0.6.9, run node scripts/test-v069-recording.mjs for the replacement recording and current cue timeline. The unchanged audio endpoint's HTTP checks are reusable with python3 scripts/verify-audio-http.py after building. No human listening, actual browser playback or visual capture is claimed. Technical decoding, source attribution and automated phrase recognition cannot certify subjective clarity.
 

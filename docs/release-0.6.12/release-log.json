@@ -1,0 +1,16 @@
+{
+  "version": "0.6.12",
+  "at": "2026-10-06T17:18:17.461435+00:00",
+  "changes": [
+    "Welcome artwork uses a responsive SVG viewport focused on the visitor and host",
+    "Unused right-hand text panel is outside the welcome viewport",
+    "Title, Continue button and the 0.6.11 explicit-entry behavior are retained"
+  ],
+  "verification": {
+    "typecheck": "passed",
+    "sourceReview": "Original image, religious data and model files unchanged",
+    "browserVisualCheck": "not performed: browser credential session could not be resumed",
+    "freshLiveModelRun": "not performed; model unchanged"
+  },
+  "religiousContentSha256": "dd042548837cf9f9afb93e02c7dbbd9555be57284ef81fd3b8532d1487e97664"
+}
