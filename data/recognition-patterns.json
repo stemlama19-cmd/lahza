@@ -1,0 +1,16 @@
+{
+ "version":"0.6.0","purpose":"Operational observable-cue adapters only. No religious explanation. Must satisfy every requireAll item in the unmodified supplied file. Adhan remains on the unchanged 0.4.11 evidence gate.",
+ "cues":{
+  "iqamah-short-call":["نداء قصير|عبارات سريعة|short (?:call|announcement)|quick phrases|under a minute"],
+  "iqamah-after-first":["نداء.*اطول.*قبل|قبل.*نداء.*اطول|قام الجميع واصطف|a longer call earlier|short.*call.*after.*longer|then everyone stood up in rows"],
+  "iqamah-x-only-call":["لم اسمع نداء قبله|no earlier call"],"iqamah-x-moving":["سيارة|مركبة|\\bvan\\b|\\bcar\\b"],"iqamah-x-spoken":["اعلان بصوت عادي|spoken.*normal voice|spoken announcement|normal voice"],"iqamah-x-music":["موسيقى|music"],
+  "jamaah-rows":["يقفون.*صف|كتفا الي كتف|كتفا إلى كتف|stood in rows|standing in rows|shoulder to shoulder"],
+  "jamaah-together":["ينحنون معا|انحنوا كلهم|يسجدون معا|bowing together|bent forward together|foreheads to the ground together"],
+  "jamaah-x-music":["موسيقى|تمرين|يوغا|music|exercise|yoga"],"jamaah-x-queue":["طابور|queue|waiting line"],"jamaah-x-seated":["جالسون يستمعون|sitting and listening"],"jamaah-x-single":["رجل وحده|one person alone"],
+  "wudu-parts":["(?:ذراع|مرفق|arms|elbows)","(?:قدم|قدمي|feet|foot)"],
+  "wudu-context":["مدخل المسجد|بجانب المصلى|المصلى|prayer room|mosque entrance"],
+  "wudu-x-hands-only":["يديه فقط|washing hands only"],"wudu-x-meal":["قبل الاكل|مغسلة المطعم|before eating|restaurant sink"],"wudu-x-bathing":["يستحم|مسبح|shower|pool"],
+  "khutbah-speech":["يتحدث طويلا|خطاب|long speech|one man speaking"],"khutbah-mosque":["من المسجد|الناس جالسون يستمعون|mosque|everyone sat and listened"],"khutbah-friday":["ظهر الجمعه|ظهر الجمعة|friday around noon|friday.*noon"],
+  "khutbah-x-other-day":["مساء الثلاثاء|tuesday evening"],"khutbah-x-call":["عبارات منغمه بينها وقفات|melodic phrases with pauses"],"khutbah-x-group":["يرددون معا|chanting together"]
+ }
+}

@@ -1,0 +1,32 @@
+{
+  "version":"0.6.2",
+  "goals":[
+    {"id":"visit","ar":"أزور بلدًا مسلمًا وأريد فهم ما حولي","en":"I’m visiting a Muslim country and want to understand what’s around me"},
+    {"id":"daily","ar":"أود التعرّف على حياة المسلمين اليومية","en":"I’d like to explore everyday Muslim life"},
+    {"id":"work","ar":"أود أن أفهم زملائي المسلمين في العمل","en":"I’d like to understand my Muslim colleagues"},
+    {"id":"learn","ar":"أرغب في التعلّم أكثر عن الإسلام","en":"I’d like to learn more about Islam"},
+    {"id":"history","ar":"مهتم بالتاريخ الإسلامي","en":"I’m interested in Islamic history"},
+    {"id":"places","ar":"مهتم بزيارة الأماكن الإسلامية","en":"I’m interested in visiting Islamic places"}
+  ],
+  "explore":[
+    {"id":"call","moment":"adhan","branch":"adhan-what","ar":"ما هذا الصوت الذي أسمعه؟","en":"What is that call I can hear?","icon":"audio","goals":["visit","daily"]},
+    {"id":"colleague","moment":"congregational-prayer","branch":"jamaah-what","ar":"لماذا يتوقف زميلي للصلاة؟","en":"Why does my colleague pause for prayer?","icon":"people","goals":["work","learn"]},
+    {"id":"friday","moment":"khutbah","branch":"khutbah-what","ar":"ماذا يحدث ظهر الجمعة؟","en":"What happens at Friday noon?","icon":"sun","goals":["visit","history"]},
+    {"id":"wash","moment":"wudu","branch":"wudu-what","ar":"ماذا يفعل الناس قبل دخول المسجد؟","en":"What are people doing before entering?","icon":"water","goals":["places","visit"]},
+    {"id":"second","moment":"iqamah","branch":"iqamah-what","ar":"هل هذا نداء آخر؟","en":"Is that another call?","icon":"audio","goals":["daily","learn"]},
+    {"id":"history","moment":"adhan","branch":"adhan-origin","ar":"كيف بدأ الأذان؟","en":"How did the adhan begin?","icon":"book","goals":["history"]}
+  ],
+  "journey":{
+    "id":"call-to-prayer","ar":"من النداء إلى الصلاة","en":"From the call to prayer","reviewStatus":"pending",
+    "claimIds":["adhan-purpose","wudu-what-1","iqamah-what-1","jamaah-what-1"],
+    "steps":["observe","guess","meaning","discover","match","stamp"],
+    "question":{"id":"journey-call-quiz-01","ar":"إلى أي لحظة يشير هذا النص؟","en":"Which moment does this text describe?","claimId":"adhan-purpose","options":["wudu","adhan","iqamah"],"answer":"adhan","reviewStatus":"pending","sourceClaimIds":["adhan-purpose"]},
+    "matching":{"id":"journey-call-match-01","pairs":[{"claimId":"adhan-purpose","moment":"adhan"},{"claimId":"wudu-what-1","moment":"wudu"},{"claimId":"iqamah-what-1","moment":"iqamah"},{"claimId":"jamaah-what-1","moment":"congregational-prayer"}],"reviewStatus":"pending"}
+  },
+  "purposeLines":[],
+  "experiences":[
+    {"id":"mosque","ar":"زيارة مسجد مع مرشد","en":"A guided mosque visit","icon":"place","duration":45},
+    {"id":"heritage","ar":"جولة في معلم تاريخي","en":"A heritage walk","icon":"compass","duration":60},
+    {"id":"conversation","ar":"لقاء تعريفي","en":"An introductory conversation","icon":"chat","duration":30}
+  ]
+}

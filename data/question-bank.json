@@ -1,0 +1,58 @@
+[
+  {
+    "id": "Q1",
+    "ar": "من أين جاء الصوت؟ مكبرات خارج مبنى، داخل المكان، هاتف أو جهاز؟",
+    "en": "Where did the sound come from: speakers outside a building, inside the place, or a phone or device?",
+    "whyAr": "مصدر الصوت يساعد على فهم السياق، لكنه لا يحدد محتواه وحده.",
+    "whyEn": "The source helps establish context, but does not identify the content on its own."
+  },
+  {
+    "id": "Q2",
+    "ar": "كم استمر تقريبًا؟ أقل من دقيقة، دقائق قليلة، أم أطول بكثير؟",
+    "en": "About how long did it last: under a minute, a few minutes, or much longer?",
+    "whyAr": "المدة تضيف قرينة إلى وصفك، ولا تحسم نوع الصوت.",
+    "whyEn": "Duration adds a clue to your description; it does not determine the sound."
+  },
+  {
+    "id": "Q3",
+    "ar": "كيف كان الصوت؟ عبارات منغّمة بينها وقفات، قراءة متصلة، حديث كالخطاب، أم جماعة تكرر عبارة؟",
+    "en": "What did it sound like: melodic phrases with pauses, continuous reciting, a speech, or a group repeating a phrase?",
+    "whyAr": "نمط الصوت يساعد على التمييز بين النداء والحديث والقراءة.",
+    "whyEn": "The pattern helps distinguish a call, a speech and recitation."
+  },
+  {
+    "id": "Q4",
+    "ar": "هل تتذكر كلمة أو عبارة مما سمعت؟ اكتبها كما تتذكرها.",
+    "en": "Do you remember a word or phrase you heard? Write it as you remember it.",
+    "whyAr": "العبارة قد تساعد مع القرائن الأخرى؛ كلمة واحدة لا تكفي.",
+    "whyEn": "A phrase can help alongside other clues; one word is not enough."
+  },
+  {
+    "id": "Q5",
+    "ar": "هل سمعت قبله بدقائق نداءً أطول من المكان نفسه؟",
+    "en": "Did you hear a longer call from the same place a little earlier?",
+    "whyAr": "تتابع النداءات قد يغيّر الاحتمال، دون أن يحسمه.",
+    "whyEn": "The sequence of calls may change the likely explanation without proving it."
+  },
+  {
+    "id": "Q6",
+    "ar": "هل كان ذلك قرابة ظهر الجمعة؟",
+    "en": "Was it around midday on a Friday?",
+    "whyAr": "التوقيت يساعد على فهم سياق الحديث الطويل، ولا يكفي وحده.",
+    "whyEn": "The time helps place a longer speech in context, but is not enough by itself."
+  },
+  {
+    "id": "Q7",
+    "ar": "ماذا فعل الناس حولك؟ اتجهوا إلى مبنى، وقفوا صفوفًا، أم واصلوا شأنهم؟",
+    "en": "What did people around you do: walk towards a building, stand in rows, or carry on?",
+    "whyAr": "ما فعله الناس يضيف سياقًا إلى ما سمعته.",
+    "whyEn": "What people did adds context to what you heard."
+  },
+  {
+    "id": "Q8",
+    "ar": "ماذا كانوا يفعلون؟ يقفون في صفوف وينحنون معًا، يجلسون ويستمعون لمتحدث، أم يقرأ شخص من كتاب؟",
+    "en": "What were they doing: standing in rows and bowing together, sitting and listening to a speaker, or one person reading a book?",
+    "whyAr": "الحركات التي لاحظتها تساعد على فهم المشهد.",
+    "whyEn": "The actions you noticed help make sense of the scene."
+  }
+]

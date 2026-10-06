@@ -1,0 +1,36 @@
+{
+  "version": "moments-stage1-2026-10-05",
+  "activeMomentIds": [
+    "adhan"
+  ],
+  "gates": {
+    "adhan": {
+      "requireAll": [
+        "audio",
+        "fixed",
+        {
+          "anyOf": [
+            {
+              "allOf": [
+                "single",
+                "pauses"
+              ]
+            },
+            "phrase"
+          ]
+        }
+      ],
+      "contraryAny": [
+        "moving",
+        "previous",
+        "group",
+        "continuous",
+        "music",
+        "recitation",
+        {
+          "not": "audio"
+        }
+      ]
+    }
+  }
+}

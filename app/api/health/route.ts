@@ -1,0 +1,4 @@
+import {corpusVersion,corpus} from '@/lib/knowledge';
+import {APP_VERSION,PROMPT_VERSION} from '@/lib/discovery-contract';
+import {modelConfig} from '@/lib/discovery';
+export function GET(){return Response.json({status:'ok',version:APP_VERSION,promptVersion:PROMPT_VERSION,corpusVersion,sources:corpus.length,discoveryModelConfigured:!!modelConfig(),model:modelConfig()?.model||null,verification:'Configuration check only; use an actual conversation to verify inference.',retrieval:'local lexical index',generation:'model-selected evidence, constrained composition',supabaseConnected:false,humanConnected:false,contentVerification:'source-verified; not a claim of scholarly approval',logs:'sessionStorage in current browser tab; last 20 sessions; no application server question database'},{headers:{'Cache-Control':'no-store'}});}
