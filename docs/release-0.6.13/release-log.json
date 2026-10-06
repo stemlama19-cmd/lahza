@@ -1,0 +1,53 @@
+{
+  "appVersion": "0.6.13",
+  "previousAppVersion": "0.6.12",
+  "scope": "Permanent Arabic and English AI disclosure on Discovery and Chat; no model or religious content change",
+  "preservation": {
+    "data/moments-batch1.json": {
+      "sha256": "dd042548837cf9f9afb93e02c7dbbd9555be57284ef81fd3b8532d1487e97664",
+      "unchangedFromPreviousRelease": true
+    },
+    "app/api/chat/route.ts": {
+      "sha256": "bd1eee84df8b0192c4bd2298553d58aca958820dcf99f01bc760adbbb16a31b7",
+      "unchangedFromPreviousRelease": true
+    },
+    "app/api/moments/route.ts": {
+      "sha256": "f78bf1f470c768ef8fcd022d86c26775b6009f54048bcd945b3325c8996ee682",
+      "unchangedFromPreviousRelease": true
+    },
+    "engineAndContentTreeUnchanged": true
+  },
+  "liveChatTests": {
+    "status": "completed_with_partial_match",
+    "file": "three-questions-live.json",
+    "summary": {
+      "questions": 3,
+      "productionHttp200": 3,
+      "confirmedLiveModelCalls": 3,
+      "yes": 2,
+      "partial": 1,
+      "no": 0,
+      "engineChangedAfterResults": false
+    },
+    "testedDeploymentId": "appgdep_6ac53c7a71b48191b767ded7fa772dc8",
+    "testedSourceCommit": "f55e5384de7e46f7fdd1ddc09b1d7e00ca4e21a2",
+    "startedAtUTC": "2026-10-06T18:23:36.737384+00:00",
+    "completedAtUTC": "2026-10-06T18:24:18.760081+00:00",
+    "model": "gpt-4.1-2025-04-14",
+    "browserVisualVerification": false
+  },
+  "githubUpdate": {
+    "status": "blocked",
+    "reason": "Connected GitHub account anased has pull access but no push access to stemlama19-cmd/lahza."
+  },
+  "localValidation": {
+    "typecheck": "passed",
+    "visualBrowserCheck": "not_performed",
+    "productionBuild": "passed",
+    "prohibitedWholeWordPhrasesInUI": []
+  },
+  "findings": [
+    "Question 2 abstains but does not identify a personal fatwa or refer to a qualified authority. No engine changes made.",
+    "All three responses suggest the same adhan follow-ups; unchanged."
+  ]
+}

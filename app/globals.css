@@ -171,3 +171,7 @@ html[lang=en] .meaning-dimension .claim>p{font-size:16px;line-height:1.8}
 @media(max-height:740px){.view-now .city-scene{height:23svh;min-height:145px}.curiosity-entry{padding-block:10px}.curiosity-entry p{font-size:14px;margin-bottom:8px}.view-now .scene-copy{padding-block:12px 20px}.view-now .scene-copy h1{font-size:24px}.view-now .scene-question{margin-bottom:12px}}
 @media(max-width:374px){.curiosity-entry{padding-inline:17px}.curiosity-entry button{font-size:13px;gap:5px}.available-languages .language-option{padding:11px}.planned-languages span{padding-inline:6px}}
 @media(prefers-reduced-motion:reduce){.reflection-sheet .meaning-dimension{animation:none}}
+
+/* Permanent AI disclosure, shared by discovery and chat. */
+.ai-transparency{color:#17364b;background:#f4f1e9;border:1px solid #d1c4a5;border-radius:12px;padding:12px 14px;margin:16px 0;font-size:1rem;line-height:1.7;text-align:start;overflow-wrap:anywhere}
+.ai-transparency + .chat-compose{margin-top:10px}

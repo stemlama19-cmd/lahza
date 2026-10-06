@@ -1,0 +1,50 @@
+{
+  "testedDeployment": {
+    "id": "appgdep_6ac53c7a71b48191b767ded7fa772dc8",
+    "project_id": "appgprj_6ac1a9cc50288191842255ed92d1e8e7",
+    "title": "لَحْظَة | LAHZA",
+    "version_id": "appgprj_6ac1a9cc50288191842255ed92d1e8e7~appgver_c4a4143a59f081918934faac7f498949",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://lahza-discovery.stemlama.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ac1a9cc50288191842255ed92d1e8e7",
+    "failure_message": null,
+    "env_set_revision": 3,
+    "updated_at": "2026-10-06T18:23:23.552217+00:00"
+  },
+  "testedCommit": "f55e5384de7e46f7fdd1ddc09b1d7e00ca4e21a2",
+  "llmEvents": [
+    {
+      "level": "info",
+      "event": "llm_call",
+      "callId": "f8dbefa0-1f12-446e-9373-ba9ba174c601",
+      "at": "2026-10-06T18:24:17.748Z",
+      "requestId": "req_9af1a1d163fb4cdaa329036bc207a086",
+      "version": "0.6.2",
+      "durationMs": 964,
+      "status": 200
+    },
+    {
+      "level": "info",
+      "event": "llm_call",
+      "callId": "7efc1686-1eb2-4cd6-b01d-d08dbfea13f1",
+      "at": "2026-10-06T18:24:05.444Z",
+      "requestId": "req_53969ef351dd4b4f9c5bec70139b5375",
+      "version": "0.6.2",
+      "durationMs": 890,
+      "status": 200
+    },
+    {
+      "level": "info",
+      "event": "llm_call",
+      "callId": "50abd066-b2e2-49f2-87f0-d7f0fba5f7f5",
+      "at": "2026-10-06T18:23:52.633Z",
+      "requestId": "req_5fa54c6cceea4f10a6a2fc1f95ae92c9",
+      "version": "0.6.2",
+      "durationMs": 1772,
+      "status": 200
+    }
+  ]
+}

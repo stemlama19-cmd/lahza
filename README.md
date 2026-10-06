@@ -1,4 +1,4 @@
-# لَحْظَة | LAHZA 0.6.12
+# لَحْظَة | LAHZA 0.6.13
 
 A bilingual web app using source-verified sentences supplied by the project owner.
 
@@ -8,6 +8,10 @@ Direct question-impact page: https://lahza-discovery.stemlama.chatgpt.site/judge
 Opening the app now keeps the welcome screen visible until the visitor explicitly continues or skips it, including on return visits. Saved language, interests and local records are retained; returning visitors continue in one step. `/judge` remains directly accessible.
 
 The 0.6.12 welcome artwork frames the visitor and host with a responsive SVG viewport, excluding the original empty text panel. The original image, welcome copy and navigation behavior are unchanged.
+
+## 0.6.13 transparency update
+
+Discovery and chat show a permanent, non-dismissible AI disclosure above each writing field in Arabic and English, with a 16px default font and accessible field descriptions. The disclosure also remains on discovery states without a writing field. The model, evidence gates and religious content are unchanged. Three requested published-chat checks used the live gpt-4.1 model on 6 October 2026: two matched the expected behavior and the personal-fatwa question partially matched (abstention without referral). Raw answers, timestamps and production request IDs are recorded in `docs/release-0.6.13/`. These three checks do not replace the full 28-case regression or a browser walkthrough.
 
 ## Current behavior
 
