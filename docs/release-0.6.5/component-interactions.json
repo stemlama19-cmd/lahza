@@ -1,0 +1,98 @@
+{
+  "version": "0.6.5",
+  "at": "2026-10-06T13:05:47.350Z",
+  "scope": "Local execution of actual component event handlers in a controlled hook/storage environment. Not a browser, not visual QA, and no live model calls. Sheet/Switch/Progress primitives are test wrappers. Network failures are injected deliberately.",
+  "checks": [
+    {
+      "name": "Fresh visitor completes Arabic two-step onboarding with real time default",
+      "pass": true
+    },
+    {
+      "name": "Language changes to English with LTR and persists across reload",
+      "pass": true
+    },
+    {
+      "name": "Pinned preview selection survives reload; Return to now restores live time",
+      "pass": true
+    },
+    {
+      "name": "Adhan reader has seven lines and reaches reading step 15",
+      "pass": true
+    },
+    {
+      "name": "All five moments open with three dimensions and source disclosures",
+      "pass": true
+    },
+    {
+      "name": "Understanding a moment awards one persisted stamp without duplicates",
+      "pass": true
+    },
+    {
+      "name": "Six-stop journey, wrong and right quiz answers, matching and earned stamp",
+      "pass": true
+    },
+    {
+      "name": "Visit interest and edited conversation card save on device and reload",
+      "pass": true
+    },
+    {
+      "name": "Chat failure shows one clear error and no suggested clarification",
+      "pass": true
+    },
+    {
+      "name": "Retry sends the same request without duplicating the visitor question",
+      "pass": true
+    },
+    {
+      "name": "Typed follow-up carries canonical claim IDs from the last answer",
+      "pass": true
+    },
+    {
+      "name": "A refusal clears context for the next typed follow-up",
+      "pass": true
+    },
+    {
+      "name": "Detail refresh restores both moment and selected branch",
+      "pass": true
+    },
+    {
+      "name": "Prayer time details also survive refresh",
+      "pass": true
+    },
+    {
+      "name": "Clear data removes stored data and locks later journey stations immediately",
+      "pass": true
+    },
+    {
+      "name": "Direct judge route bypasses onboarding for a fresh visitor",
+      "pass": true
+    },
+    {
+      "name": "Settings city and iqamah bounds persist",
+      "pass": true
+    },
+    {
+      "name": "Arabic moment cards retain all supplied dimensions and source labels",
+      "pass": true
+    },
+    {
+      "name": "Discovery failure shows the service error without a clarification question",
+      "pass": true
+    },
+    {
+      "name": "Unavailable storage does not claim that interest was saved",
+      "pass": true
+    },
+    {
+      "name": "Clear handler race guard aborts and discards late response (handler invoked directly while navigation is disabled)",
+      "pass": true
+    }
+  ],
+  "findings": [],
+  "summary": {
+    "checks": 21,
+    "passed": 21,
+    "failed": 0,
+    "findings": 0
+  }
+}

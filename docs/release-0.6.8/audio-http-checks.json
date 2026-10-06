@@ -1,0 +1,19 @@
+{
+  "version": "0.6.8",
+  "at": "2026-10-06T14:45:50.400129+00:00",
+  "scope": "Local built Worker HTTP, not browser audio output",
+  "status": 200,
+  "contentType": "audio/mpeg",
+  "bytes": 1848947,
+  "sha256Matches": true,
+  "rangeStatus": 206,
+  "rangeBytes": 1024,
+  "additionalChecks": [
+    "two-byte probe",
+    "open-ended range",
+    "suffix range",
+    "invalid range 416",
+    "HEAD",
+    "If-Range mismatch"
+  ]
+}

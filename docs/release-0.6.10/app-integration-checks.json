@@ -1,0 +1,32 @@
+{
+  "version": "0.6.10",
+  "at": "2026-10-06T15:32:48.844Z",
+  "scope": "Controlled parent-app event integration with child player/flow stubs, local storage and content fixture; not a browser or live model.",
+  "checks": [
+    {
+      "name": "Both curiosity buttons open the matching existing text-description discovery flow",
+      "pass": true
+    },
+    {
+      "name": "Listen entry opens optional reflection; its listen action starts the persistent audio controller",
+      "pass": true
+    },
+    {
+      "name": "Reflection save persists and reload restores exact before/after into the flow",
+      "pass": true
+    },
+    {
+      "name": "App propagates storage failure and clear-data removes reflection records and resets flow",
+      "pass": true
+    },
+    {
+      "name": "Fresh /judge still bypasses onboarding",
+      "pass": true
+    }
+  ],
+  "summary": {
+    "checks": 5,
+    "passed": 5,
+    "failed": 0
+  }
+}

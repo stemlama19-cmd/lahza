@@ -1,1602 +1,2115 @@
 {
-  "library": "lahza-moments",
-  "batch": 1,
-  "schemaVersion": "1.0",
-  "createdAt": "2026-10-05",
-  "status": "Adjudicated by AI source verification on 2026-10-06. Human scholarly review still pending.",
-  "reviewPolicy": {
-    "statusValues": [
-      "pending",
-      "approved",
-      "approved_with_edits",
-      "rejected",
-      "needs_source"
+ "library": "lahza-moments",
+ "batch": 1,
+ "schemaVersion": "1.0",
+ "createdAt": "2026-10-05",
+ "status": "Adjudicated by AI source verification on 2026-10-06. Human scholarly review still pending.",
+ "reviewPolicy": {
+  "statusValues": [
+   "pending",
+   "approved",
+   "approved_with_edits",
+   "rejected",
+   "needs_source"
+  ],
+  "publishRule": "Show a claim only when reviewStatus is approved or approved_with_edits. Show each claim with its source link. rejected and needs_source are never shown.",
+  "appliesTo": "every claim, including claims already published in earlier releases",
+  "reviewer": {
+   "name": "Claude (AI model)",
+   "scope": "Textual verification of every claim against the published text of its cited source. Not a review by a human religious scholar.",
+   "date": "2026-10-06"
+  },
+  "humanScholarReview": "pending",
+  "displayLabel_ar": "مطابَق على مصدره",
+  "displayLabel_en": "Verified against its source",
+  "doNotClaim": "Do not describe this content as reviewed or approved by a scholar anywhere in the app, page metadata or pitch."
+ },
+ "engineRules": {
+  "confirm": "Propose a moment only when every requireAll cue of that moment is present in the visitor's own words and no contrary cue is present. Wording is always tentative.",
+  "recognitionVsExplanation": "recognition.enabled says the engine may lean toward the moment. Whether an explanation exists is computed from approved claims only. A recognised moment with no approved claim ends in no_content with the conversation card.",
+  "questionSelection": "Choose the bank question that best separates the remaining candidates, including the candidate that the scene is outside the library. Use discriminatingQuestions and nearestConfusions as hints. Existing limits stay: two questions at most, never ask what the description already answers, no sound questions for a purely visual scene.",
+  "outsideLibrary": "Always keep 'outside the library' as a live candidate. Cue lists are examples of patterns, not exhaustive keyword lists."
+ },
+ "sources": [
+  {
+   "id": "BUK-631",
+   "title_ar": "صحيح البخاري 631",
+   "title_en": "Sahih al-Bukhari 631",
+   "url": "https://sunnah.com/bukhari:631",
+   "supports_ar": "الأذان عند حضور وقت الصلاة: «فإذا حضرت الصلاة فليؤذن لكم أحدكم».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "BUK-604",
+   "title_ar": "صحيح البخاري 604",
+   "title_en": "Sahih al-Bukhari 604",
+   "url": "https://sunnah.com/bukhari:604",
+   "supports_ar": "بدء الأذان: التشاور في طريقة النداء ثم أمر بلال أن ينادي بالصلاة.",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "BUK-605",
+   "title_ar": "صحيح البخاري 605",
+   "title_en": "Sahih al-Bukhari 605",
+   "url": "https://sunnah.com/bukhari:605",
+   "supports_ar": "«أُمر بلال أن يشفع الأذان وأن يوتر الإقامة إلا الإقامة».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "ABD-499",
+   "title_ar": "سنن أبي داود 499",
+   "title_en": "Sunan Abi Dawud 499",
+   "url": "https://sunnah.com/abudawud:499",
+   "supports_ar": "رؤيا عبد الله بن زيد وصيغة الأذان والإقامة.",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "MUS-385",
+   "title_ar": "صحيح مسلم 385",
+   "title_en": "Sahih Muslim 385",
+   "url": "https://sunnah.com/muslim:385",
+   "supports_ar": "ما يقوله من يسمع المؤذن. يتضمن ألفاظ الأذان.",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "BUK-645",
+   "title_ar": "صحيح البخاري 645",
+   "title_en": "Sahih al-Bukhari 645",
+   "url": "https://sunnah.com/bukhari:645",
+   "supports_ar": "«صلاة الجماعة تفضل صلاة الفذ بسبع وعشرين درجة».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "BUK-722",
+   "title_ar": "صحيح البخاري 722",
+   "title_en": "Sahih al-Bukhari 722",
+   "url": "https://sunnah.com/bukhari:722",
+   "supports_ar": "«إنما جُعل الإمام ليؤتم به... فإذا ركع فاركعوا... وإذا سجد فاسجدوا... وأقيموا الصف في الصلاة».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "BUK-920",
+   "title_ar": "صحيح البخاري 920",
+   "title_en": "Sahih al-Bukhari 920",
+   "url": "https://sunnah.com/bukhari:920",
+   "supports_ar": "«كان النبي ﷺ يخطب قائمًا ثم يقعد ثم يقوم».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "QUR-5-6",
+   "title_ar": "القرآن، سورة المائدة، الآية 6",
+   "title_en": "Quran 5:6",
+   "url": "https://quran.com/5/6",
+   "supports_ar": "غسل الوجه واليدين إلى المرافق ومسح الرأس والرجلين إلى الكعبين عند القيام إلى الصلاة.",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "QUR-62-9",
+   "title_ar": "القرآن، سورة الجمعة، الآية 9",
+   "title_en": "Quran 62:9",
+   "url": "https://quran.com/62/9",
+   "supports_ar": "«إذا نودي للصلاة من يوم الجمعة فاسعوا إلى ذكر الله».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "QUR-22-77",
+   "title_ar": "القرآن، سورة الحج، الآية 77",
+   "title_en": "Quran 22:77",
+   "url": "https://quran.com/22/77",
+   "supports_ar": "«اركعوا واسجدوا».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "BUK-607",
+   "title_ar": "صحيح البخاري 607",
+   "title_en": "Sahih al-Bukhari 607",
+   "url": "https://sunnah.com/bukhari:607",
+   "supports_ar": "عنوان الباب: «الإقامة واحدة إلا قوله قد قامت الصلاة».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "BUK-159",
+   "title_ar": "صحيح البخاري 159",
+   "title_en": "Sahih al-Bukhari 159",
+   "url": "https://sunnah.com/bukhari:159",
+   "supports_ar": "صفة الوضوء: غسل الكفين، المضمضة والاستنشاق، غسل الوجه واليدين إلى المرفقين، مسح الرأس، غسل الرجلين إلى الكعبين. وفيه «من توضأ نحو وضوئي هذا».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "BUK-934",
+   "title_ar": "صحيح البخاري 934",
+   "title_en": "Sahih al-Bukhari 934",
+   "url": "https://sunnah.com/bukhari:934",
+   "supports_ar": "«إذا قلت لصاحبك يوم الجمعة أنصت والإمام يخطب فقد لغوت».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "QUR-24-37",
+   "title_ar": "القرآن، سورة النور، الآية 37",
+   "title_en": "Quran 24:37",
+   "url": "https://quran.com/24/37",
+   "supports_ar": "﴿رجال لا تلهيهم تجارة ولا بيع عن ذكر الله وإقام الصلاة﴾.",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "QUR-4-103",
+   "title_ar": "القرآن، سورة النساء، الآية 103",
+   "title_en": "Quran 4:103",
+   "url": "https://quran.com/4/103",
+   "supports_ar": "﴿إن الصلاة كانت على المؤمنين كتابًا موقوتًا﴾.",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "QUR-20-14",
+   "title_ar": "القرآن، سورة طه، الآية 14",
+   "title_en": "Quran 20:14",
+   "url": "https://quran.com/20/14",
+   "supports_ar": "﴿وأقم الصلاة لذكري﴾.",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "QUR-13-28",
+   "title_ar": "القرآن، سورة الرعد، الآية 28",
+   "title_en": "Quran 13:28",
+   "url": "https://quran.com/13/28",
+   "supports_ar": "﴿ألا بذكر الله تطمئن القلوب﴾.",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "QUR-62-10",
+   "title_ar": "القرآن، سورة الجمعة، الآية 10",
+   "title_en": "Quran 62:10",
+   "url": "https://quran.com/62/10",
+   "supports_ar": "﴿فإذا قضيت الصلاة فانتشروا في الأرض وابتغوا من فضل الله﴾.",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "BUK-609",
+   "title_ar": "صحيح البخاري 609",
+   "title_en": "Sahih al-Bukhari 609",
+   "url": "https://sunnah.com/bukhari:609",
+   "supports_ar": "«لا يسمع مدى صوت المؤذن جن ولا إنس ولا شيء إلا شهد له يوم القيامة».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "ABD-4985",
+   "title_ar": "سنن أبي داود 4985",
+   "title_en": "Sunan Abi Dawud 4985",
+   "url": "https://sunnah.com/abudawud:4985",
+   "supports_ar": "«يا بلال أقم الصلاة أرحنا بها». الحكم في صفحة المصدر: صحيح (الألباني).",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "BUK-636",
+   "title_ar": "صحيح البخاري 636",
+   "title_en": "Sahih al-Bukhari 636",
+   "url": "https://sunnah.com/bukhari:636",
+   "supports_ar": "«إذا سمعتم الإقامة فامشوا إلى الصلاة وعليكم بالسكينة والوقار ولا تسرعوا».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "MUS-244",
+   "title_ar": "صحيح مسلم 244",
+   "title_en": "Sahih Muslim 244",
+   "url": "https://sunnah.com/muslim:244",
+   "supports_ar": "خروج الخطايا مع الماء عند غسل الوجه واليدين والرجلين «حتى يخرج نقيًّا من الذنوب».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "MUS-223",
+   "title_ar": "صحيح مسلم 223",
+   "title_en": "Sahih Muslim 223",
+   "url": "https://sunnah.com/muslim:223",
+   "supports_ar": "«الطهور شطر الإيمان».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "BUK-201",
+   "title_ar": "صحيح البخاري 201",
+   "title_en": "Sahih al-Bukhari 201",
+   "url": "https://sunnah.com/bukhari:201",
+   "supports_ar": "«كان النبي ﷺ يغتسل بالصاع إلى خمسة أمداد ويتوضأ بالمد».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "BUK-528",
+   "title_ar": "صحيح البخاري 528",
+   "title_en": "Sahih al-Bukhari 528",
+   "url": "https://sunnah.com/bukhari:528",
+   "supports_ar": "«أرأيتم لو أن نهرًا بباب أحدكم يغتسل فيه كل يوم خمسًا». المثل في الصلوات الخمس عمومًا.",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "MUS-2564",
+   "title_ar": "صحيح مسلم 2564",
+   "title_en": "Sahih Muslim 2564",
+   "url": "https://sunnah.com/muslim:2564c",
+   "supports_ar": "«إن الله لا ينظر إلى صوركم وأموالكم ولكن ينظر إلى قلوبكم وأعمالكم». حديث عام لم يرد في الصفوف.",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "BUK-723",
+   "title_ar": "صحيح البخاري 723",
+   "title_en": "Sahih al-Bukhari 723",
+   "url": "https://sunnah.com/bukhari:723",
+   "supports_ar": "«سووا صفوفكم فإن تسوية الصفوف من إقامة الصلاة».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  },
+  {
+   "id": "MUS-854",
+   "title_ar": "صحيح مسلم 854",
+   "title_en": "Sahih Muslim 854",
+   "url": "https://sunnah.com/muslim:854a",
+   "supports_ar": "«خير يوم طلعت عليه الشمس يوم الجمعة».",
+   "verifiedOnSourcePage": true,
+   "verifiedAt": "2026-10-06"
+  }
+ ],
+ "proposedQuestions": [
+  {
+   "id": "Q9",
+   "text_ar": "أين كان ذلك؟ عند مدخل مسجد أو مصلى، في دورة مياه عامة، أم في مكان آخر؟",
+   "text_en": "Where was this: by a mosque or prayer room entrance, in a public washroom, or somewhere else?",
+   "distinguishes_ar": "الوضوء وغسل لا صلة له بالصلاة",
+   "reviewStatus": "pending",
+   "note": "سؤال جديد مقترح. لا يُستخدم قبل اعتماده."
+  }
+ ],
+ "moments": [
+  {
+   "id": "adhan",
+   "name_ar": "الأذان",
+   "name_en": "The adhan",
+   "modality": "sound",
+   "recognition": {
+    "enabled": true,
+    "requireAll": [
+     {
+      "id": "adhan-call-pattern",
+      "description_ar": "نمط نداء: صوت واحد بعبارات بينها وقفات، أو عبارة من الأذان مع قرينة أخرى",
+      "examples_ar": [
+       "صوت واحد",
+       "عبارات بينها وقفات",
+       "عبارات منغّمة تتوقف ثم تعود"
+      ],
+      "examples_en": [
+       "one voice",
+       "phrases with pauses",
+       "melodic phrases separated by pauses"
+      ]
+     },
+     {
+      "id": "adhan-fixed-source",
+      "description_ar": "مصدر ثابت: مبنى أو مسجد أو مئذنة أو برج",
+      "examples_ar": [
+       "من المسجد",
+       "من المئذنة",
+       "من برج المبنى",
+       "مكبرات على مبنى"
+      ],
+      "examples_en": [
+       "from the mosque",
+       "from the minaret",
+       "from a tower",
+       "speakers on a building"
+      ]
+     }
     ],
-    "publishRule": "Show a claim only when reviewStatus is approved or approved_with_edits. Show each claim with its source link. rejected and needs_source are never shown.",
-    "appliesTo": "every claim, including claims already published in earlier releases",
-    "reviewer": {
-      "name": "Claude (AI model)",
-      "scope": "Textual verification of every claim against the published text of its cited source. Not a review by a human religious scholar.",
-      "date": "2026-10-06"
-    },
-    "humanScholarReview": "pending",
-    "displayLabel_ar": "مطابَق على مصدره",
-    "displayLabel_en": "Verified against its source",
-    "doNotClaim": "Do not describe this content as reviewed or approved by a scholar anywhere in the app, page metadata or pitch."
+    "supporting": [
+     {
+      "id": "adhan-people-move",
+      "description_ar": "توجه الناس نحو المبنى بعد الصوت",
+      "examples_ar": [
+       "الناس اتجهوا نحو المبنى"
+      ],
+      "examples_en": [
+       "people walked towards the building"
+      ]
+     },
+     {
+      "id": "adhan-few-minutes",
+      "description_ar": "مدة دقائق قليلة",
+      "examples_ar": [
+       "دقائق قليلة",
+       "نحو ثلاث دقائق"
+      ],
+      "examples_en": [
+       "a few minutes",
+       "about three minutes"
+      ]
+     }
+    ],
+    "contrary": [
+     {
+      "id": "adhan-x-moving",
+      "description_ar": "مصدر متحرك",
+      "examples_ar": [
+       "سيارة",
+       "مركبة",
+       "شاحنة تتحرك"
+      ],
+      "examples_en": [
+       "van",
+       "car",
+       "moving vehicle"
+      ]
+     },
+     {
+      "id": "adhan-x-second-call",
+      "description_ar": "نداء قصير سبقه نداء أطول من المكان نفسه",
+      "examples_ar": [
+       "نداء أطول قبله"
+      ],
+      "examples_en": [
+       "a longer call earlier"
+      ]
+     },
+     {
+      "id": "adhan-x-visual-only",
+      "description_ar": "مشهد بصري بلا صوت",
+      "examples_ar": [
+       "رأيت"
+      ],
+      "examples_en": [
+       "I saw"
+      ]
+     },
+     {
+      "id": "adhan-x-group",
+      "description_ar": "ترديد جماعي",
+      "examples_ar": [
+       "جماعة تردد",
+       "يرددون معًا"
+      ],
+      "examples_en": [
+       "a group repeating",
+       "chanting together"
+      ]
+     },
+     {
+      "id": "adhan-x-continuous",
+      "description_ar": "قراءة أو ترتيل متصل",
+      "examples_ar": [
+       "ترتيل متصل",
+       "قراءة متصلة"
+      ],
+      "examples_en": [
+       "continuous reciting"
+      ]
+     },
+     {
+      "id": "adhan-x-speech",
+      "description_ar": "حديث كالخطاب",
+      "examples_ar": [
+       "يتحدث طويلًا",
+       "خطاب"
+      ],
+      "examples_en": [
+       "a speech",
+       "talking for a long time"
+      ]
+     },
+     {
+      "id": "adhan-x-music",
+      "description_ar": "موسيقى مصاحبة",
+      "examples_ar": [
+       "موسيقى"
+      ],
+      "examples_en": [
+       "music"
+      ]
+     }
+    ],
+    "discriminatingQuestions": [
+     "Q3",
+     "Q1",
+     "Q5",
+     "Q4"
+    ],
+    "nearestConfusions": [
+     "iqamah",
+     "quran-recitation-audio",
+     "khutbah",
+     "eid-takbir"
+    ]
+   },
+   "explanation": {
+    "branches": [
+     {
+      "id": "adhan-what",
+      "title_ar": "ما هذا؟",
+      "title_en": "What is this?",
+      "claims": [
+       {
+        "claimId": "adhan-purpose",
+        "text_ar": "الأذان نداءٌ للصلاة عند دخول وقتها.",
+        "text_en": "The adhan is a call to prayer when its time begins.",
+        "sourceIds": [
+         "BUK-631",
+         "BUK-604"
+        ],
+        "contentType": "religious",
+        "origin": "existing",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "note": "منشورة في الإصدار 0.4.11. لم تمر على مراجعة علمية، فحالتها بانتظار المراجعة.",
+        "sourceEvidence_ar": "«فإذا حضرت الصلاة فليؤذن لكم أحدكم». «ينادي بالصلاة».",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     },
+     {
+      "id": "adhan-words-branch",
+      "title_ar": "ماذا تعني الكلمات؟",
+      "title_en": "What do the words mean?",
+      "claims": [
+       {
+        "claimId": "adhan-words",
+        "text_ar": "تتضمن كلمات الأذان تكبير الله، والشهادة بأن لا إله إلا الله وأن محمدًا رسول الله، والدعوة إلى الصلاة والفلاح.",
+        "text_en": "The words of the adhan declare that God is most great, testify that there is no god but God and that Muhammad is the Messenger of God, and call people to prayer and to success.",
+        "sourceIds": [
+         "ABD-499",
+         "MUS-385"
+        ],
+        "contentType": "religious",
+        "origin": "existing",
+        "reviewStatus": "approved_with_edits",
+        "reviewerNote": "",
+        "note": "منشورة سابقًا. المصدر يتضمن ألفاظ الأذان وموضوعه استجابة السامع. يقرر المختص كفايته.",
+        "sourceEvidence_ar": "ألفاظ الأذان في الحديث: التكبير، الشهادتان، «حي على الصلاة»، «حي على الفلاح»، «لا إله إلا الله».",
+        "decisionReason_ar": "كانت ناقصة: أغفلت الشهادتين. أُضيفتا، وقُدّم المصدر الذي يورد ألفاظ الأذان.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     },
+     {
+      "id": "adhan-response-branch",
+      "title_ar": "كيف يستجيب من يسمعه؟",
+      "title_en": "How do listeners respond?",
+      "claims": [
+       {
+        "claimId": "adhan-response",
+        "text_ar": "يذكر الحديث أن السامع يردد ما يقوله المؤذن، ويقول «لا حول ولا قوة إلا بالله» عند «حيّ على الصلاة» و«حيّ على الفلاح».",
+        "text_en": "The hadith describes the listener repeating what the caller says, and saying \"There is no might and no power except with God\" at \"Come to prayer\" and \"Come to success\".",
+        "sourceIds": [
+         "MUS-385"
+        ],
+        "contentType": "religious",
+        "origin": "existing",
+        "reviewStatus": "approved_with_edits",
+        "reviewerNote": "",
+        "note": "النص الإنجليزي منشور سابقًا. النص العربي صياغة مقترحة تُطابَق مع المنشور.",
+        "sourceEvidence_ar": "«إذا قال المؤذن الله أكبر الله أكبر فقال أحدكم الله أكبر الله أكبر... ثم قال حي على الصلاة قال لا حول ولا قوة إلا بالله».",
+        "decisionReason_ar": "كانت ناقصة: الحديث يذكر ترديد العبارات ويخص عبارتين بقول آخر.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     },
+     {
+      "id": "adhan-why",
+      "title_ar": "لماذا يوجد الأذان؟",
+      "title_en": "Why is there an adhan?",
+      "claims": [
+       {
+        "claimId": "adhan-why-1",
+        "text_ar": "الأذان إعلان بدخول وقت الصلاة ودعوة إليها.",
+        "text_en": "The adhan announces that the time for prayer has begun and invites people to it.",
+        "sourceIds": [
+         "BUK-631",
+         "ABD-499"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "note": "قريبة المعنى من adhan-purpose. يختار المختص إحداهما أو يبقيهما.",
+        "sourceEvidence_ar": "«فإذا حضرت الصلاة فليؤذن لكم أحدكم». «ندعو به إلى الصلاة». «حي على الصلاة».",
+        "decisionReason_ar": "مطابقة. أُضيف مصدر ثانٍ لعبارة الدعوة إلى الصلاة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "adhan-why-2",
+        "text_ar": "يُرفع الأذان بصوت إنسان ينادي بالصلاة.",
+        "text_en": "The adhan is made by a human voice calling people to prayer.",
+        "sourceIds": [
+         "BUK-604"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved_with_edits",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "«أولا تبعثون رجلًا ينادي بالصلاة».",
+        "decisionReason_ar": "حُذف الشطر الثاني لأنه استنتاج لا يرد في المصدر.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     },
+     {
+      "id": "adhan-origin",
+      "title_ar": "كيف بدأ؟",
+      "title_en": "How did it begin?",
+      "claims": [
+       {
+        "claimId": "adhan-origin-1",
+        "text_ar": "حين قدم المسلمون المدينة كانوا يجتمعون للصلاة بتقدير وقتها، ولم يكن لها نداء.",
+        "text_en": "When the Muslims came to Madinah, they used to gather for prayer by estimating its time. There was no call for it.",
+        "sourceIds": [
+         "BUK-604"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved_with_edits",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "«كان المسلمون حين قدموا المدينة يجتمعون فيتحينون الصلاة، ليس ينادى لها».",
+        "decisionReason_ar": "عُدّل «استقر» إلى لفظ الحديث «قدموا».",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "adhan-origin-2",
+        "text_ar": "تشاوروا يومًا في طريقة تجمعهم. اقترح بعضهم ناقوسًا، واقترح آخرون بوقًا.",
+        "text_en": "One day they discussed how to gather people. Some suggested a bell, others a horn.",
+        "sourceIds": [
+         "BUK-604"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "note": "حُذفت نسبة الناقوس والبوق إلى أديان بعينها، والحديث يذكرها. قرار للمختص.",
+        "sourceEvidence_ar": "«فتكلموا يومًا في ذلك، فقال بعضهم اتخذوا ناقوسًا... وقال بعضهم بل بوقًا».",
+        "decisionReason_ar": "مطابقة. الحديث ينسب الناقوس والبوق إلى أهل ديانتين، وقد حُذفت النسبة من النص المعروض ولا يخل ذلك بالمطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "adhan-origin-3",
+        "text_ar": "ثم اقترح عمر أن يُبعث رجل ينادي بالصلاة، فأمر النبي محمد ﷺ بلالًا أن ينادي.",
+        "text_en": "Then Umar suggested sending a man to call out for prayer, and the Prophet Muhammad told Bilal to stand and make the call.",
+        "sourceIds": [
+         "BUK-604"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved_with_edits",
+        "reviewerNote": "",
+        "note": "صيغة الصلاة على النبي في النص الإنجليزي قرار للمختص.",
+        "sourceEvidence_ar": "«فقال عمر أولا تبعثون رجلًا ينادي بالصلاة. فقال رسول الله ﷺ: يا بلال قم فناد بالصلاة».",
+        "decisionReason_ar": "النص العربي مطابق. عُدّل الإنجليزي من asked إلى told لأن اللفظ أمر.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "adhan-origin-4",
+        "text_ar": "ويروي حديث آخر أن الصحابي عبد الله بن زيد رأى في منامه كلمات الأذان، فأخبر النبي ﷺ فقال «إنها لرؤيا حق»، وأمره أن يلقيها على بلال ليؤذن بها.",
+        "text_en": "Another hadith relates that the companion Abdullah ibn Zayd saw the words of the adhan in a dream. He told the Prophet, who said it was a true vision and told him to teach the words to Bilal so that he could make the call.",
+        "sourceIds": [
+         "ABD-499"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved_with_edits",
+        "reviewerNote": "",
+        "note": "يقرر المختص عرضها بهذا الإيجاز أو حذفها من النسخة الأولى.",
+        "sourceEvidence_ar": "«فأخبرته بما رأيت فقال إنها لرؤيا حق إن شاء الله، فقم مع بلال فألقِ عليه ما رأيت فليؤذن به».",
+        "decisionReason_ar": "صُرّح بأنها رواية أخرى وسُمّي صاحب الرؤيا كما في الحديث. الجمع بين الروايتين متروك للمختص البشري.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     },
+     {
+      "id": "adhan-after",
+      "title_ar": "ماذا يحدث بعد النداء؟",
+      "title_en": "What happens after the call?",
+      "claims": [
+       {
+        "claimId": "adhan-after-1",
+        "text_ar": "بعد الأذان نداء ثانٍ أقصر يسمى الإقامة، يُقال عند إقامة الصلاة، وفيه عبارة «قد قامت الصلاة».",
+        "text_en": "After the adhan comes a second, shorter call known as the iqamah. It is said when the prayer is being established and includes the phrase \"The time for prayer has come\".",
+        "sourceIds": [
+         "ABD-499",
+         "BUK-605"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved_with_edits",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "«وتقول إذا أقمت الصلاة: الله أكبر الله أكبر... قد قامت الصلاة قد قامت الصلاة». «أن يوتر الإقامة».",
+        "decisionReason_ar": "حُذفت «يعلن أن الصلاة ستبدأ» واستُبدل بها لفظ المصدر.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     },
+     {
+      "id": "adhan-lines",
+      "title_ar": "كلمات الأذان سطرًا بسطر",
+      "title_en": "The words of the adhan, line by line",
+      "claims": [
+       {
+        "claimId": "adhan-line-1",
+        "text_ar": "الله أكبر",
+        "text_en": "Allah is most great",
+        "sourceIds": [
+         "ABD-499"
+        ],
+        "contentType": "translation",
+        "origin": "added_in_review",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "لفظ الأذان في الحديث بهذا الترتيب وهذا العدد.",
+        "decisionReason_ar": "أُضيف في التحكيم لوضع الكلمات المتزامنة. العبارة بلفظ الحديث، والترجمة بنص الترجمة المنشورة في صفحة المصدر.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        },
+        "order": 1,
+        "repeat": 4
+       },
+       {
+        "claimId": "adhan-line-2",
+        "text_ar": "أشهد أن لا إله إلا الله",
+        "text_en": "I testify that there is no god but Allah",
+        "sourceIds": [
+         "ABD-499"
+        ],
+        "contentType": "translation",
+        "origin": "added_in_review",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "لفظ الأذان في الحديث بهذا الترتيب وهذا العدد.",
+        "decisionReason_ar": "أُضيف في التحكيم لوضع الكلمات المتزامنة. العبارة بلفظ الحديث، والترجمة بنص الترجمة المنشورة في صفحة المصدر.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        },
+        "order": 2,
+        "repeat": 2
+       },
+       {
+        "claimId": "adhan-line-3",
+        "text_ar": "أشهد أن محمدًا رسول الله",
+        "text_en": "I testify that Muhammad is the Messenger of Allah",
+        "sourceIds": [
+         "ABD-499"
+        ],
+        "contentType": "translation",
+        "origin": "added_in_review",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "لفظ الأذان في الحديث بهذا الترتيب وهذا العدد.",
+        "decisionReason_ar": "أُضيف في التحكيم لوضع الكلمات المتزامنة. العبارة بلفظ الحديث، والترجمة بنص الترجمة المنشورة في صفحة المصدر.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        },
+        "order": 3,
+        "repeat": 2
+       },
+       {
+        "claimId": "adhan-line-4",
+        "text_ar": "حيّ على الصلاة",
+        "text_en": "Come to pray",
+        "sourceIds": [
+         "ABD-499"
+        ],
+        "contentType": "translation",
+        "origin": "added_in_review",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "لفظ الأذان في الحديث بهذا الترتيب وهذا العدد.",
+        "decisionReason_ar": "أُضيف في التحكيم لوضع الكلمات المتزامنة. العبارة بلفظ الحديث، والترجمة بنص الترجمة المنشورة في صفحة المصدر.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        },
+        "order": 4,
+        "repeat": 2
+       },
+       {
+        "claimId": "adhan-line-5",
+        "text_ar": "حيّ على الفلاح",
+        "text_en": "Come to salvation",
+        "sourceIds": [
+         "ABD-499"
+        ],
+        "contentType": "translation",
+        "origin": "added_in_review",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "لفظ الأذان في الحديث بهذا الترتيب وهذا العدد.",
+        "decisionReason_ar": "أُضيف في التحكيم لوضع الكلمات المتزامنة. العبارة بلفظ الحديث، والترجمة بنص الترجمة المنشورة في صفحة المصدر.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        },
+        "order": 5,
+        "repeat": 2
+       },
+       {
+        "claimId": "adhan-line-6",
+        "text_ar": "الله أكبر",
+        "text_en": "Allah is most great",
+        "sourceIds": [
+         "ABD-499"
+        ],
+        "contentType": "translation",
+        "origin": "added_in_review",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "لفظ الأذان في الحديث بهذا الترتيب وهذا العدد.",
+        "decisionReason_ar": "أُضيف في التحكيم لوضع الكلمات المتزامنة. العبارة بلفظ الحديث، والترجمة بنص الترجمة المنشورة في صفحة المصدر.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        },
+        "order": 6,
+        "repeat": 2
+       },
+       {
+        "claimId": "adhan-line-7",
+        "text_ar": "لا إله إلا الله",
+        "text_en": "There is no god but Allah",
+        "sourceIds": [
+         "ABD-499"
+        ],
+        "contentType": "translation",
+        "origin": "added_in_review",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "لفظ الأذان في الحديث بهذا الترتيب وهذا العدد.",
+        "decisionReason_ar": "أُضيف في التحكيم لوضع الكلمات المتزامنة. العبارة بلفظ الحديث، والترجمة بنص الترجمة المنشورة في صفحة المصدر.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        },
+        "order": 7,
+        "repeat": 1
+       }
+      ]
+     },
+     {
+      "id": "adhan-meaning",
+      "title_ar": "لماذا يهمّ أهله؟",
+      "title_en": "Why it matters to them",
+      "display": "front",
+      "claims": [
+       {
+        "claimId": "adhan-meaning-spiritual",
+        "dimension": "spiritual",
+        "text_ar": "يبدأ النداء بعبارة «الله أكبر» فيذكّر السامع بأن هناك ما هو أكبر من شغله وهمّه. ويؤمن المسلمون أن كل ما يبلغه صوت المؤذن يشهد له يوم القيامة.",
+        "text_en": "The call opens with “Allahu akbar” (God is greater), reminding the listener that something is greater than work and worry. Muslims believe that everything the caller’s voice reaches will bear witness for him on the Day of Resurrection.",
+        "sourceIds": [
+         "ABD-499",
+         "BUK-609"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "عبارة «أكبر من شغله وهمّه» شرح لمعنى التكبير وليست لفظ المصدر.",
+        "interpretiveLink": true,
+        "sourceEvidence_ar": "رؤيا عبد الله بن زيد وصيغة الأذان والإقامة. «لا يسمع مدى صوت المؤذن جن ولا إنس ولا شيء إلا شهد له يوم القيامة».",
+        "decisionReason_ar": "مطابقة للنص المقتبس، والربط بالمشهد صياغة تفسيرية.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "adhan-meaning-value",
+        "dimension": "value",
+        "text_ar": "يقدّم المستجيب للنداء ذكر الله على تجارته. يمدح القرآن هؤلاء بأنهم ﴿رجال لا تلهيهم تجارة ولا بيع عن ذكر الله وإقام الصلاة﴾.",
+        "text_en": "Those who answer the call put the remembrance of God before their trade. The Quran praises them as people “who are not distracted, either by buying or selling, from God’s remembrance or performing prayer.”",
+        "sourceIds": [
+         "QUR-24-37"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "interpretiveLink": false,
+        "sourceEvidence_ar": "﴿رجال لا تلهيهم تجارة ولا بيع عن ذكر الله وإقام الصلاة﴾.",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "adhan-meaning-educational",
+        "dimension": "educational",
+        "text_ar": "يربّي الأذان على احترام الوقت. للصلاة في القرآن مواعيد محددة: ﴿إن الصلاة كانت على المؤمنين كتابًا موقوتًا﴾، فينتظم يوم المسلم حول خمسة مواعيد ثابتة.",
+        "text_en": "The adhan teaches respect for time. The Quran describes prayer as “a duty on the believers at the appointed times,” so a Muslim’s day is organised around five fixed moments.",
+        "sourceIds": [
+         "QUR-4-103"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "interpretiveLink": false,
+        "sourceEvidence_ar": "﴿إن الصلاة كانت على المؤمنين كتابًا موقوتًا﴾.",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     }
+    ]
+   }
   },
-  "engineRules": {
-    "confirm": "Propose a moment only when every requireAll cue of that moment is present in the visitor's own words and no contrary cue is present. Wording is always tentative.",
-    "recognitionVsExplanation": "recognition.enabled says the engine may lean toward the moment. Whether an explanation exists is computed from approved claims only. A recognised moment with no approved claim ends in no_content with the conversation card.",
-    "questionSelection": "Choose the bank question that best separates the remaining candidates, including the candidate that the scene is outside the library. Use discriminatingQuestions and nearestConfusions as hints. Existing limits stay: two questions at most, never ask what the description already answers, no sound questions for a purely visual scene.",
-    "outsideLibrary": "Always keep 'outside the library' as a live candidate. Cue lists are examples of patterns, not exhaustive keyword lists."
+  {
+   "id": "iqamah",
+   "name_ar": "الإقامة",
+   "name_en": "The iqamah",
+   "modality": "sound",
+   "recognition": {
+    "enabled": true,
+    "requireAll": [
+     {
+      "id": "iqamah-short-call",
+      "description_ar": "نداء قصير بعبارات سريعة من مصدر ثابت أو داخل المسجد",
+      "examples_ar": [
+       "نداء قصير",
+       "عبارات سريعة متتابعة",
+       "أقل من دقيقة"
+      ],
+      "examples_en": [
+       "a short call",
+       "quick phrases",
+       "under a minute"
+      ]
+     },
+     {
+      "id": "iqamah-after-first",
+      "description_ar": "سبقه نداء أطول من المكان نفسه، أو تلاه مباشرة قيام الناس واصطفافهم",
+      "examples_ar": [
+       "نداء أطول قبله",
+       "ثم قام الجميع واصطفوا"
+      ],
+      "examples_en": [
+       "a longer call earlier",
+       "then everyone stood up in rows"
+      ]
+     }
+    ],
+    "supporting": [
+     {
+      "id": "iqamah-inside",
+      "description_ar": "الناس مجتمعون داخل المسجد قبله",
+      "examples_ar": [
+       "الناس جالسون في المسجد"
+      ],
+      "examples_en": [
+       "people already seated inside"
+      ]
+     }
+    ],
+    "contrary": [
+     {
+      "id": "iqamah-x-only-call",
+      "description_ar": "النداء الوحيد المسموع ولا شيء قبله ولا اصطفاف بعده",
+      "examples_ar": [
+       "لم أسمع نداء قبله"
+      ],
+      "examples_en": [
+       "no earlier call"
+      ]
+     },
+     {
+      "id": "iqamah-x-moving",
+      "description_ar": "مصدر متحرك",
+      "examples_ar": [
+       "سيارة",
+       "مركبة"
+      ],
+      "examples_en": [
+       "van",
+       "car"
+      ]
+     },
+     {
+      "id": "iqamah-x-spoken",
+      "description_ar": "كلام عادي غير منغّم كإعلان",
+      "examples_ar": [
+       "إعلان بصوت عادي"
+      ],
+      "examples_en": [
+       "a spoken announcement",
+       "normal voice"
+      ]
+     },
+     {
+      "id": "iqamah-x-music",
+      "description_ar": "موسيقى مصاحبة",
+      "examples_ar": [
+       "موسيقى"
+      ],
+      "examples_en": [
+       "music"
+      ]
+     }
+    ],
+    "discriminatingQuestions": [
+     "Q5",
+     "Q2",
+     "Q7",
+     "Q3"
+    ],
+    "nearestConfusions": [
+     "adhan"
+    ]
+   },
+   "explanation": {
+    "branches": [
+     {
+      "id": "iqamah-what",
+      "title_ar": "ما هذا؟",
+      "title_en": "What is this?",
+      "claims": [
+       {
+        "claimId": "iqamah-what-1",
+        "text_ar": "الإقامة نداء أقصر من الأذان، يُقال عند إقامة الصلاة، وفيه عبارة «قد قامت الصلاة».",
+        "text_en": "The iqamah is a call shorter than the adhan. It is said when the prayer is being established and includes the phrase \"The time for prayer has come\".",
+        "sourceIds": [
+         "ABD-499",
+         "BUK-605"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved_with_edits",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "«وتقول إذا أقمت الصلاة... قد قامت الصلاة قد قامت الصلاة». «أن يوتر الإقامة».",
+        "decisionReason_ar": "وُحّدت مع adhan-after-1 بعد أن كانتا متعارضتين في التوقيت.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "iqamah-shorter-1",
+        "text_ar": "يذكر الحديث أن بلالًا أُمر أن يكرر عبارات الأذان مرتين، وأن يقول عبارات الإقامة مرة واحدة إلا عبارة «قد قامت الصلاة».",
+        "text_en": "The hadith relates that Bilal was told to say the phrases of the adhan twice and those of the iqamah once, except the phrase announcing that the prayer has begun.",
+        "sourceIds": [
+         "BUK-605",
+         "BUK-607"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "rejected",
+        "reviewerNote": "",
+        "note": "تفسير «إلا الإقامة» بعبارة «قد قامت الصلاة» يحتاج إلى تأكيد المختص.",
+        "sourceEvidence_ar": "«أُمر بلال أن يشفع الأذان وأن يوتر الإقامة إلا الإقامة».",
+        "decisionReason_ar": "تُحجب في هذه النسخة. صياغتها «مرتين» و«مرة واحدة» لا تطابق أعداد الألفاظ في أبي داود 499، وصفة الإقامة فيها خلاف فقهي، والتفصيل لا يحتاجه الزائر.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     },
+     {
+      "id": "iqamah-meaning",
+      "title_ar": "لماذا يهمّ أهله؟",
+      "title_en": "Why it matters to them",
+      "display": "front",
+      "claims": [
+       {
+        "claimId": "iqamah-meaning-spiritual",
+        "dimension": "spiritual",
+        "text_ar": "الصلاة عند أهلها استراحة القلب من تعب اليوم. كان النبي ﷺ يقول لمؤذنه: «يا بلال أقم الصلاة، أرحنا بها».",
+        "text_en": "For those who pray, prayer is the heart’s rest from the day. The Prophet used to tell his caller: “O Bilal, call iqamah for prayer: give us comfort by it.”",
+        "sourceIds": [
+         "ABD-4985"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "interpretiveLink": false,
+        "sourceEvidence_ar": "«يا بلال أقم الصلاة أرحنا بها». الحكم في صفحة المصدر: صحيح (الألباني).",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "iqamah-meaning-value",
+        "dimension": "value",
+        "text_ar": "غاية الصلاة في القرآن ذكر الله: ﴿وأقم الصلاة لذكري﴾. وبهذا الذكر يسكن القلب: ﴿ألا بذكر الله تطمئن القلوب﴾.",
+        "text_en": "In the Quran the purpose of prayer is remembrance: “Establish prayer for My remembrance.” And remembrance is where the heart settles: “Surely in the remembrance of God do hearts find comfort.”",
+        "sourceIds": [
+         "QUR-20-14",
+         "QUR-13-28"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "آية الرعد عامة في الذكر، وربطها بالصلاة عبر آية طه.",
+        "interpretiveLink": true,
+        "sourceEvidence_ar": "﴿وأقم الصلاة لذكري﴾. ﴿ألا بذكر الله تطمئن القلوب﴾.",
+        "decisionReason_ar": "مطابقة للنص المقتبس، والربط بالمشهد صياغة تفسيرية.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "iqamah-meaning-educational",
+        "dimension": "educational",
+        "text_ar": "تعلّم الإقامة الهدوء. أوصى النبي ﷺ من يسمعها أن يمشي إلى الصلاة دون عجلة: «وعليكم بالسكينة والوقار ولا تسرعوا».",
+        "text_en": "The iqamah teaches calm. The Prophet told those who hear it to walk to prayer “with calmness and solemnity, and do not make haste.”",
+        "sourceIds": [
+         "BUK-636"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "interpretiveLink": false,
+        "sourceEvidence_ar": "«إذا سمعتم الإقامة فامشوا إلى الصلاة وعليكم بالسكينة والوقار ولا تسرعوا».",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     }
+    ]
+   }
   },
-  "sources": [
-    {
-      "id": "BUK-631",
-      "title_ar": "صحيح البخاري 631",
-      "title_en": "Sahih al-Bukhari 631",
-      "url": "https://sunnah.com/bukhari:631",
-      "supports_ar": "الأذان عند حضور وقت الصلاة: «فإذا حضرت الصلاة فليؤذن لكم أحدكم».",
-      "verifiedOnSourcePage": true,
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "id": "BUK-604",
-      "title_ar": "صحيح البخاري 604",
-      "title_en": "Sahih al-Bukhari 604",
-      "url": "https://sunnah.com/bukhari:604",
-      "supports_ar": "بدء الأذان: التشاور في طريقة النداء ثم أمر بلال أن ينادي بالصلاة.",
-      "verifiedOnSourcePage": true,
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "id": "BUK-605",
-      "title_ar": "صحيح البخاري 605",
-      "title_en": "Sahih al-Bukhari 605",
-      "url": "https://sunnah.com/bukhari:605",
-      "supports_ar": "«أُمر بلال أن يشفع الأذان وأن يوتر الإقامة إلا الإقامة».",
-      "verifiedOnSourcePage": true,
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "id": "ABD-499",
-      "title_ar": "سنن أبي داود 499",
-      "title_en": "Sunan Abi Dawud 499",
-      "url": "https://sunnah.com/abudawud:499",
-      "supports_ar": "رؤيا عبد الله بن زيد وصيغة الأذان والإقامة.",
-      "verifiedOnSourcePage": true,
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "id": "MUS-385",
-      "title_ar": "صحيح مسلم 385",
-      "title_en": "Sahih Muslim 385",
-      "url": "https://sunnah.com/muslim:385",
-      "supports_ar": "ما يقوله من يسمع المؤذن. يتضمن ألفاظ الأذان.",
-      "verifiedOnSourcePage": true,
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "id": "BUK-645",
-      "title_ar": "صحيح البخاري 645",
-      "title_en": "Sahih al-Bukhari 645",
-      "url": "https://sunnah.com/bukhari:645",
-      "supports_ar": "«صلاة الجماعة تفضل صلاة الفذ بسبع وعشرين درجة».",
-      "verifiedOnSourcePage": true,
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "id": "BUK-722",
-      "title_ar": "صحيح البخاري 722",
-      "title_en": "Sahih al-Bukhari 722",
-      "url": "https://sunnah.com/bukhari:722",
-      "supports_ar": "«إنما جُعل الإمام ليؤتم به... فإذا ركع فاركعوا... وإذا سجد فاسجدوا... وأقيموا الصف في الصلاة».",
-      "verifiedOnSourcePage": true,
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "id": "BUK-920",
-      "title_ar": "صحيح البخاري 920",
-      "title_en": "Sahih al-Bukhari 920",
-      "url": "https://sunnah.com/bukhari:920",
-      "supports_ar": "«كان النبي ﷺ يخطب قائمًا ثم يقعد ثم يقوم».",
-      "verifiedOnSourcePage": true,
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "id": "QUR-5-6",
-      "title_ar": "القرآن، سورة المائدة، الآية 6",
-      "title_en": "Quran 5:6",
-      "url": "https://quran.com/5/6",
-      "supports_ar": "غسل الوجه واليدين إلى المرافق ومسح الرأس والرجلين إلى الكعبين عند القيام إلى الصلاة.",
-      "verifiedOnSourcePage": true,
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "id": "QUR-62-9",
-      "title_ar": "القرآن، سورة الجمعة، الآية 9",
-      "title_en": "Quran 62:9",
-      "url": "https://quran.com/62/9",
-      "supports_ar": "«إذا نودي للصلاة من يوم الجمعة فاسعوا إلى ذكر الله».",
-      "verifiedOnSourcePage": true,
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "id": "QUR-22-77",
-      "title_ar": "القرآن، سورة الحج، الآية 77",
-      "title_en": "Quran 22:77",
-      "url": "https://quran.com/22/77",
-      "supports_ar": "«اركعوا واسجدوا».",
-      "verifiedOnSourcePage": true,
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "id": "BUK-607",
-      "title_ar": "صحيح البخاري 607",
-      "title_en": "Sahih al-Bukhari 607",
-      "url": "https://sunnah.com/bukhari:607",
-      "supports_ar": "عنوان الباب: «الإقامة واحدة إلا قوله قد قامت الصلاة».",
-      "verifiedOnSourcePage": true,
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "id": "BUK-159",
-      "title_ar": "صحيح البخاري 159",
-      "title_en": "Sahih al-Bukhari 159",
-      "url": "https://sunnah.com/bukhari:159",
-      "supports_ar": "صفة الوضوء: غسل الكفين، المضمضة والاستنشاق، غسل الوجه واليدين إلى المرفقين، مسح الرأس، غسل الرجلين إلى الكعبين. وفيه «من توضأ نحو وضوئي هذا».",
-      "verifiedOnSourcePage": true,
-      "verifiedAt": "2026-10-06"
-    },
-    {
-      "id": "BUK-934",
-      "title_ar": "صحيح البخاري 934",
-      "title_en": "Sahih al-Bukhari 934",
-      "url": "https://sunnah.com/bukhari:934",
-      "supports_ar": "«إذا قلت لصاحبك يوم الجمعة أنصت والإمام يخطب فقد لغوت».",
-      "verifiedOnSourcePage": true,
-      "verifiedAt": "2026-10-06"
-    }
-  ],
-  "proposedQuestions": [
-    {
-      "id": "Q9",
-      "text_ar": "أين كان ذلك؟ عند مدخل مسجد أو مصلى، في دورة مياه عامة، أم في مكان آخر؟",
-      "text_en": "Where was this: by a mosque or prayer room entrance, in a public washroom, or somewhere else?",
-      "distinguishes_ar": "الوضوء وغسل لا صلة له بالصلاة",
-      "reviewStatus": "pending",
-      "note": "سؤال جديد مقترح. لا يُستخدم قبل اعتماده."
-    }
-  ],
-  "moments": [
-    {
-      "id": "adhan",
-      "name_ar": "الأذان",
-      "name_en": "The adhan",
-      "modality": "sound",
-      "recognition": {
-        "enabled": true,
-        "requireAll": [
-          {
-            "id": "adhan-call-pattern",
-            "description_ar": "نمط نداء: صوت واحد بعبارات بينها وقفات، أو عبارة من الأذان مع قرينة أخرى",
-            "examples_ar": [
-              "صوت واحد",
-              "عبارات بينها وقفات",
-              "عبارات منغّمة تتوقف ثم تعود"
-            ],
-            "examples_en": [
-              "one voice",
-              "phrases with pauses",
-              "melodic phrases separated by pauses"
-            ]
-          },
-          {
-            "id": "adhan-fixed-source",
-            "description_ar": "مصدر ثابت: مبنى أو مسجد أو مئذنة أو برج",
-            "examples_ar": [
-              "من المسجد",
-              "من المئذنة",
-              "من برج المبنى",
-              "مكبرات على مبنى"
-            ],
-            "examples_en": [
-              "from the mosque",
-              "from the minaret",
-              "from a tower",
-              "speakers on a building"
-            ]
-          }
-        ],
-        "supporting": [
-          {
-            "id": "adhan-people-move",
-            "description_ar": "توجه الناس نحو المبنى بعد الصوت",
-            "examples_ar": [
-              "الناس اتجهوا نحو المبنى"
-            ],
-            "examples_en": [
-              "people walked towards the building"
-            ]
-          },
-          {
-            "id": "adhan-few-minutes",
-            "description_ar": "مدة دقائق قليلة",
-            "examples_ar": [
-              "دقائق قليلة",
-              "نحو ثلاث دقائق"
-            ],
-            "examples_en": [
-              "a few minutes",
-              "about three minutes"
-            ]
-          }
-        ],
-        "contrary": [
-          {
-            "id": "adhan-x-moving",
-            "description_ar": "مصدر متحرك",
-            "examples_ar": [
-              "سيارة",
-              "مركبة",
-              "شاحنة تتحرك"
-            ],
-            "examples_en": [
-              "van",
-              "car",
-              "moving vehicle"
-            ]
-          },
-          {
-            "id": "adhan-x-second-call",
-            "description_ar": "نداء قصير سبقه نداء أطول من المكان نفسه",
-            "examples_ar": [
-              "نداء أطول قبله"
-            ],
-            "examples_en": [
-              "a longer call earlier"
-            ]
-          },
-          {
-            "id": "adhan-x-visual-only",
-            "description_ar": "مشهد بصري بلا صوت",
-            "examples_ar": [
-              "رأيت"
-            ],
-            "examples_en": [
-              "I saw"
-            ]
-          },
-          {
-            "id": "adhan-x-group",
-            "description_ar": "ترديد جماعي",
-            "examples_ar": [
-              "جماعة تردد",
-              "يرددون معًا"
-            ],
-            "examples_en": [
-              "a group repeating",
-              "chanting together"
-            ]
-          },
-          {
-            "id": "adhan-x-continuous",
-            "description_ar": "قراءة أو ترتيل متصل",
-            "examples_ar": [
-              "ترتيل متصل",
-              "قراءة متصلة"
-            ],
-            "examples_en": [
-              "continuous reciting"
-            ]
-          },
-          {
-            "id": "adhan-x-speech",
-            "description_ar": "حديث كالخطاب",
-            "examples_ar": [
-              "يتحدث طويلًا",
-              "خطاب"
-            ],
-            "examples_en": [
-              "a speech",
-              "talking for a long time"
-            ]
-          },
-          {
-            "id": "adhan-x-music",
-            "description_ar": "موسيقى مصاحبة",
-            "examples_ar": [
-              "موسيقى"
-            ],
-            "examples_en": [
-              "music"
-            ]
-          }
-        ],
-        "discriminatingQuestions": [
-          "Q3",
-          "Q1",
-          "Q5",
-          "Q4"
-        ],
-        "nearestConfusions": [
-          "iqamah",
-          "quran-recitation-audio",
-          "khutbah",
-          "eid-takbir"
-        ]
-      },
-      "explanation": {
-        "branches": [
-          {
-            "id": "adhan-what",
-            "title_ar": "ما هذا؟",
-            "title_en": "What is this?",
-            "claims": [
-              {
-                "claimId": "adhan-purpose",
-                "text_ar": "الأذان نداءٌ للصلاة عند دخول وقتها.",
-                "text_en": "The adhan is a call to prayer when its time begins.",
-                "sourceIds": [
-                  "BUK-631",
-                  "BUK-604"
-                ],
-                "contentType": "religious",
-                "origin": "existing",
-                "reviewStatus": "approved",
-                "reviewerNote": "",
-                "note": "منشورة في الإصدار 0.4.11. لم تمر على مراجعة علمية، فحالتها بانتظار المراجعة.",
-                "sourceEvidence_ar": "«فإذا حضرت الصلاة فليؤذن لكم أحدكم». «ينادي بالصلاة».",
-                "decisionReason_ar": "مطابقة.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              }
-            ]
-          },
-          {
-            "id": "adhan-words-branch",
-            "title_ar": "ماذا تعني الكلمات؟",
-            "title_en": "What do the words mean?",
-            "claims": [
-              {
-                "claimId": "adhan-words",
-                "text_ar": "تتضمن كلمات الأذان تكبير الله، والشهادة بأن لا إله إلا الله وأن محمدًا رسول الله، والدعوة إلى الصلاة والفلاح.",
-                "text_en": "The words of the adhan declare that God is most great, testify that there is no god but God and that Muhammad is the Messenger of God, and call people to prayer and to success.",
-                "sourceIds": [
-                  "ABD-499",
-                  "MUS-385"
-                ],
-                "contentType": "religious",
-                "origin": "existing",
-                "reviewStatus": "approved_with_edits",
-                "reviewerNote": "",
-                "note": "منشورة سابقًا. المصدر يتضمن ألفاظ الأذان وموضوعه استجابة السامع. يقرر المختص كفايته.",
-                "sourceEvidence_ar": "ألفاظ الأذان في الحديث: التكبير، الشهادتان، «حي على الصلاة»، «حي على الفلاح»، «لا إله إلا الله».",
-                "decisionReason_ar": "كانت ناقصة: أغفلت الشهادتين. أُضيفتا، وقُدّم المصدر الذي يورد ألفاظ الأذان.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              }
-            ]
-          },
-          {
-            "id": "adhan-response-branch",
-            "title_ar": "كيف يستجيب من يسمعه؟",
-            "title_en": "How do listeners respond?",
-            "claims": [
-              {
-                "claimId": "adhan-response",
-                "text_ar": "يذكر الحديث أن السامع يردد ما يقوله المؤذن، ويقول «لا حول ولا قوة إلا بالله» عند «حيّ على الصلاة» و«حيّ على الفلاح».",
-                "text_en": "The hadith describes the listener repeating what the caller says, and saying \"There is no might and no power except with God\" at \"Come to prayer\" and \"Come to success\".",
-                "sourceIds": [
-                  "MUS-385"
-                ],
-                "contentType": "religious",
-                "origin": "existing",
-                "reviewStatus": "approved_with_edits",
-                "reviewerNote": "",
-                "note": "النص الإنجليزي منشور سابقًا. النص العربي صياغة مقترحة تُطابَق مع المنشور.",
-                "sourceEvidence_ar": "«إذا قال المؤذن الله أكبر الله أكبر فقال أحدكم الله أكبر الله أكبر... ثم قال حي على الصلاة قال لا حول ولا قوة إلا بالله».",
-                "decisionReason_ar": "كانت ناقصة: الحديث يذكر ترديد العبارات ويخص عبارتين بقول آخر.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              }
-            ]
-          },
-          {
-            "id": "adhan-why",
-            "title_ar": "لماذا يوجد الأذان؟",
-            "title_en": "Why is there an adhan?",
-            "claims": [
-              {
-                "claimId": "adhan-why-1",
-                "text_ar": "الأذان إعلان بدخول وقت الصلاة ودعوة إليها.",
-                "text_en": "The adhan announces that the time for prayer has begun and invites people to it.",
-                "sourceIds": [
-                  "BUK-631",
-                  "ABD-499"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved",
-                "reviewerNote": "",
-                "note": "قريبة المعنى من adhan-purpose. يختار المختص إحداهما أو يبقيهما.",
-                "sourceEvidence_ar": "«فإذا حضرت الصلاة فليؤذن لكم أحدكم». «ندعو به إلى الصلاة». «حي على الصلاة».",
-                "decisionReason_ar": "مطابقة. أُضيف مصدر ثانٍ لعبارة الدعوة إلى الصلاة.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              },
-              {
-                "claimId": "adhan-why-2",
-                "text_ar": "يُرفع الأذان بصوت إنسان ينادي بالصلاة.",
-                "text_en": "The adhan is made by a human voice calling people to prayer.",
-                "sourceIds": [
-                  "BUK-604"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved_with_edits",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "«أولا تبعثون رجلًا ينادي بالصلاة».",
-                "decisionReason_ar": "حُذف الشطر الثاني لأنه استنتاج لا يرد في المصدر.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              }
-            ]
-          },
-          {
-            "id": "adhan-origin",
-            "title_ar": "كيف بدأ؟",
-            "title_en": "How did it begin?",
-            "claims": [
-              {
-                "claimId": "adhan-origin-1",
-                "text_ar": "حين قدم المسلمون المدينة كانوا يجتمعون للصلاة بتقدير وقتها، ولم يكن لها نداء.",
-                "text_en": "When the Muslims came to Madinah, they used to gather for prayer by estimating its time. There was no call for it.",
-                "sourceIds": [
-                  "BUK-604"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved_with_edits",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "«كان المسلمون حين قدموا المدينة يجتمعون فيتحينون الصلاة، ليس ينادى لها».",
-                "decisionReason_ar": "عُدّل «استقر» إلى لفظ الحديث «قدموا».",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              },
-              {
-                "claimId": "adhan-origin-2",
-                "text_ar": "تشاوروا يومًا في طريقة تجمعهم. اقترح بعضهم ناقوسًا، واقترح آخرون بوقًا.",
-                "text_en": "One day they discussed how to gather people. Some suggested a bell, others a horn.",
-                "sourceIds": [
-                  "BUK-604"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved",
-                "reviewerNote": "",
-                "note": "حُذفت نسبة الناقوس والبوق إلى أديان بعينها، والحديث يذكرها. قرار للمختص.",
-                "sourceEvidence_ar": "«فتكلموا يومًا في ذلك، فقال بعضهم اتخذوا ناقوسًا... وقال بعضهم بل بوقًا».",
-                "decisionReason_ar": "مطابقة. الحديث ينسب الناقوس والبوق إلى أهل ديانتين، وقد حُذفت النسبة من النص المعروض ولا يخل ذلك بالمطابقة.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              },
-              {
-                "claimId": "adhan-origin-3",
-                "text_ar": "ثم اقترح عمر أن يُبعث رجل ينادي بالصلاة، فأمر النبي محمد ﷺ بلالًا أن ينادي.",
-                "text_en": "Then Umar suggested sending a man to call out for prayer, and the Prophet Muhammad told Bilal to stand and make the call.",
-                "sourceIds": [
-                  "BUK-604"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved_with_edits",
-                "reviewerNote": "",
-                "note": "صيغة الصلاة على النبي في النص الإنجليزي قرار للمختص.",
-                "sourceEvidence_ar": "«فقال عمر أولا تبعثون رجلًا ينادي بالصلاة. فقال رسول الله ﷺ: يا بلال قم فناد بالصلاة».",
-                "decisionReason_ar": "النص العربي مطابق. عُدّل الإنجليزي من asked إلى told لأن اللفظ أمر.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              },
-              {
-                "claimId": "adhan-origin-4",
-                "text_ar": "ويروي حديث آخر أن الصحابي عبد الله بن زيد رأى في منامه كلمات الأذان، فأخبر النبي ﷺ فقال «إنها لرؤيا حق»، وأمره أن يلقيها على بلال ليؤذن بها.",
-                "text_en": "Another hadith relates that the companion Abdullah ibn Zayd saw the words of the adhan in a dream. He told the Prophet, who said it was a true vision and told him to teach the words to Bilal so that he could make the call.",
-                "sourceIds": [
-                  "ABD-499"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved_with_edits",
-                "reviewerNote": "",
-                "note": "يقرر المختص عرضها بهذا الإيجاز أو حذفها من النسخة الأولى.",
-                "sourceEvidence_ar": "«فأخبرته بما رأيت فقال إنها لرؤيا حق إن شاء الله، فقم مع بلال فألقِ عليه ما رأيت فليؤذن به».",
-                "decisionReason_ar": "صُرّح بأنها رواية أخرى وسُمّي صاحب الرؤيا كما في الحديث. الجمع بين الروايتين متروك للمختص البشري.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              }
-            ]
-          },
-          {
-            "id": "adhan-after",
-            "title_ar": "ماذا يحدث بعد النداء؟",
-            "title_en": "What happens after the call?",
-            "claims": [
-              {
-                "claimId": "adhan-after-1",
-                "text_ar": "بعد الأذان نداء ثانٍ أقصر يسمى الإقامة، يُقال عند إقامة الصلاة، وفيه عبارة «قد قامت الصلاة».",
-                "text_en": "After the adhan comes a second, shorter call known as the iqamah. It is said when the prayer is being established and includes the phrase \"The time for prayer has come\".",
-                "sourceIds": [
-                  "ABD-499",
-                  "BUK-605"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved_with_edits",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "«وتقول إذا أقمت الصلاة: الله أكبر الله أكبر... قد قامت الصلاة قد قامت الصلاة». «أن يوتر الإقامة».",
-                "decisionReason_ar": "حُذفت «يعلن أن الصلاة ستبدأ» واستُبدل بها لفظ المصدر.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              }
-            ]
-          },
-          {
-            "id": "adhan-lines",
-            "title_ar": "كلمات الأذان سطرًا بسطر",
-            "title_en": "The words of the adhan, line by line",
-            "claims": [
-              {
-                "claimId": "adhan-line-1",
-                "text_ar": "الله أكبر",
-                "text_en": "Allah is most great",
-                "sourceIds": [
-                  "ABD-499"
-                ],
-                "contentType": "translation",
-                "origin": "added_in_review",
-                "reviewStatus": "approved",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "لفظ الأذان في الحديث بهذا الترتيب وهذا العدد.",
-                "decisionReason_ar": "أُضيف في التحكيم لوضع الكلمات المتزامنة. العبارة بلفظ الحديث، والترجمة بنص الترجمة المنشورة في صفحة المصدر.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                },
-                "order": 1,
-                "repeat": 4
-              },
-              {
-                "claimId": "adhan-line-2",
-                "text_ar": "أشهد أن لا إله إلا الله",
-                "text_en": "I testify that there is no god but Allah",
-                "sourceIds": [
-                  "ABD-499"
-                ],
-                "contentType": "translation",
-                "origin": "added_in_review",
-                "reviewStatus": "approved",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "لفظ الأذان في الحديث بهذا الترتيب وهذا العدد.",
-                "decisionReason_ar": "أُضيف في التحكيم لوضع الكلمات المتزامنة. العبارة بلفظ الحديث، والترجمة بنص الترجمة المنشورة في صفحة المصدر.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                },
-                "order": 2,
-                "repeat": 2
-              },
-              {
-                "claimId": "adhan-line-3",
-                "text_ar": "أشهد أن محمدًا رسول الله",
-                "text_en": "I testify that Muhammad is the Messenger of Allah",
-                "sourceIds": [
-                  "ABD-499"
-                ],
-                "contentType": "translation",
-                "origin": "added_in_review",
-                "reviewStatus": "approved",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "لفظ الأذان في الحديث بهذا الترتيب وهذا العدد.",
-                "decisionReason_ar": "أُضيف في التحكيم لوضع الكلمات المتزامنة. العبارة بلفظ الحديث، والترجمة بنص الترجمة المنشورة في صفحة المصدر.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                },
-                "order": 3,
-                "repeat": 2
-              },
-              {
-                "claimId": "adhan-line-4",
-                "text_ar": "حيّ على الصلاة",
-                "text_en": "Come to pray",
-                "sourceIds": [
-                  "ABD-499"
-                ],
-                "contentType": "translation",
-                "origin": "added_in_review",
-                "reviewStatus": "approved",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "لفظ الأذان في الحديث بهذا الترتيب وهذا العدد.",
-                "decisionReason_ar": "أُضيف في التحكيم لوضع الكلمات المتزامنة. العبارة بلفظ الحديث، والترجمة بنص الترجمة المنشورة في صفحة المصدر.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                },
-                "order": 4,
-                "repeat": 2
-              },
-              {
-                "claimId": "adhan-line-5",
-                "text_ar": "حيّ على الفلاح",
-                "text_en": "Come to salvation",
-                "sourceIds": [
-                  "ABD-499"
-                ],
-                "contentType": "translation",
-                "origin": "added_in_review",
-                "reviewStatus": "approved",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "لفظ الأذان في الحديث بهذا الترتيب وهذا العدد.",
-                "decisionReason_ar": "أُضيف في التحكيم لوضع الكلمات المتزامنة. العبارة بلفظ الحديث، والترجمة بنص الترجمة المنشورة في صفحة المصدر.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                },
-                "order": 5,
-                "repeat": 2
-              },
-              {
-                "claimId": "adhan-line-6",
-                "text_ar": "الله أكبر",
-                "text_en": "Allah is most great",
-                "sourceIds": [
-                  "ABD-499"
-                ],
-                "contentType": "translation",
-                "origin": "added_in_review",
-                "reviewStatus": "approved",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "لفظ الأذان في الحديث بهذا الترتيب وهذا العدد.",
-                "decisionReason_ar": "أُضيف في التحكيم لوضع الكلمات المتزامنة. العبارة بلفظ الحديث، والترجمة بنص الترجمة المنشورة في صفحة المصدر.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                },
-                "order": 6,
-                "repeat": 2
-              },
-              {
-                "claimId": "adhan-line-7",
-                "text_ar": "لا إله إلا الله",
-                "text_en": "There is no god but Allah",
-                "sourceIds": [
-                  "ABD-499"
-                ],
-                "contentType": "translation",
-                "origin": "added_in_review",
-                "reviewStatus": "approved",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "لفظ الأذان في الحديث بهذا الترتيب وهذا العدد.",
-                "decisionReason_ar": "أُضيف في التحكيم لوضع الكلمات المتزامنة. العبارة بلفظ الحديث، والترجمة بنص الترجمة المنشورة في صفحة المصدر.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                },
-                "order": 7,
-                "repeat": 1
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "iqamah",
-      "name_ar": "الإقامة",
-      "name_en": "The iqamah",
-      "modality": "sound",
-      "recognition": {
-        "enabled": true,
-        "requireAll": [
-          {
-            "id": "iqamah-short-call",
-            "description_ar": "نداء قصير بعبارات سريعة من مصدر ثابت أو داخل المسجد",
-            "examples_ar": [
-              "نداء قصير",
-              "عبارات سريعة متتابعة",
-              "أقل من دقيقة"
-            ],
-            "examples_en": [
-              "a short call",
-              "quick phrases",
-              "under a minute"
-            ]
-          },
-          {
-            "id": "iqamah-after-first",
-            "description_ar": "سبقه نداء أطول من المكان نفسه، أو تلاه مباشرة قيام الناس واصطفافهم",
-            "examples_ar": [
-              "نداء أطول قبله",
-              "ثم قام الجميع واصطفوا"
-            ],
-            "examples_en": [
-              "a longer call earlier",
-              "then everyone stood up in rows"
-            ]
-          }
-        ],
-        "supporting": [
-          {
-            "id": "iqamah-inside",
-            "description_ar": "الناس مجتمعون داخل المسجد قبله",
-            "examples_ar": [
-              "الناس جالسون في المسجد"
-            ],
-            "examples_en": [
-              "people already seated inside"
-            ]
-          }
-        ],
-        "contrary": [
-          {
-            "id": "iqamah-x-only-call",
-            "description_ar": "النداء الوحيد المسموع ولا شيء قبله ولا اصطفاف بعده",
-            "examples_ar": [
-              "لم أسمع نداء قبله"
-            ],
-            "examples_en": [
-              "no earlier call"
-            ]
-          },
-          {
-            "id": "iqamah-x-moving",
-            "description_ar": "مصدر متحرك",
-            "examples_ar": [
-              "سيارة",
-              "مركبة"
-            ],
-            "examples_en": [
-              "van",
-              "car"
-            ]
-          },
-          {
-            "id": "iqamah-x-spoken",
-            "description_ar": "كلام عادي غير منغّم كإعلان",
-            "examples_ar": [
-              "إعلان بصوت عادي"
-            ],
-            "examples_en": [
-              "a spoken announcement",
-              "normal voice"
-            ]
-          },
-          {
-            "id": "iqamah-x-music",
-            "description_ar": "موسيقى مصاحبة",
-            "examples_ar": [
-              "موسيقى"
-            ],
-            "examples_en": [
-              "music"
-            ]
-          }
-        ],
-        "discriminatingQuestions": [
-          "Q5",
-          "Q2",
-          "Q7",
-          "Q3"
-        ],
-        "nearestConfusions": [
-          "adhan"
-        ]
-      },
-      "explanation": {
-        "branches": [
-          {
-            "id": "iqamah-what",
-            "title_ar": "ما هذا؟",
-            "title_en": "What is this?",
-            "claims": [
-              {
-                "claimId": "iqamah-what-1",
-                "text_ar": "الإقامة نداء أقصر من الأذان، يُقال عند إقامة الصلاة، وفيه عبارة «قد قامت الصلاة».",
-                "text_en": "The iqamah is a call shorter than the adhan. It is said when the prayer is being established and includes the phrase \"The time for prayer has come\".",
-                "sourceIds": [
-                  "ABD-499",
-                  "BUK-605"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved_with_edits",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "«وتقول إذا أقمت الصلاة... قد قامت الصلاة قد قامت الصلاة». «أن يوتر الإقامة».",
-                "decisionReason_ar": "وُحّدت مع adhan-after-1 بعد أن كانتا متعارضتين في التوقيت.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              },
-              {
-                "claimId": "iqamah-shorter-1",
-                "text_ar": "يذكر الحديث أن بلالًا أُمر أن يكرر عبارات الأذان مرتين، وأن يقول عبارات الإقامة مرة واحدة إلا عبارة «قد قامت الصلاة».",
-                "text_en": "The hadith relates that Bilal was told to say the phrases of the adhan twice and those of the iqamah once, except the phrase announcing that the prayer has begun.",
-                "sourceIds": [
-                  "BUK-605",
-                  "BUK-607"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "rejected",
-                "reviewerNote": "",
-                "note": "تفسير «إلا الإقامة» بعبارة «قد قامت الصلاة» يحتاج إلى تأكيد المختص.",
-                "sourceEvidence_ar": "«أُمر بلال أن يشفع الأذان وأن يوتر الإقامة إلا الإقامة».",
-                "decisionReason_ar": "تُحجب في هذه النسخة. صياغتها «مرتين» و«مرة واحدة» لا تطابق أعداد الألفاظ في أبي داود 499، وصفة الإقامة فيها خلاف فقهي، والتفصيل لا يحتاجه الزائر.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "congregational-prayer",
-      "name_ar": "صلاة الجماعة",
-      "name_en": "Congregational prayer",
-      "modality": "visual",
-      "recognition": {
-        "enabled": true,
-        "requireAll": [
-          {
-            "id": "jamaah-rows",
-            "description_ar": "أشخاص يقفون في صف أو صفوف متراصة",
-            "examples_ar": [
-              "يقفون في صفوف",
-              "كتفًا إلى كتف"
-            ],
-            "examples_en": [
-              "standing in rows",
-              "shoulder to shoulder"
-            ]
-          },
-          {
-            "id": "jamaah-together",
-            "description_ar": "حركة مشتركة من انحناء أو سجود",
-            "examples_ar": [
-              "ينحنون معًا",
-              "يسجدون معًا"
-            ],
-            "examples_en": [
-              "bowing together",
-              "kneeling with foreheads to the ground together"
-            ]
-          }
-        ],
-        "supporting": [
-          {
-            "id": "jamaah-leader",
-            "description_ar": "شخص يتقدمهم",
-            "examples_ar": [
-              "رجل أمامهم"
-            ],
-            "examples_en": [
-              "one person at the front"
-            ]
-          }
-        ],
-        "contrary": [
-          {
-            "id": "jamaah-x-music",
-            "description_ar": "موسيقى أو تمرين رياضي",
-            "examples_ar": [
-              "موسيقى",
-              "تمرين",
-              "يوغا"
-            ],
-            "examples_en": [
-              "music",
-              "exercise class",
-              "yoga"
-            ]
-          },
-          {
-            "id": "jamaah-x-queue",
-            "description_ar": "طابور انتظار بلا حركة مشتركة",
-            "examples_ar": [
-              "طابور"
-            ],
-            "examples_en": [
-              "queue",
-              "waiting line"
-            ]
-          },
-          {
-            "id": "jamaah-x-seated",
-            "description_ar": "جلوس واستماع لمتحدث",
-            "examples_ar": [
-              "جالسون يستمعون"
-            ],
-            "examples_en": [
-              "sitting and listening"
-            ]
-          },
-          {
-            "id": "jamaah-x-single",
-            "description_ar": "شخص واحد",
-            "examples_ar": [
-              "رجل وحده"
-            ],
-            "examples_en": [
-              "one person alone"
-            ]
-          }
-        ],
-        "discriminatingQuestions": [
-          "Q8"
-        ],
-        "nearestConfusions": [
-          "khutbah",
-          "mosque-lesson"
-        ]
-      },
-      "explanation": {
-        "branches": [
-          {
-            "id": "jamaah-what",
-            "title_ar": "ما هذا؟",
-            "title_en": "What is this?",
-            "claims": [
-              {
-                "claimId": "jamaah-what-1",
-                "text_ar": "في صلاة الجماعة يتبع المصلون إمامًا في حركاته: يركعون إذا ركع ويسجدون إذا سجد، ويقيمون الصف.",
-                "text_en": "In congregational prayer, worshippers follow an imam in his movements: they bow when he bows and prostrate when he prostrates, and they keep the row straight.",
-                "sourceIds": [
-                  "BUK-722"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved_with_edits",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "«إنما جُعل الإمام ليؤتم به... فإذا ركع فاركعوا... وإذا سجد فاسجدوا... وأقيموا الصف في الصلاة».",
-                "decisionReason_ar": "حُذفت «خلف» لأنها لا ترد في المصدر، وأُعيدت الصياغة بألفاظه.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              },
-              {
-                "claimId": "jamaah-moves-1",
-                "text_ar": "من حركات الصلاة الركوع والسجود.",
-                "text_en": "The movements of the prayer include bowing and prostrating.",
-                "sourceIds": [
-                  "QUR-22-77",
-                  "BUK-722"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "«اركعوا واسجدوا». «فإذا ركع فاركعوا... وإذا سجد فاسجدوا».",
-                "decisionReason_ar": "مطابقة.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              }
-            ]
-          },
-          {
-            "id": "jamaah-why",
-            "title_ar": "لماذا يصلّون معًا؟",
-            "title_en": "Why do they pray together?",
-            "claims": [
-              {
-                "claimId": "jamaah-value-1",
-                "text_ar": "يذكر الحديث أن صلاة الجماعة تفضل صلاة الفرد بسبع وعشرين درجة.",
-                "text_en": "The hadith states that prayer in congregation is twenty-seven degrees better than prayer offered alone.",
-                "sourceIds": [
-                  "BUK-645"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved_with_edits",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "«صلاة الجماعة تفضل صلاة الفذ بسبع وعشرين درجة».",
-                "decisionReason_ar": "أُضيف العدد الوارد في الحديث.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              },
-              {
-                "claimId": "jamaah-rows-1",
-                "text_ar": "ورد في الحديث الأمر بإقامة الصف في الصلاة.",
-                "text_en": "The hadith instructs worshippers to straighten the row in prayer.",
-                "sourceIds": [
-                  "BUK-722"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved_with_edits",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "«وأقيموا الصف في الصلاة، فإن إقامة الصف من حسن الصلاة».",
-                "decisionReason_ar": "النص العربي مطابق. ضُبط الإنجليزي.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              }
-            ]
-          },
-          {
-            "id": "jamaah-where",
-            "title_ar": "لماذا رأيتها خارج المسجد؟",
-            "title_en": "Why did I see it outside a mosque?",
-            "claims": [
-              {
-                "claimId": "jamaah-place-1",
-                "text_ar": "تُؤدى الصلاة في المساجد، وتُؤدى أيضًا في مصليات داخل الأسواق والمباني العامة.",
-                "text_en": "Prayer is held in mosques, and also in prayer rooms inside malls and public buildings.",
-                "sourceIds": [],
-                "contentType": "local",
-                "origin": "draft",
-                "reviewStatus": "needs_source",
-                "reviewerNote": "",
-                "note": "معلومة محلية. لا تُنشر قبل ربطها بمصدر رسمي مؤرخ.",
-                "sourceEvidence_ar": "لا مصدر.",
-                "decisionReason_ar": "معلومة محلية بلا مصدر. لا تُنشر.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "wudu",
-      "name_ar": "الوضوء",
-      "name_en": "Wudu (ablution)",
-      "modality": "visual",
-      "recognition": {
-        "enabled": true,
-        "requireAll": [
-          {
-            "id": "wudu-parts",
-            "description_ar": "غسل عضوين على الأقل غير اليدين: الوجه أو الذراعان أو القدمان",
-            "examples_ar": [
-              "يغسل ذراعيه إلى المرفقين",
-              "يغسل قدميه"
-            ],
-            "examples_en": [
-              "washing arms up to the elbows",
-              "washing feet"
-            ]
-          },
-          {
-            "id": "wudu-context",
-            "description_ar": "عند مسجد أو مصلى، أو يعقبه دخول إلى الصلاة",
-            "examples_ar": [
-              "عند مدخل المسجد",
-              "بجانب المصلى",
-              "قبل الدخول"
-            ],
-            "examples_en": [
-              "by the mosque entrance",
-              "next to the prayer room",
-              "before going in"
-            ]
-          }
-        ],
-        "supporting": [
-          {
-            "id": "wudu-order",
-            "description_ar": "ترتيب متشابه بين أكثر من شخص",
-            "examples_ar": [
-              "بالترتيب نفسه"
-            ],
-            "examples_en": [
-              "in the same order"
-            ]
-          }
-        ],
-        "contrary": [
-          {
-            "id": "wudu-x-hands-only",
-            "description_ar": "غسل اليدين أو الوجه فقط",
-            "examples_ar": [
-              "يغسل يديه"
-            ],
-            "examples_en": [
-              "washing hands only"
-            ]
-          },
-          {
-            "id": "wudu-x-meal",
-            "description_ar": "سياق طعام أو دورة مياه عامة بلا صلة بالصلاة",
-            "examples_ar": [
-              "قبل الأكل",
-              "مغسلة المطعم"
-            ],
-            "examples_en": [
-              "before eating",
-              "restaurant sink"
-            ]
-          },
-          {
-            "id": "wudu-x-bathing",
-            "description_ar": "استحمام أو سباحة",
-            "examples_ar": [
-              "يستحم",
-              "مسبح"
-            ],
-            "examples_en": [
-              "shower",
-              "pool"
-            ]
-          }
-        ],
-        "discriminatingQuestions": [
-          "Q8",
-          "Q9"
-        ],
-        "nearestConfusions": []
-      },
-      "explanation": {
-        "branches": [
-          {
-            "id": "wudu-what",
-            "title_ar": "ما هذا؟",
-            "title_en": "What is this?",
-            "claims": [
-              {
-                "claimId": "wudu-what-1",
-                "text_ar": "الوضوء غسل يسبق الصلاة. يذكر القرآن منه غسل الوجه واليدين إلى المرفقين، ومسح الرأس، والرجلين إلى الكعبين.",
-                "text_en": "Wudu is a washing that comes before prayer. The Quran mentions washing the face and the arms up to the elbows, wiping the head, and the feet up to the ankles.",
-                "sourceIds": [
-                  "QUR-5-6",
-                  "BUK-159"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved_with_edits",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "«إذا قمتم إلى الصلاة فاغسلوا وجوهكم وأيديكم إلى المرافق وامسحوا برءوسكم وأرجلكم إلى الكعبين». «من توضأ نحو وضوئي هذا».",
-                "decisionReason_ar": "رُتّبت على لفظ الآية، وأُضيف مصدر لتسمية الوضوء.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              },
-              {
-                "claimId": "wudu-steps-1",
-                "text_ar": "يصف الحديث وضوءًا بدأ بغسل الكفين، ثم المضمضة والاستنشاق، ثم غسل الوجه واليدين إلى المرفقين، ثم مسح الرأس، ثم غسل الرجلين إلى الكعبين.",
-                "text_en": "The hadith describes a wudu that began with washing the hands, then rinsing the mouth and nose, then washing the face and the arms up to the elbows, then wiping the head, then washing the feet up to the ankles.",
-                "sourceIds": [
-                  "BUK-159"
-                ],
-                "contentType": "religious",
-                "origin": "added_in_review",
-                "reviewStatus": "approved",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "«فأفرغ على كفيه ثلاث مرار فغسلهما... فمضمض واستنشق، ثم غسل وجهه ثلاثًا ويديه إلى المرفقين... ثم مسح برأسه، ثم غسل رجليه... إلى الكعبين».",
-                "decisionReason_ar": "أُضيفت في التحكيم: تصف ما يراه الزائر فعلًا، ومنه غسل الكفين والمضمضة.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "khutbah",
-      "name_ar": "خطبة الجمعة",
-      "name_en": "The Friday sermon",
-      "modality": "sound",
-      "recognition": {
-        "enabled": true,
-        "requireAll": [
-          {
-            "id": "khutbah-speech",
-            "description_ar": "حديث طويل كالخطاب من شخص واحد",
-            "examples_ar": [
-              "يتحدث طويلًا",
-              "خطاب"
-            ],
-            "examples_en": [
-              "a long speech",
-              "one man speaking"
-            ]
-          },
-          {
-            "id": "khutbah-mosque",
-            "description_ar": "من مسجد، أو أمام مصلين جالسين يستمعون",
-            "examples_ar": [
-              "من المسجد",
-              "الناس جالسون يستمعون"
-            ],
-            "examples_en": [
-              "from the mosque",
-              "everyone sat and listened"
-            ]
-          },
-          {
-            "id": "khutbah-friday",
-            "description_ar": "يوم الجمعة قرابة الظهر",
-            "examples_ar": [
-              "ظهر الجمعة"
-            ],
-            "examples_en": [
-              "Friday around noon"
-            ]
-          }
-        ],
-        "supporting": [
-          {
-            "id": "khutbah-then-prayer",
-            "description_ar": "تعقبه صلاة في صفوف",
-            "examples_ar": [
-              "ثم صلّوا"
-            ],
-            "examples_en": [
-              "then they prayed in rows"
-            ]
-          }
-        ],
-        "contrary": [
-          {
-            "id": "khutbah-x-other-day",
-            "description_ar": "يوم أو وقت آخر",
-            "examples_ar": [
-              "مساء الثلاثاء"
-            ],
-            "examples_en": [
-              "Tuesday evening"
-            ]
-          },
-          {
-            "id": "khutbah-x-call",
-            "description_ar": "نمط نداء منغّم قصير",
-            "examples_ar": [
-              "عبارات منغّمة بينها وقفات"
-            ],
-            "examples_en": [
-              "melodic phrases with pauses"
-            ]
-          },
-          {
-            "id": "khutbah-x-group",
-            "description_ar": "ترديد جماعي",
-            "examples_ar": [
-              "يرددون معًا"
-            ],
-            "examples_en": [
-              "chanting together"
-            ]
-          }
-        ],
-        "discriminatingQuestions": [
-          "Q6",
-          "Q3",
-          "Q2",
-          "Q8"
-        ],
-        "nearestConfusions": [
-          "mosque-lesson",
-          "adhan"
-        ]
-      },
-      "explanation": {
-        "branches": [
-          {
-            "id": "khutbah-what",
-            "title_ar": "ما هذا؟",
-            "title_en": "What is this?",
-            "claims": [
-              {
-                "claimId": "khutbah-what-1",
-                "text_ar": "يوم الجمعة يخطب الإمام في المصلين، والحاضرون ينصتون له.",
-                "text_en": "On Friday the imam delivers a sermon to the worshippers, and those present listen in silence.",
-                "sourceIds": [
-                  "BUK-934",
-                  "BUK-920"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved_with_edits",
-                "reviewerNote": "",
-                "note": "موضعها من الصلاة لم يُذكر لعدم ربطه بمصدر في هذه الدفعة.",
-                "sourceEvidence_ar": "«إذا قلت لصاحبك يوم الجمعة أنصت والإمام يخطب فقد لغوت». «كان النبي ﷺ يخطب قائمًا».",
-                "decisionReason_ar": "كانت تعريفًا بلا سند كافٍ. أُعيدت صياغتها على ما يثبته الحديثان.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              },
-              {
-                "claimId": "khutbah-standing-1",
-                "text_ar": "يذكر الحديث أن النبي ﷺ كان يخطب قائمًا ثم يجلس ثم يقوم.",
-                "text_en": "The hadith relates that the Prophet used to deliver the sermon standing, then sit, then stand again.",
-                "sourceIds": [
-                  "BUK-920"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "«كان النبي ﷺ يخطب قائمًا ثم يقعد ثم يقوم».",
-                "decisionReason_ar": "مطابقة.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              },
-              {
-                "claimId": "khutbah-friday-1",
-                "text_ar": "يذكر القرآن النداء للصلاة يوم الجمعة ويدعو إلى السعي إلى ذكر الله.",
-                "text_en": "The Quran mentions the call to prayer on Friday and urges people to hasten to the remembrance of God.",
-                "sourceIds": [
-                  "QUR-62-9"
-                ],
-                "contentType": "religious",
-                "origin": "draft",
-                "reviewStatus": "approved",
-                "reviewerNote": "",
-                "note": "",
-                "sourceEvidence_ar": "«إذا نودي للصلاة من يوم الجمعة فاسعوا إلى ذكر الله».",
-                "decisionReason_ar": "مطابقة.",
-                "review": {
-                  "type": "ai_source_verification",
-                  "by": "Claude (AI model)",
-                  "date": "2026-10-06"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    }
-  ],
-  "recognitionOnly": [
-    {
-      "id": "quran-recitation-audio",
-      "name_ar": "تلاوة مسموعة",
-      "name_en": "Recited Quran audio",
-      "modality": "sound",
-      "cues_ar": [
-        "ترتيل متصل",
-        "من سماعة متجر أو مذياع سيارة",
-        "مدة طويلة"
+  {
+   "id": "congregational-prayer",
+   "name_ar": "صلاة الجماعة",
+   "name_en": "Congregational prayer",
+   "modality": "visual",
+   "recognition": {
+    "enabled": true,
+    "requireAll": [
+     {
+      "id": "jamaah-rows",
+      "description_ar": "أشخاص يقفون في صف أو صفوف متراصة",
+      "examples_ar": [
+       "يقفون في صفوف",
+       "كتفًا إلى كتف"
       ],
-      "cues_en": [
-        "continuous reciting",
-        "from a shop speaker or car radio",
-        "long duration"
+      "examples_en": [
+       "standing in rows",
+       "shoulder to shoulder"
+      ]
+     },
+     {
+      "id": "jamaah-together",
+      "description_ar": "حركة مشتركة من انحناء أو سجود",
+      "examples_ar": [
+       "ينحنون معًا",
+       "يسجدون معًا"
       ],
-      "note_ar": "يرجَّح الترتيل ولا يُنسب إلى القرآن دون نص منسوخ يُطابَق."
-    },
-    {
-      "id": "mosque-lesson",
-      "name_ar": "درس في المسجد",
-      "name_en": "A lesson in the mosque",
-      "modality": "sound-visual",
-      "cues_ar": [
-        "متحدث جالس",
-        "مجموعة صغيرة جالسة",
-        "غير ظهر الجمعة"
+      "examples_en": [
+       "bowing together",
+       "kneeling with foreheads to the ground together"
+      ]
+     }
+    ],
+    "supporting": [
+     {
+      "id": "jamaah-leader",
+      "description_ar": "شخص يتقدمهم",
+      "examples_ar": [
+       "رجل أمامهم"
       ],
-      "cues_en": [
-        "seated speaker",
-        "small seated group",
-        "not Friday noon"
+      "examples_en": [
+       "one person at the front"
+      ]
+     }
+    ],
+    "contrary": [
+     {
+      "id": "jamaah-x-music",
+      "description_ar": "موسيقى أو تمرين رياضي",
+      "examples_ar": [
+       "موسيقى",
+       "تمرين",
+       "يوغا"
       ],
-      "note_ar": ""
-    },
-    {
-      "id": "eid-takbir",
-      "name_ar": "تكبيرات العيد",
-      "name_en": "Eid takbir",
-      "modality": "sound",
-      "cues_ar": [
-        "ترديد جماعي متصل",
-        "صباح باكر",
-        "ملابس جديدة"
+      "examples_en": [
+       "music",
+       "exercise class",
+       "yoga"
+      ]
+     },
+     {
+      "id": "jamaah-x-queue",
+      "description_ar": "طابور انتظار بلا حركة مشتركة",
+      "examples_ar": [
+       "طابور"
       ],
-      "cues_en": [
-        "continuous group chanting",
-        "early morning",
-        "new clothes"
+      "examples_en": [
+       "queue",
+       "waiting line"
+      ]
+     },
+     {
+      "id": "jamaah-x-seated",
+      "description_ar": "جلوس واستماع لمتحدث",
+      "examples_ar": [
+       "جالسون يستمعون"
       ],
-      "note_ar": ""
-    },
-    {
-      "id": "talbiyah",
-      "name_ar": "التلبية",
-      "name_en": "Talbiyah",
-      "modality": "sound-visual",
-      "cues_ar": [
-        "ترديد جماعي أثناء المشي",
-        "لباس أبيض غير مخيط"
+      "examples_en": [
+       "sitting and listening"
+      ]
+     },
+     {
+      "id": "jamaah-x-single",
+      "description_ar": "شخص واحد",
+      "examples_ar": [
+       "رجل وحده"
       ],
-      "cues_en": [
-        "group chanting while walking",
-        "wrapped in white cloth"
+      "examples_en": [
+       "one person alone"
+      ]
+     }
+    ],
+    "discriminatingQuestions": [
+     "Q8"
+    ],
+    "nearestConfusions": [
+     "khutbah",
+     "mosque-lesson"
+    ]
+   },
+   "explanation": {
+    "branches": [
+     {
+      "id": "jamaah-what",
+      "title_ar": "ما هذا؟",
+      "title_en": "What is this?",
+      "claims": [
+       {
+        "claimId": "jamaah-what-1",
+        "text_ar": "في صلاة الجماعة يتبع المصلون إمامًا في حركاته: يركعون إذا ركع ويسجدون إذا سجد، ويقيمون الصف.",
+        "text_en": "In congregational prayer, worshippers follow an imam in his movements: they bow when he bows and prostrate when he prostrates, and they keep the row straight.",
+        "sourceIds": [
+         "BUK-722"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved_with_edits",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "«إنما جُعل الإمام ليؤتم به... فإذا ركع فاركعوا... وإذا سجد فاسجدوا... وأقيموا الصف في الصلاة».",
+        "decisionReason_ar": "حُذفت «خلف» لأنها لا ترد في المصدر، وأُعيدت الصياغة بألفاظه.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "jamaah-moves-1",
+        "text_ar": "من حركات الصلاة الركوع والسجود.",
+        "text_en": "The movements of the prayer include bowing and prostrating.",
+        "sourceIds": [
+         "QUR-22-77",
+         "BUK-722"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "«اركعوا واسجدوا». «فإذا ركع فاركعوا... وإذا سجد فاسجدوا».",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     },
+     {
+      "id": "jamaah-why",
+      "title_ar": "لماذا يصلّون معًا؟",
+      "title_en": "Why do they pray together?",
+      "claims": [
+       {
+        "claimId": "jamaah-value-1",
+        "text_ar": "يذكر الحديث أن صلاة الجماعة تفضل صلاة الفرد بسبع وعشرين درجة.",
+        "text_en": "The hadith states that prayer in congregation is twenty-seven degrees better than prayer offered alone.",
+        "sourceIds": [
+         "BUK-645"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved_with_edits",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "«صلاة الجماعة تفضل صلاة الفذ بسبع وعشرين درجة».",
+        "decisionReason_ar": "أُضيف العدد الوارد في الحديث.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "jamaah-rows-1",
+        "text_ar": "ورد في الحديث الأمر بإقامة الصف في الصلاة.",
+        "text_en": "The hadith instructs worshippers to straighten the row in prayer.",
+        "sourceIds": [
+         "BUK-722"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved_with_edits",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "«وأقيموا الصف في الصلاة، فإن إقامة الصف من حسن الصلاة».",
+        "decisionReason_ar": "النص العربي مطابق. ضُبط الإنجليزي.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     },
+     {
+      "id": "jamaah-where",
+      "title_ar": "لماذا رأيتها خارج المسجد؟",
+      "title_en": "Why did I see it outside a mosque?",
+      "claims": [
+       {
+        "claimId": "jamaah-place-1",
+        "text_ar": "تُؤدى الصلاة في المساجد، وتُؤدى أيضًا في مصليات داخل الأسواق والمباني العامة.",
+        "text_en": "Prayer is held in mosques, and also in prayer rooms inside malls and public buildings.",
+        "sourceIds": [],
+        "contentType": "local",
+        "origin": "draft",
+        "reviewStatus": "needs_source",
+        "reviewerNote": "",
+        "note": "معلومة محلية. لا تُنشر قبل ربطها بمصدر رسمي مؤرخ.",
+        "sourceEvidence_ar": "لا مصدر.",
+        "decisionReason_ar": "معلومة محلية بلا مصدر. لا تُنشر.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     },
+     {
+      "id": "congregational-prayer-meaning",
+      "title_ar": "لماذا يهمّ أهله؟",
+      "title_en": "Why it matters to them",
+      "display": "front",
+      "claims": [
+       {
+        "claimId": "jamaah-meaning-spiritual",
+        "dimension": "spiritual",
+        "text_ar": "شبّه النبي ﷺ الصلوات الخمس بنهر على باب البيت يغتسل فيه صاحبه خمس مرات كل يوم: «أرأيتم لو أن نهرًا بباب أحدكم يغتسل فيه كل يوم خمسًا، ما تقول ذلك يُبقي من درنه؟».",
+        "text_en": "The Prophet compared the five daily prayers to a river at one’s door: “If there was a river at the door of anyone of you and he took a bath in it five times a day, would you notice any dirt on him?”",
+        "sourceIds": [
+         "BUK-528"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "interpretiveLink": false,
+        "sourceEvidence_ar": "«أرأيتم لو أن نهرًا بباب أحدكم يغتسل فيه كل يوم خمسًا». المثل في الصلوات الخمس عمومًا.",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "jamaah-meaning-value",
+        "dimension": "value",
+        "text_ar": "يتجاور في الصف الغريب وابن الحي دون ترتيب بالمال أو المكانة. يؤمن المسلمون أن الله «لا ينظر إلى صوركم وأموالكم ولكن ينظر إلى قلوبكم وأعمالكم».",
+        "text_en": "In the row, stranger and neighbour stand side by side with no ranking by wealth or status. Muslims believe that God “does not look to your faces and your wealth but He looks to your heart and to your deeds.”",
+        "sourceIds": [
+         "MUS-2564"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "الحديث عام، وربطه بمشهد الصف صياغة تفسيرية.",
+        "interpretiveLink": true,
+        "sourceEvidence_ar": "«إن الله لا ينظر إلى صوركم وأموالكم ولكن ينظر إلى قلوبكم وأعمالكم». حديث عام لم يرد في الصفوف.",
+        "decisionReason_ar": "مطابقة للنص المقتبس، والربط بالمشهد صياغة تفسيرية.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "jamaah-meaning-educational",
+        "dimension": "educational",
+        "text_ar": "تربّي الجماعة على النظام. يتبع المصلون إمامًا واحدًا ويسوّون صفوفهم: «سوّوا صفوفكم فإن تسوية الصفوف من إقامة الصلاة».",
+        "text_en": "Praying together teaches order. Worshippers follow one imam and straighten their rows: “Straighten your rows, for straightening the rows is part of establishing the prayer.”",
+        "sourceIds": [
+         "BUK-723",
+         "BUK-722"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "interpretiveLink": false,
+        "sourceEvidence_ar": "«سووا صفوفكم فإن تسوية الصفوف من إقامة الصلاة». «إنما جُعل الإمام ليؤتم به... فإذا ركع فاركعوا... وإذا سجد فاسجدوا... وأقيموا الصف في الصلاة».",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "wudu",
+   "name_ar": "الوضوء",
+   "name_en": "Wudu (ablution)",
+   "modality": "visual",
+   "recognition": {
+    "enabled": true,
+    "requireAll": [
+     {
+      "id": "wudu-parts",
+      "description_ar": "غسل عضوين على الأقل غير اليدين: الوجه أو الذراعان أو القدمان",
+      "examples_ar": [
+       "يغسل ذراعيه إلى المرفقين",
+       "يغسل قدميه"
       ],
-      "note_ar": ""
-    }
-  ],
-  "testCases": [
-    {
-      "id": 101,
-      "moment": "congregational-prayer",
-      "language": "ar",
-      "kind_ar": "مطابقة",
-      "description": "في المطار رأيت رجالًا يقفون كتفًا إلى كتف في صف ورجل أمامهم، ثم انحنوا كلهم في لحظة واحدة.",
-      "facts_ar": "مصلى مفتوح في صالة المطار. نحو ثمانية أشخاص. سجدوا بعد الانحناء. دقائق قليلة. لا موسيقى.",
-      "responsePolicy_ar": "اقتراح صلاة الجماعة: موافقة. غير ذلك: «لا أعرف».",
-      "acceptableDecision_ar": "ترجيح صلاة الجماعة بصيغة «قد يكون» دون سؤال، ثم الشرح المعتمد إن وُجد، وإلا توقف no_content مع البطاقة.",
-      "errorToAvoid_ar": "اقتراح الأذان، أو طرح سؤال عن الصوت.",
-      "review": "بانتظار المراجعة العلمية"
-    },
-    {
-      "id": 102,
-      "moment": "congregational-prayer",
-      "language": "en",
-      "kind_ar": "قريبة مخالفة",
-      "description": "In a park at sunrise, a group stood in rows and bent forward together, following a woman at the front.",
-      "facts_ar": "حصة تمارين في حديقة. موسيقى هادئة من سماعة. سجادات تمرين. استمرت نحو ساعة.",
-      "responsePolicy_ar": "اقتراح صلاة: رفض مع معلومة «كانت هناك موسيقى وسجادات تمرين». غير ذلك: «لا أعرف».",
-      "acceptableDecision_ar": "لا تُرجَّح صلاة الجماعة بعد ظهور القرينة المخالفة. توقف out_of_scope.",
-      "errorToAvoid_ar": "ترجيح صلاة الجماعة من الصفوف والانحناء وحدهما دون استيضاح.",
-      "review": "بانتظار المراجعة العلمية"
-    },
-    {
-      "id": 103,
-      "moment": "wudu",
-      "language": "en",
-      "kind_ar": "مطابقة",
-      "description": "Next to the prayer room in the mall, a man was washing his arms up to the elbows and then his feet in a low sink.",
-      "facts_ar": "مغاسل منخفضة بجانب المصلى. غسل وجهه أيضًا. دخل المصلى بعدها حافيًا.",
-      "responsePolicy_ar": "اقتراح الوضوء أو غسل قبل الصلاة: موافقة. غير ذلك: «لا أعرف».",
-      "acceptableDecision_ar": "ترجيح الوضوء بصيغة «قد يكون» دون سؤال، ثم الشرح المعتمد إن وُجد، وإلا توقف no_content مع البطاقة.",
-      "errorToAvoid_ar": "طرح سؤال عن الصوت، أو التوقف out_of_scope.",
-      "review": "بانتظار المراجعة العلمية"
-    },
-    {
-      "id": 104,
-      "moment": "wudu",
-      "language": "ar",
-      "kind_ar": "قريبة مخالفة",
-      "description": "رأيت رجلًا يغسل يديه ووجهه في مغسلة المطعم قبل الأكل.",
-      "facts_ar": "مغسلة داخل مطعم. غسل اليدين والوجه فقط. جلس بعدها إلى المائدة.",
-      "responsePolicy_ar": "اقتراح الوضوء: عدم تأكد. غير ذلك: «لا أعرف».",
-      "acceptableDecision_ar": "لا يُرجَّح الوضوء. توقف out_of_scope أو insufficient_evidence دون تسمية.",
-      "errorToAvoid_ar": "ترجيح الوضوء من غسل اليدين والوجه وحده.",
-      "review": "بانتظار المراجعة العلمية"
-    },
-    {
-      "id": 105,
-      "moment": "iqamah",
-      "language": "ar",
-      "kind_ar": "مطابقة",
-      "description": "كنت داخل المسجد زائرًا والناس جالسون، ثم قال رجل عبارات سريعة بصوت مرتفع فقام الجميع واصطفوا.",
-      "facts_ar": "بعد النداء الأول بنحو عشر دقائق. أقل من دقيقة. بدأت الصلاة بعدها مباشرة. لا يتذكر كلمات.",
-      "responsePolicy_ar": "اقتراح الإقامة أو نداء ثانٍ: موافقة. اقتراح الأذان: رفض مع معلومة «كان نداء أقصر بعد النداء الأول».",
-      "acceptableDecision_ar": "ترجيح الإقامة بصيغة «قد يكون» بسؤال واحد على الأكثر، ثم الشرح المعتمد إن وُجد، وإلا توقف no_content مع البطاقة.",
-      "errorToAvoid_ar": "شرحها بوصفها الأذان.",
-      "review": "بانتظار المراجعة العلمية"
-    },
-    {
-      "id": 106,
-      "moment": "iqamah",
-      "language": "en",
-      "kind_ar": "قريبة مخالفة",
-      "description": "I heard a short announcement from the mosque loudspeaker in the afternoon, spoken in a normal voice, not melodic.",
-      "facts_ar": "نحو عشرين ثانية. كلام عادي. لم يسبقه نداء. لم يتحرك أحد بعده.",
-      "responsePolicy_ar": "أي اقتراح: عدم تأكد.",
-      "acceptableDecision_ar": "لا تُرجَّح الإقامة ولا الأذان. توقف insufficient_evidence مع البطاقة دون عرض مثال.",
-      "errorToAvoid_ar": "ترجيح الإقامة لمجرد قِصر النداء.",
-      "review": "بانتظار المراجعة العلمية"
-    },
-    {
-      "id": 107,
-      "moment": "khutbah",
-      "language": "en",
-      "kind_ar": "مطابقة",
-      "description": "On Friday around noon the mosque near my hotel was full, and a man stood on raised steps giving a long speech while everyone sat and listened.",
-      "facts_ar": "نحو عشرين دقيقة. عبر المكبرات. جلس المتحدث لحظة ثم قام. صلّوا بعدها في صفوف.",
-      "responsePolicy_ar": "اقتراح خطبة الجمعة: موافقة. اقتراح الأذان: رفض مع معلومة «كان حديثًا طويلًا».",
-      "acceptableDecision_ar": "ترجيح خطبة الجمعة بصيغة «قد يكون» دون سؤال، ثم الشرح المعتمد إن وُجد، وإلا توقف no_content مع البطاقة.",
-      "errorToAvoid_ar": "اقتراح الأذان، أو سؤال عن اليوم وهو مذكور في الوصف.",
-      "review": "بانتظار المراجعة العلمية"
-    },
-    {
-      "id": 108,
-      "moment": "khutbah",
-      "language": "ar",
-      "kind_ar": "قريبة مخالفة",
-      "description": "مساء الثلاثاء سمعت من المسجد رجلًا يتحدث بهدوء لنحو نصف ساعة.",
-      "facts_ar": "مجموعة صغيرة جالسة. المتحدث جالس وأمامه كتاب. لا صفوف ولا صلاة بعده مباشرة.",
-      "responsePolicy_ar": "اقتراح خطبة الجمعة: رفض مع معلومة «كان مساء الثلاثاء». اقتراح درس: «لا أعرف».",
-      "acceptableDecision_ar": "لا تُرجَّح خطبة الجمعة. يُفهم المشهد حديثًا أو درسًا، ثم توقف no_content مع البطاقة.",
-      "errorToAvoid_ar": "ترجيح خطبة الجمعة من طول الحديث ومصدره.",
-      "review": "بانتظار المراجعة العلمية"
-    }
-  ]
+      "examples_en": [
+       "washing arms up to the elbows",
+       "washing feet"
+      ]
+     },
+     {
+      "id": "wudu-context",
+      "description_ar": "عند مسجد أو مصلى، أو يعقبه دخول إلى الصلاة",
+      "examples_ar": [
+       "عند مدخل المسجد",
+       "بجانب المصلى",
+       "قبل الدخول"
+      ],
+      "examples_en": [
+       "by the mosque entrance",
+       "next to the prayer room",
+       "before going in"
+      ]
+     }
+    ],
+    "supporting": [
+     {
+      "id": "wudu-order",
+      "description_ar": "ترتيب متشابه بين أكثر من شخص",
+      "examples_ar": [
+       "بالترتيب نفسه"
+      ],
+      "examples_en": [
+       "in the same order"
+      ]
+     }
+    ],
+    "contrary": [
+     {
+      "id": "wudu-x-hands-only",
+      "description_ar": "غسل اليدين أو الوجه فقط",
+      "examples_ar": [
+       "يغسل يديه"
+      ],
+      "examples_en": [
+       "washing hands only"
+      ]
+     },
+     {
+      "id": "wudu-x-meal",
+      "description_ar": "سياق طعام أو دورة مياه عامة بلا صلة بالصلاة",
+      "examples_ar": [
+       "قبل الأكل",
+       "مغسلة المطعم"
+      ],
+      "examples_en": [
+       "before eating",
+       "restaurant sink"
+      ]
+     },
+     {
+      "id": "wudu-x-bathing",
+      "description_ar": "استحمام أو سباحة",
+      "examples_ar": [
+       "يستحم",
+       "مسبح"
+      ],
+      "examples_en": [
+       "shower",
+       "pool"
+      ]
+     }
+    ],
+    "discriminatingQuestions": [
+     "Q8",
+     "Q9"
+    ],
+    "nearestConfusions": []
+   },
+   "explanation": {
+    "branches": [
+     {
+      "id": "wudu-what",
+      "title_ar": "ما هذا؟",
+      "title_en": "What is this?",
+      "claims": [
+       {
+        "claimId": "wudu-what-1",
+        "text_ar": "الوضوء غسل يسبق الصلاة. يذكر القرآن منه غسل الوجه واليدين إلى المرفقين، ومسح الرأس، والرجلين إلى الكعبين.",
+        "text_en": "Wudu is a washing that comes before prayer. The Quran mentions washing the face and the arms up to the elbows, wiping the head, and the feet up to the ankles.",
+        "sourceIds": [
+         "QUR-5-6",
+         "BUK-159"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved_with_edits",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "«إذا قمتم إلى الصلاة فاغسلوا وجوهكم وأيديكم إلى المرافق وامسحوا برءوسكم وأرجلكم إلى الكعبين». «من توضأ نحو وضوئي هذا».",
+        "decisionReason_ar": "رُتّبت على لفظ الآية، وأُضيف مصدر لتسمية الوضوء.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "wudu-steps-1",
+        "text_ar": "يصف الحديث وضوءًا بدأ بغسل الكفين، ثم المضمضة والاستنشاق، ثم غسل الوجه واليدين إلى المرفقين، ثم مسح الرأس، ثم غسل الرجلين إلى الكعبين.",
+        "text_en": "The hadith describes a wudu that began with washing the hands, then rinsing the mouth and nose, then washing the face and the arms up to the elbows, then wiping the head, then washing the feet up to the ankles.",
+        "sourceIds": [
+         "BUK-159"
+        ],
+        "contentType": "religious",
+        "origin": "added_in_review",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "«فأفرغ على كفيه ثلاث مرار فغسلهما... فمضمض واستنشق، ثم غسل وجهه ثلاثًا ويديه إلى المرفقين... ثم مسح برأسه، ثم غسل رجليه... إلى الكعبين».",
+        "decisionReason_ar": "أُضيفت في التحكيم: تصف ما يراه الزائر فعلًا، ومنه غسل الكفين والمضمضة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     },
+     {
+      "id": "wudu-meaning",
+      "title_ar": "لماذا يهمّ أهله؟",
+      "title_en": "Why it matters to them",
+      "display": "front",
+      "claims": [
+       {
+        "claimId": "wudu-meaning-spiritual",
+        "dimension": "spiritual",
+        "text_ar": "يرى المسلم في ماء الوضوء طهارة تتجاوز الجسد. يؤمن أن أخطاءه تخرج مع قطراته عند غسل الوجه واليدين والقدمين «حتى يخرج نقيًّا من الذنوب».",
+        "text_en": "A Muslim sees in this water a cleansing that goes beyond the body. He believes his wrongs leave with its drops as he washes face, hands and feet, “until he comes out pure from all sins.”",
+        "sourceIds": [
+         "MUS-244"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "interpretiveLink": false,
+        "sourceEvidence_ar": "خروج الخطايا مع الماء عند غسل الوجه واليدين والرجلين «حتى يخرج نقيًّا من الذنوب».",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "wudu-meaning-value",
+        "dimension": "value",
+        "text_ar": "النظافة عند المسلمين جزء من الإيمان. قال النبي ﷺ: «الطُّهور شطر الإيمان».",
+        "text_en": "For Muslims, cleanliness is part of faith. The Prophet said: “Cleanliness is half of faith.”",
+        "sourceIds": [
+         "MUS-223"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "interpretiveLink": false,
+        "sourceEvidence_ar": "«الطهور شطر الإيمان».",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "wudu-meaning-educational",
+        "dimension": "educational",
+        "text_ar": "يربّي الوضوء على الاقتصاد في الماء. كان النبي ﷺ يتوضأ بقدر قليل منه يسمى المُدّ.",
+        "text_en": "Wudu teaches care with water. The Prophet used to perform it with a small measure of water called a mudd.",
+        "sourceIds": [
+         "BUK-201"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "وصف المُدّ بأنه «قدر قليل» شرح للمقدار وليس لفظ المصدر.",
+        "interpretiveLink": true,
+        "sourceEvidence_ar": "«كان النبي ﷺ يغتسل بالصاع إلى خمسة أمداد ويتوضأ بالمد».",
+        "decisionReason_ar": "مطابقة للنص المقتبس، والربط بالمشهد صياغة تفسيرية.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "khutbah",
+   "name_ar": "خطبة الجمعة",
+   "name_en": "The Friday sermon",
+   "modality": "sound",
+   "recognition": {
+    "enabled": true,
+    "requireAll": [
+     {
+      "id": "khutbah-speech",
+      "description_ar": "حديث طويل كالخطاب من شخص واحد",
+      "examples_ar": [
+       "يتحدث طويلًا",
+       "خطاب"
+      ],
+      "examples_en": [
+       "a long speech",
+       "one man speaking"
+      ]
+     },
+     {
+      "id": "khutbah-mosque",
+      "description_ar": "من مسجد، أو أمام مصلين جالسين يستمعون",
+      "examples_ar": [
+       "من المسجد",
+       "الناس جالسون يستمعون"
+      ],
+      "examples_en": [
+       "from the mosque",
+       "everyone sat and listened"
+      ]
+     },
+     {
+      "id": "khutbah-friday",
+      "description_ar": "يوم الجمعة قرابة الظهر",
+      "examples_ar": [
+       "ظهر الجمعة"
+      ],
+      "examples_en": [
+       "Friday around noon"
+      ]
+     }
+    ],
+    "supporting": [
+     {
+      "id": "khutbah-then-prayer",
+      "description_ar": "تعقبه صلاة في صفوف",
+      "examples_ar": [
+       "ثم صلّوا"
+      ],
+      "examples_en": [
+       "then they prayed in rows"
+      ]
+     }
+    ],
+    "contrary": [
+     {
+      "id": "khutbah-x-other-day",
+      "description_ar": "يوم أو وقت آخر",
+      "examples_ar": [
+       "مساء الثلاثاء"
+      ],
+      "examples_en": [
+       "Tuesday evening"
+      ]
+     },
+     {
+      "id": "khutbah-x-call",
+      "description_ar": "نمط نداء منغّم قصير",
+      "examples_ar": [
+       "عبارات منغّمة بينها وقفات"
+      ],
+      "examples_en": [
+       "melodic phrases with pauses"
+      ]
+     },
+     {
+      "id": "khutbah-x-group",
+      "description_ar": "ترديد جماعي",
+      "examples_ar": [
+       "يرددون معًا"
+      ],
+      "examples_en": [
+       "chanting together"
+      ]
+     }
+    ],
+    "discriminatingQuestions": [
+     "Q6",
+     "Q3",
+     "Q2",
+     "Q8"
+    ],
+    "nearestConfusions": [
+     "mosque-lesson",
+     "adhan"
+    ]
+   },
+   "explanation": {
+    "branches": [
+     {
+      "id": "khutbah-what",
+      "title_ar": "ما هذا؟",
+      "title_en": "What is this?",
+      "claims": [
+       {
+        "claimId": "khutbah-what-1",
+        "text_ar": "يوم الجمعة يخطب الإمام في المصلين، والحاضرون ينصتون له.",
+        "text_en": "On Friday the imam delivers a sermon to the worshippers, and those present listen in silence.",
+        "sourceIds": [
+         "BUK-934",
+         "BUK-920"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved_with_edits",
+        "reviewerNote": "",
+        "note": "موضعها من الصلاة لم يُذكر لعدم ربطه بمصدر في هذه الدفعة.",
+        "sourceEvidence_ar": "«إذا قلت لصاحبك يوم الجمعة أنصت والإمام يخطب فقد لغوت». «كان النبي ﷺ يخطب قائمًا».",
+        "decisionReason_ar": "كانت تعريفًا بلا سند كافٍ. أُعيدت صياغتها على ما يثبته الحديثان.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "khutbah-standing-1",
+        "text_ar": "يذكر الحديث أن النبي ﷺ كان يخطب قائمًا ثم يجلس ثم يقوم.",
+        "text_en": "The hadith relates that the Prophet used to deliver the sermon standing, then sit, then stand again.",
+        "sourceIds": [
+         "BUK-920"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "«كان النبي ﷺ يخطب قائمًا ثم يقعد ثم يقوم».",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "khutbah-friday-1",
+        "text_ar": "يذكر القرآن النداء للصلاة يوم الجمعة ويدعو إلى السعي إلى ذكر الله.",
+        "text_en": "The Quran mentions the call to prayer on Friday and urges people to hasten to the remembrance of God.",
+        "sourceIds": [
+         "QUR-62-9"
+        ],
+        "contentType": "religious",
+        "origin": "draft",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "note": "",
+        "sourceEvidence_ar": "«إذا نودي للصلاة من يوم الجمعة فاسعوا إلى ذكر الله».",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     },
+     {
+      "id": "khutbah-meaning",
+      "title_ar": "لماذا يهمّ أهله؟",
+      "title_en": "Why it matters to them",
+      "display": "front",
+      "claims": [
+       {
+        "claimId": "khutbah-meaning-spiritual",
+        "dimension": "spiritual",
+        "text_ar": "الجمعة عند المسلمين أفضل أيام الأسبوع. قال النبي ﷺ: «خير يوم طلعت عليه الشمس يوم الجمعة».",
+        "text_en": "Friday is the best day of the week for Muslims. The Prophet said: “The best day on which the sun has risen is Friday.”",
+        "sourceIds": [
+         "MUS-854"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "interpretiveLink": false,
+        "sourceEvidence_ar": "«خير يوم طلعت عليه الشمس يوم الجمعة».",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "khutbah-meaning-value",
+        "dimension": "value",
+        "text_ar": "يوازن الإسلام بين العبادة والعمل. يدعو القرآن إلى ترك البيع عند النداء ﴿ذلكم خير لكم﴾، ثم يقول: ﴿فإذا قضيت الصلاة فانتشروا في الأرض وابتغوا من فضل الله﴾.",
+        "text_en": "Islam balances worship and work. The Quran asks believers to leave trade when the call is made, “that is best for you,” then says: “Once the prayer is over, disperse throughout the land and seek the bounty of God.”",
+        "sourceIds": [
+         "QUR-62-9",
+         "QUR-62-10"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "interpretiveLink": false,
+        "sourceEvidence_ar": "«إذا نودي للصلاة من يوم الجمعة فاسعوا إلى ذكر الله». ﴿فإذا قضيت الصلاة فانتشروا في الأرض وابتغوا من فضل الله﴾.",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       },
+       {
+        "claimId": "khutbah-meaning-educational",
+        "dimension": "educational",
+        "text_ar": "تعلّم الخطبة أدب الإنصات. يُطلب من الحاضر أن يصمت والإمام يخطب، حتى عن قول «أنصت» لمن بجواره.",
+        "text_en": "The sermon teaches the discipline of listening. Those present stay silent while the imam speaks, even from telling a neighbour “be quiet.”",
+        "sourceIds": [
+         "BUK-934"
+        ],
+        "contentType": "religious",
+        "origin": "batch1-meaning",
+        "reviewStatus": "approved",
+        "reviewerNote": "",
+        "interpretiveLink": false,
+        "sourceEvidence_ar": "«إذا قلت لصاحبك يوم الجمعة أنصت والإمام يخطب فقد لغوت».",
+        "decisionReason_ar": "مطابقة.",
+        "review": {
+         "type": "ai_source_verification",
+         "by": "Claude (AI model)",
+         "date": "2026-10-06"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "recognitionOnly": [
+  {
+   "id": "quran-recitation-audio",
+   "name_ar": "تلاوة مسموعة",
+   "name_en": "Recited Quran audio",
+   "modality": "sound",
+   "cues_ar": [
+    "ترتيل متصل",
+    "من سماعة متجر أو مذياع سيارة",
+    "مدة طويلة"
+   ],
+   "cues_en": [
+    "continuous reciting",
+    "from a shop speaker or car radio",
+    "long duration"
+   ],
+   "note_ar": "يرجَّح الترتيل ولا يُنسب إلى القرآن دون نص منسوخ يُطابَق."
+  },
+  {
+   "id": "mosque-lesson",
+   "name_ar": "درس في المسجد",
+   "name_en": "A lesson in the mosque",
+   "modality": "sound-visual",
+   "cues_ar": [
+    "متحدث جالس",
+    "مجموعة صغيرة جالسة",
+    "غير ظهر الجمعة"
+   ],
+   "cues_en": [
+    "seated speaker",
+    "small seated group",
+    "not Friday noon"
+   ],
+   "note_ar": ""
+  },
+  {
+   "id": "eid-takbir",
+   "name_ar": "تكبيرات العيد",
+   "name_en": "Eid takbir",
+   "modality": "sound",
+   "cues_ar": [
+    "ترديد جماعي متصل",
+    "صباح باكر",
+    "ملابس جديدة"
+   ],
+   "cues_en": [
+    "continuous group chanting",
+    "early morning",
+    "new clothes"
+   ],
+   "note_ar": ""
+  },
+  {
+   "id": "talbiyah",
+   "name_ar": "التلبية",
+   "name_en": "Talbiyah",
+   "modality": "sound-visual",
+   "cues_ar": [
+    "ترديد جماعي أثناء المشي",
+    "لباس أبيض غير مخيط"
+   ],
+   "cues_en": [
+    "group chanting while walking",
+    "wrapped in white cloth"
+   ],
+   "note_ar": ""
+  }
+ ],
+ "testCases": [
+  {
+   "id": 101,
+   "moment": "congregational-prayer",
+   "language": "ar",
+   "kind_ar": "مطابقة",
+   "description": "في المطار رأيت رجالًا يقفون كتفًا إلى كتف في صف ورجل أمامهم، ثم انحنوا كلهم في لحظة واحدة.",
+   "facts_ar": "مصلى مفتوح في صالة المطار. نحو ثمانية أشخاص. سجدوا بعد الانحناء. دقائق قليلة. لا موسيقى.",
+   "responsePolicy_ar": "اقتراح صلاة الجماعة: موافقة. غير ذلك: «لا أعرف».",
+   "acceptableDecision_ar": "ترجيح صلاة الجماعة بصيغة «قد يكون» دون سؤال، ثم الشرح المعتمد إن وُجد، وإلا توقف no_content مع البطاقة.",
+   "errorToAvoid_ar": "اقتراح الأذان، أو طرح سؤال عن الصوت.",
+   "review": "بانتظار المراجعة العلمية"
+  },
+  {
+   "id": 102,
+   "moment": "congregational-prayer",
+   "language": "en",
+   "kind_ar": "قريبة مخالفة",
+   "description": "In a park at sunrise, a group stood in rows and bent forward together, following a woman at the front.",
+   "facts_ar": "حصة تمارين في حديقة. موسيقى هادئة من سماعة. سجادات تمرين. استمرت نحو ساعة.",
+   "responsePolicy_ar": "اقتراح صلاة: رفض مع معلومة «كانت هناك موسيقى وسجادات تمرين». غير ذلك: «لا أعرف».",
+   "acceptableDecision_ar": "لا تُرجَّح صلاة الجماعة بعد ظهور القرينة المخالفة. توقف out_of_scope.",
+   "errorToAvoid_ar": "ترجيح صلاة الجماعة من الصفوف والانحناء وحدهما دون استيضاح.",
+   "review": "بانتظار المراجعة العلمية"
+  },
+  {
+   "id": 103,
+   "moment": "wudu",
+   "language": "en",
+   "kind_ar": "مطابقة",
+   "description": "Next to the prayer room in the mall, a man was washing his arms up to the elbows and then his feet in a low sink.",
+   "facts_ar": "مغاسل منخفضة بجانب المصلى. غسل وجهه أيضًا. دخل المصلى بعدها حافيًا.",
+   "responsePolicy_ar": "اقتراح الوضوء أو غسل قبل الصلاة: موافقة. غير ذلك: «لا أعرف».",
+   "acceptableDecision_ar": "ترجيح الوضوء بصيغة «قد يكون» دون سؤال، ثم الشرح المعتمد إن وُجد، وإلا توقف no_content مع البطاقة.",
+   "errorToAvoid_ar": "طرح سؤال عن الصوت، أو التوقف out_of_scope.",
+   "review": "بانتظار المراجعة العلمية"
+  },
+  {
+   "id": 104,
+   "moment": "wudu",
+   "language": "ar",
+   "kind_ar": "قريبة مخالفة",
+   "description": "رأيت رجلًا يغسل يديه ووجهه في مغسلة المطعم قبل الأكل.",
+   "facts_ar": "مغسلة داخل مطعم. غسل اليدين والوجه فقط. جلس بعدها إلى المائدة.",
+   "responsePolicy_ar": "اقتراح الوضوء: عدم تأكد. غير ذلك: «لا أعرف».",
+   "acceptableDecision_ar": "لا يُرجَّح الوضوء. توقف out_of_scope أو insufficient_evidence دون تسمية.",
+   "errorToAvoid_ar": "ترجيح الوضوء من غسل اليدين والوجه وحده.",
+   "review": "بانتظار المراجعة العلمية"
+  },
+  {
+   "id": 105,
+   "moment": "iqamah",
+   "language": "ar",
+   "kind_ar": "مطابقة",
+   "description": "كنت داخل المسجد زائرًا والناس جالسون، ثم قال رجل عبارات سريعة بصوت مرتفع فقام الجميع واصطفوا.",
+   "facts_ar": "بعد النداء الأول بنحو عشر دقائق. أقل من دقيقة. بدأت الصلاة بعدها مباشرة. لا يتذكر كلمات.",
+   "responsePolicy_ar": "اقتراح الإقامة أو نداء ثانٍ: موافقة. اقتراح الأذان: رفض مع معلومة «كان نداء أقصر بعد النداء الأول».",
+   "acceptableDecision_ar": "ترجيح الإقامة بصيغة «قد يكون» بسؤال واحد على الأكثر، ثم الشرح المعتمد إن وُجد، وإلا توقف no_content مع البطاقة.",
+   "errorToAvoid_ar": "شرحها بوصفها الأذان.",
+   "review": "بانتظار المراجعة العلمية"
+  },
+  {
+   "id": 106,
+   "moment": "iqamah",
+   "language": "en",
+   "kind_ar": "قريبة مخالفة",
+   "description": "I heard a short announcement from the mosque loudspeaker in the afternoon, spoken in a normal voice, not melodic.",
+   "facts_ar": "نحو عشرين ثانية. كلام عادي. لم يسبقه نداء. لم يتحرك أحد بعده.",
+   "responsePolicy_ar": "أي اقتراح: عدم تأكد.",
+   "acceptableDecision_ar": "لا تُرجَّح الإقامة ولا الأذان. توقف insufficient_evidence مع البطاقة دون عرض مثال.",
+   "errorToAvoid_ar": "ترجيح الإقامة لمجرد قِصر النداء.",
+   "review": "بانتظار المراجعة العلمية"
+  },
+  {
+   "id": 107,
+   "moment": "khutbah",
+   "language": "en",
+   "kind_ar": "مطابقة",
+   "description": "On Friday around noon the mosque near my hotel was full, and a man stood on raised steps giving a long speech while everyone sat and listened.",
+   "facts_ar": "نحو عشرين دقيقة. عبر المكبرات. جلس المتحدث لحظة ثم قام. صلّوا بعدها في صفوف.",
+   "responsePolicy_ar": "اقتراح خطبة الجمعة: موافقة. اقتراح الأذان: رفض مع معلومة «كان حديثًا طويلًا».",
+   "acceptableDecision_ar": "ترجيح خطبة الجمعة بصيغة «قد يكون» دون سؤال، ثم الشرح المعتمد إن وُجد، وإلا توقف no_content مع البطاقة.",
+   "errorToAvoid_ar": "اقتراح الأذان، أو سؤال عن اليوم وهو مذكور في الوصف.",
+   "review": "بانتظار المراجعة العلمية"
+  },
+  {
+   "id": 108,
+   "moment": "khutbah",
+   "language": "ar",
+   "kind_ar": "قريبة مخالفة",
+   "description": "مساء الثلاثاء سمعت من المسجد رجلًا يتحدث بهدوء لنحو نصف ساعة.",
+   "facts_ar": "مجموعة صغيرة جالسة. المتحدث جالس وأمامه كتاب. لا صفوف ولا صلاة بعده مباشرة.",
+   "responsePolicy_ar": "اقتراح خطبة الجمعة: رفض مع معلومة «كان مساء الثلاثاء». اقتراح درس: «لا أعرف».",
+   "acceptableDecision_ar": "لا تُرجَّح خطبة الجمعة. يُفهم المشهد حديثًا أو درسًا، ثم توقف no_content مع البطاقة.",
+   "errorToAvoid_ar": "ترجيح خطبة الجمعة من طول الحديث ومصدره.",
+   "review": "بانتظار المراجعة العلمية"
+  }
+ ],
+ "displayGuidance": {
+  "front": "Show the 'meaning' branch on the face of each moment card, grouped as spiritual / value / educational, with quoted text in the source wording.",
+  "sources": "Book names and hadith numbers appear only inside a collapsed 'للمزيد / Learn more' section.",
+  "labels": {
+   "spiritual": {
+    "ar": "البعد الروحي",
+    "en": "Spiritual"
+   },
+   "value": {
+    "ar": "البعد القيمي",
+    "en": "Values"
+   },
+   "educational": {
+    "ar": "البعد التربوي",
+    "en": "Character"
+   }
+  },
+  "interpretiveLink": "When true, the quoted text is verified but its link to the scene is editorial wording. Keep the quote verbatim."
+ }
 }

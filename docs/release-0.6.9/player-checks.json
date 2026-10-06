@@ -1,0 +1,52 @@
+{
+  "version": "0.6.9",
+  "at": "2026-10-06T15:05:16.957Z",
+  "kind": "Controlled component/media event integration and real MP3 decoding; not browser sound-output verification",
+  "checks": [
+    {
+      "name": "MP3 decodes and duration matches the timeline",
+      "pass": true
+    },
+    {
+      "name": "15 chronological cues preserve the seven approved phrases and all repetitions",
+      "pass": true
+    },
+    {
+      "name": "Starts real play operation synchronously from the user action; no autoplay on mount",
+      "pass": true
+    },
+    {
+      "name": "Media time drives highlights and repeat counter; tapping a line seeks the recording",
+      "pass": true
+    },
+    {
+      "name": "Pause, scrub, next/previous and replay use the audio clock",
+      "pass": true
+    },
+    {
+      "name": "Closing pauses audio and ignores completion of an older play promise",
+      "pass": true
+    },
+    {
+      "name": "Autoplay denial shows a recoverable message and retries on click",
+      "pass": true
+    },
+    {
+      "name": "Arabic words and supplied Arabic explanation remain verbatim; English translation accompanies each line",
+      "pass": true
+    },
+    {
+      "name": "Missing or rejected phrase blocks playback instead of inventing content",
+      "pass": true
+    },
+    {
+      "name": "Religious claim file remains byte-identical",
+      "pass": true
+    }
+  ],
+  "summary": {
+    "checks": 10,
+    "passed": 10,
+    "failed": 0
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "version": "0.6.4",
+  "at": "2026-10-06T12:29:21.396Z",
+  "kind": "Deterministic content, rendered markup, retrieval and mocked API integration; not live model inference or browser screenshots",
+  "checks": [
+    {
+      "name": "Owner upload retained byte for byte",
+      "pass": true
+    },
+    {
+      "name": "Exactly 42 of 44 claims eligible, including 15 meaning claims",
+      "pass": true
+    },
+    {
+      "name": "Excluded claims absent from public and review payloads and retrieval",
+      "pass": true
+    },
+    {
+      "name": "Old notes never change eligibility; internal adjudication notes not exposed",
+      "pass": true
+    },
+    {
+      "name": "Original claim text and reviewStatus preserved",
+      "pass": true
+    },
+    {
+      "name": "Source gate rejects invented IDs, excluded claims and unknown references",
+      "pass": true
+    },
+    {
+      "name": "Every claim and quotation survives formatting verbatim in both languages",
+      "pass": true
+    },
+    {
+      "name": "adhan meaning renders three supplied dimensions and collapsed sources (ar)",
+      "pass": true
+    },
+    {
+      "name": "iqamah meaning renders three supplied dimensions and collapsed sources (ar)",
+      "pass": true
+    },
+    {
+      "name": "congregational-prayer meaning renders three supplied dimensions and collapsed sources (ar)",
+      "pass": true
+    },
+    {
+      "name": "wudu meaning renders three supplied dimensions and collapsed sources (ar)",
+      "pass": true
+    },
+    {
+      "name": "khutbah meaning renders three supplied dimensions and collapsed sources (ar)",
+      "pass": true
+    },
+    {
+      "name": "adhan meaning renders three supplied dimensions and collapsed sources (en)",
+      "pass": true
+    },
+    {
+      "name": "iqamah meaning renders three supplied dimensions and collapsed sources (en)",
+      "pass": true
+    },
+    {
+      "name": "congregational-prayer meaning renders three supplied dimensions and collapsed sources (en)",
+      "pass": true
+    },
+    {
+      "name": "wudu meaning renders three supplied dimensions and collapsed sources (en)",
+      "pass": true
+    },
+    {
+      "name": "khutbah meaning renders three supplied dimensions and collapsed sources (en)",
+      "pass": true
+    },
+    {
+      "name": "Source references and badge occur only inside collapsed details",
+      "pass": true
+    },
+    {
+      "name": "adhan meaning retrieval and exact-text mocked API answer (ar)",
+      "pass": true
+    },
+    {
+      "name": "adhan meaning retrieval and exact-text mocked API answer (en)",
+      "pass": true
+    },
+    {
+      "name": "iqamah meaning retrieval and exact-text mocked API answer (ar)",
+      "pass": true
+    },
+    {
+      "name": "iqamah meaning retrieval and exact-text mocked API answer (en)",
+      "pass": true
+    },
+    {
+      "name": "congregational-prayer meaning retrieval and exact-text mocked API answer (ar)",
+      "pass": true
+    },
+    {
+      "name": "congregational-prayer meaning retrieval and exact-text mocked API answer (en)",
+      "pass": true
+    },
+    {
+      "name": "wudu meaning retrieval and exact-text mocked API answer (ar)",
+      "pass": true
+    },
+    {
+      "name": "wudu meaning retrieval and exact-text mocked API answer (en)",
+      "pass": true
+    },
+    {
+      "name": "khutbah meaning retrieval and exact-text mocked API answer (ar)",
+      "pass": true
+    },
+    {
+      "name": "khutbah meaning retrieval and exact-text mocked API answer (en)",
+      "pass": true
+    },
+    {
+      "name": "Explicit meaning branches put all three new claims first",
+      "pass": true
+    },
+    {
+      "name": "Unsupported model selection gives one service error, no fabricated answer",
+      "pass": true
+    },
+    {
+      "name": "Adhan order, repetitions and distinct journey claims unchanged",
+      "pass": true
+    },
+    {
+      "name": "Discovery, model routes, prompts and refusal gates unchanged",
+      "pass": true
+    },
+    {
+      "name": "All supplied recognition test cases remain unchanged",
+      "pass": true
+    },
+    {
+      "name": "Recognition case 101 deterministic gate",
+      "pass": true
+    },
+    {
+      "name": "Recognition case 102 deterministic gate",
+      "pass": true
+    },
+    {
+      "name": "Recognition case 103 deterministic gate",
+      "pass": true
+    },
+    {
+      "name": "Recognition case 104 deterministic gate",
+      "pass": true
+    },
+    {
+      "name": "Recognition case 105 deterministic gate",
+      "pass": true
+    },
+    {
+      "name": "Recognition case 106 deterministic gate",
+      "pass": true
+    },
+    {
+      "name": "Recognition case 107 deterministic gate",
+      "pass": true
+    },
+    {
+      "name": "Recognition case 108 deterministic gate",
+      "pass": true
+    },
+    {
+      "name": "Original 20-case recorded turns still pass unchanged boundary rules",
+      "pass": true
+    }
+  ],
+  "summary": {
+    "checks": 42,
+    "passed": 42,
+    "failed": 0,
+    "liveModelRun": false,
+    "browserScreenshots": false
+  }
+}

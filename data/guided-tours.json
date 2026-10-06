@@ -1,0 +1,417 @@
+{
+  "schemaVersion": 1,
+  "prototype": true,
+  "sourceCheckedAt": "2026-10-06",
+  "tours": [
+    {
+      "id": "riyadh-museum",
+      "city": "riyadh",
+      "category": "culture",
+      "duration": 90,
+      "title": {
+        "ar": "نافذة على الحضارة الإسلامية",
+        "en": "A window into Islamic civilization"
+      },
+      "place": {
+        "ar": "المتحف الوطني السعودي",
+        "en": "Saudi National Museum"
+      },
+      "description": {
+        "ar": "جولة بين المعروضات، تليها مساحة لأسئلتك مع المرشد.",
+        "en": "Explore the exhibits, then make time for your questions with the guide."
+      },
+      "specialty": {
+        "ar": "الثقافة والحضارة الإسلامية",
+        "en": "Islamic culture and civilization"
+      },
+      "sourceUrl": "https://engage.moc.gov.sa/national_museum/?lang=en",
+      "meeting": {
+        "ar": "عند المدخل الرئيسي للموقع",
+        "en": "At the main entrance to the venue"
+      },
+      "itinerary": [
+        {
+          "ar": "لقاء المرشد والتعارف",
+          "en": "Meet your guide"
+        },
+        {
+          "ar": "استكشاف المكان والمعروضات",
+          "en": "Explore the place and its exhibits"
+        },
+        {
+          "ar": "مساحة لأسئلتك والحوار",
+          "en": "Time for your questions and conversation"
+        }
+      ]
+    },
+    {
+      "id": "riyadh-diriyah",
+      "city": "riyadh",
+      "category": "history",
+      "duration": 90,
+      "title": {
+        "ar": "الدرعية: المكان وحكايته",
+        "en": "Diriyah: a place and its stories"
+      },
+      "place": {
+        "ar": "الدرعية · حي الطريف",
+        "en": "Diriyah · At-Turaif"
+      },
+      "description": {
+        "ar": "مسار مشي للتأمل في العمارة والتراث، مع حديث عن سياق المكان.",
+        "en": "A walking route through architecture and heritage, with a conversation about the setting."
+      },
+      "specialty": {
+        "ar": "التاريخ والتراث الإسلامي",
+        "en": "Islamic history and heritage"
+      },
+      "sourceUrl": "https://www.diriyah.sa/en/history-and-culture",
+      "meeting": {
+        "ar": "عند المدخل الرئيسي للموقع",
+        "en": "At the main entrance to the venue"
+      },
+      "itinerary": [
+        {
+          "ar": "لقاء المرشد والتعارف",
+          "en": "Meet your guide"
+        },
+        {
+          "ar": "مشي بين المعالم والتوقف للتأمل",
+          "en": "Walk between landmarks and pause to look closer"
+        },
+        {
+          "ar": "مساحة لأسئلتك والحوار",
+          "en": "Time for your questions and conversation"
+        }
+      ]
+    },
+    {
+      "id": "jeddah-balad",
+      "city": "jeddah",
+      "category": "history",
+      "duration": 75,
+      "title": {
+        "ar": "في أزقة جدة التاريخية",
+        "en": "Through historic Jeddah"
+      },
+      "place": {
+        "ar": "جدة التاريخية · البلد",
+        "en": "Historic Jeddah · Al-Balad"
+      },
+      "description": {
+        "ar": "جولة مقترحة بين الأزقة والبيوت القديمة، مع وقت للتوقف والسؤال.",
+        "en": "A proposed walk among old streets and houses, with time to pause and ask questions."
+      },
+      "specialty": {
+        "ar": "التاريخ الإسلامي وتراث الحجاز",
+        "en": "Islamic history and Hijazi heritage"
+      },
+      "sourceUrl": "https://www.visitsaudi.com/content/sauditourism/en/destinations/jeddah/attractions/summer-night-adventures-in-al-balad.html",
+      "meeting": {
+        "ar": "عند المدخل الرئيسي للموقع",
+        "en": "At the main entrance to the venue"
+      },
+      "itinerary": [
+        {
+          "ar": "لقاء المرشد والتعارف",
+          "en": "Meet your guide"
+        },
+        {
+          "ar": "مشي بين المعالم والتوقف للتأمل",
+          "en": "Walk between landmarks and pause to look closer"
+        },
+        {
+          "ar": "مساحة لأسئلتك والحوار",
+          "en": "Time for your questions and conversation"
+        }
+      ]
+    },
+    {
+      "id": "jeddah-tayebat",
+      "city": "jeddah",
+      "category": "culture",
+      "duration": 90,
+      "title": {
+        "ar": "حكايات من متحف الطيبات",
+        "en": "Stories at Al Tayebat Museum"
+      },
+      "place": {
+        "ar": "متحف الطيبات · جدة",
+        "en": "Al Tayebat Museum · Jeddah"
+      },
+      "description": {
+        "ar": "لقاء مع التراث عبر المعروضات، وحوار يربط ما تراه بما يثير فضولك.",
+        "en": "Encounter heritage through museum exhibits and discuss what catches your curiosity."
+      },
+      "specialty": {
+        "ar": "الثقافة الإسلامية والتراث المحلي",
+        "en": "Islamic culture and local heritage"
+      },
+      "sourceUrl": "https://book.visitsaudi.com/product/0e1be3ed-61fa-452f-a2eb-e2a8d66e5612?locale=en",
+      "meeting": {
+        "ar": "عند المدخل الرئيسي للموقع",
+        "en": "At the main entrance to the venue"
+      },
+      "itinerary": [
+        {
+          "ar": "لقاء المرشد والتعارف",
+          "en": "Meet your guide"
+        },
+        {
+          "ar": "استكشاف المكان والمعروضات",
+          "en": "Explore the place and its exhibits"
+        },
+        {
+          "ar": "مساحة لأسئلتك والحوار",
+          "en": "Time for your questions and conversation"
+        }
+      ]
+    },
+    {
+      "id": "makkah-hira",
+      "city": "makkah",
+      "category": "faith",
+      "duration": 75,
+      "title": {
+        "ar": "حراء: زيارة وحوار",
+        "en": "Hira: a visit and a conversation"
+      },
+      "place": {
+        "ar": "حي حراء الثقافي · مكة المكرمة",
+        "en": "Hira Cultural District · Makkah"
+      },
+      "description": {
+        "ar": "تجربة مقترحة في الحي الثقافي، تجمع الاستكشاف وطرح الأسئلة على المرشد.",
+        "en": "A proposed experience in the cultural district combining exploration and questions for your guide."
+      },
+      "specialty": {
+        "ar": "السيرة والثقافة الإسلامية",
+        "en": "The Prophet’s biography and Islamic culture"
+      },
+      "sourceUrl": "https://www.visitsaudi.com/en/destinations/makkah/attractions/hira-cultural-district-tour",
+      "meeting": {
+        "ar": "عند المدخل الرئيسي للموقع",
+        "en": "At the main entrance to the venue"
+      },
+      "itinerary": [
+        {
+          "ar": "لقاء المرشد والتعارف",
+          "en": "Meet your guide"
+        },
+        {
+          "ar": "استكشاف المكان والمعروضات",
+          "en": "Explore the place and its exhibits"
+        },
+        {
+          "ar": "مساحة لأسئلتك والحوار",
+          "en": "Time for your questions and conversation"
+        }
+      ]
+    },
+    {
+      "id": "makkah-manuscripts",
+      "city": "makkah",
+      "category": "culture",
+      "duration": 60,
+      "title": {
+        "ar": "بين الخط والمخطوط",
+        "en": "Calligraphy and manuscripts"
+      },
+      "place": {
+        "ar": "متحف القرآن الكريم · حي حراء",
+        "en": "Qur’an Museum · Hira Cultural District"
+      },
+      "description": {
+        "ar": "تأمل في الخط والمعروضات، ثم جلسة أسئلة قصيرة مع المرشد.",
+        "en": "Look closely at calligraphy and exhibits, followed by a short conversation with your guide."
+      },
+      "specialty": {
+        "ar": "القرآن والثقافة الإسلامية",
+        "en": "The Qur’an and Islamic culture"
+      },
+      "sourceUrl": "https://www.visitsaudi.com/en/destinations/makkah/attractions/hira-cultural-district-tour",
+      "meeting": {
+        "ar": "عند المدخل الرئيسي للموقع",
+        "en": "At the main entrance to the venue"
+      },
+      "itinerary": [
+        {
+          "ar": "لقاء المرشد والتعارف",
+          "en": "Meet your guide"
+        },
+        {
+          "ar": "استكشاف المكان والمعروضات",
+          "en": "Explore the place and its exhibits"
+        },
+        {
+          "ar": "مساحة لأسئلتك والحوار",
+          "en": "Time for your questions and conversation"
+        }
+      ]
+    },
+    {
+      "id": "madinah-dar",
+      "city": "madinah",
+      "category": "history",
+      "duration": 75,
+      "title": {
+        "ar": "المدينة من خلال حكاياتها",
+        "en": "Madinah through its stories"
+      },
+      "place": {
+        "ar": "متحف دار المدينة",
+        "en": "Dar Al-Madinah Museum"
+      },
+      "description": {
+        "ar": "جولة مقترحة في المتحف للتعرف على المكان من خلال معروضاته.",
+        "en": "A proposed museum tour to explore the city through its exhibits."
+      },
+      "specialty": {
+        "ar": "السيرة وتاريخ المدينة",
+        "en": "The Prophet’s biography and Madinah’s history"
+      },
+      "sourceUrl": "https://book.visitsaudi.com/product/dce27cbe-026f-4282-9f46-508464ebca3e?locale=en",
+      "meeting": {
+        "ar": "عند المدخل الرئيسي للموقع",
+        "en": "At the main entrance to the venue"
+      },
+      "itinerary": [
+        {
+          "ar": "لقاء المرشد والتعارف",
+          "en": "Meet your guide"
+        },
+        {
+          "ar": "استكشاف المكان والمعروضات",
+          "en": "Explore the place and its exhibits"
+        },
+        {
+          "ar": "مساحة لأسئلتك والحوار",
+          "en": "Time for your questions and conversation"
+        }
+      ]
+    },
+    {
+      "id": "madinah-seerah",
+      "city": "madinah",
+      "category": "faith",
+      "duration": 90,
+      "title": {
+        "ar": "نافذة على السيرة",
+        "en": "A window into the Prophet’s life"
+      },
+      "place": {
+        "ar": "المتحف الدولي للسيرة النبوية والحضارة الإسلامية",
+        "en": "International Museum of the Prophet’s Biography and Islamic Civilization"
+      },
+      "description": {
+        "ar": "مسار بين المعروضات يختتم بحوار مفتوح حول أسئلة الزوار.",
+        "en": "An exhibition route ending with an open conversation about visitors’ questions."
+      },
+      "specialty": {
+        "ar": "السيرة النبوية والحضارة الإسلامية",
+        "en": "The Prophet’s biography and Islamic civilization"
+      },
+      "sourceUrl": "https://book.visitsaudi.com/product/dce27cbe-026f-4282-9f46-508464ebca3e?locale=en",
+      "meeting": {
+        "ar": "عند المدخل الرئيسي للموقع",
+        "en": "At the main entrance to the venue"
+      },
+      "itinerary": [
+        {
+          "ar": "لقاء المرشد والتعارف",
+          "en": "Meet your guide"
+        },
+        {
+          "ar": "استكشاف المكان والمعروضات",
+          "en": "Explore the place and its exhibits"
+        },
+        {
+          "ar": "مساحة لأسئلتك والحوار",
+          "en": "Time for your questions and conversation"
+        }
+      ]
+    },
+    {
+      "id": "dammam-village",
+      "city": "dammam",
+      "category": "history",
+      "duration": 60,
+      "title": {
+        "ar": "ذاكرة المكان والتراث",
+        "en": "Local heritage, up close"
+      },
+      "place": {
+        "ar": "القرية الشعبية · الدمام",
+        "en": "Heritage Village · Dammam"
+      },
+      "description": {
+        "ar": "جولة في المعروضات التراثية وحوار حول تفاصيل الحياة والثقافة.",
+        "en": "Explore heritage displays and talk about the details of everyday life and culture."
+      },
+      "specialty": {
+        "ar": "الثقافة الإسلامية والتراث المحلي",
+        "en": "Islamic culture and local heritage"
+      },
+      "sourceUrl": "https://www.visitsaudi.com/en/eastern-province/attractions/heritage-village-in-dammam",
+      "meeting": {
+        "ar": "عند المدخل الرئيسي للموقع",
+        "en": "At the main entrance to the venue"
+      },
+      "itinerary": [
+        {
+          "ar": "لقاء المرشد والتعارف",
+          "en": "Meet your guide"
+        },
+        {
+          "ar": "استكشاف المكان والمعروضات",
+          "en": "Explore the place and its exhibits"
+        },
+        {
+          "ar": "مساحة لأسئلتك والحوار",
+          "en": "Time for your questions and conversation"
+        }
+      ]
+    },
+    {
+      "id": "dammam-ithra",
+      "city": "dammam",
+      "category": "culture",
+      "duration": 90,
+      "title": {
+        "ar": "إثراء: فن وثقافة وحوار",
+        "en": "Ithra: art, culture and conversation"
+      },
+      "place": {
+        "ar": "مركز إثراء · الظهران، قرب الدمام",
+        "en": "Ithra · Dhahran, near Dammam"
+      },
+      "description": {
+        "ar": "زيارة مقترحة تستكشف الفن والثقافة، مع مساحة للحوار وطرح الأسئلة.",
+        "en": "A proposed visit exploring art and culture, with space for conversation and questions."
+      },
+      "specialty": {
+        "ar": "الفنون والثقافة الإسلامية",
+        "en": "Islamic art and culture"
+      },
+      "sourceUrl": "https://www.visitsaudi.com/en/destinations/eastern-province/attractions/ithra",
+      "meeting": {
+        "ar": "عند المدخل الرئيسي للموقع",
+        "en": "At the main entrance to the venue"
+      },
+      "itinerary": [
+        {
+          "ar": "لقاء المرشد والتعارف",
+          "en": "Meet your guide"
+        },
+        {
+          "ar": "استكشاف المكان والمعروضات",
+          "en": "Explore the place and its exhibits"
+        },
+        {
+          "ar": "مساحة لأسئلتك والحوار",
+          "en": "Time for your questions and conversation"
+        }
+      ]
+    }
+  ]
+}

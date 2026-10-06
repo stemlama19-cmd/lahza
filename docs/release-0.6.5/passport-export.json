@@ -1,0 +1,23 @@
+{
+  "version": "0.6.5",
+  "at": "2026-10-06T13:06:56.455Z",
+  "scope": "Actual unchanged exportPassport function executed with native Canvas and a minimal document adapter; DejaVu Sans registered under the Tajawal family only in this test adapter. Not browser screenshots or a browser download/share test.",
+  "results": [
+    {
+      "language": "ar",
+      "stamps": 6,
+      "width": 1080,
+      "height": 1350,
+      "bytes": 144875,
+      "pass": true
+    },
+    {
+      "language": "en",
+      "stamps": 6,
+      "width": 1080,
+      "height": 1350,
+      "bytes": 162844,
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "version": "0.6.10",
+  "at": "2026-10-06T15:30:58.534Z",
+  "scope": "Controlled component interactions, native Canvas export with a substitute test font, and source invariants. Not a browser walkthrough, real audio output, or live-model run.",
+  "checks": [
+    {
+      "name": "Upcoming languages show a notice without switching language; Arabic and English remain selectable",
+      "pass": true
+    },
+    {
+      "name": "ar: optional before/after flow persists exact text, approved meaning, learning stamp, souvenir and reopened reflection",
+      "pass": true
+    },
+    {
+      "name": "en: optional before/after flow persists exact text, approved meaning, learning stamp, souvenir and reopened reflection",
+      "pass": true
+    },
+    {
+      "name": "Skipping before reflection still starts listening synchronously without saving an answer",
+      "pass": true
+    },
+    {
+      "name": "Storage failure retains visitor text and allows retry without a false save",
+      "pass": true
+    },
+    {
+      "name": "Missing approved meaning and review mode cannot award a learning stamp",
+      "pass": true
+    },
+    {
+      "name": "Reset closes reflection and clears draft from the rendered flow",
+      "pass": true
+    },
+    {
+      "name": "Malformed local records are ignored and updates preserve one card per moment/city",
+      "pass": true
+    },
+    {
+      "name": "ar: actual PNG exporter handles both reflections, long text and a learning stamp",
+      "pass": true
+    },
+    {
+      "name": "en: actual PNG exporter handles both reflections, long text and a learning stamp",
+      "pass": true
+    },
+    {
+      "name": "Religious data and model implementation remain unchanged",
+      "pass": true
+    },
+    {
+      "name": "App wires curiosity entries, reflection persistence, reset, direct judge and both language selectors",
+      "pass": true
+    }
+  ],
+  "summary": {
+    "checks": 12,
+    "passed": 12,
+    "failed": 0
+  }
+}

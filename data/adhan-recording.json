@@ -1,0 +1,110 @@
+{
+  "src": "/audio/adhan-haram-ali-mulla.mp3",
+  "playbackUrl": "/api/adhan-audio?v=0.6.9",
+  "duration": 198.164898,
+  "title_ar": "أذان الحرم المكي · علي بن أحمد ملا",
+  "title_en": "Makkah Haram adhan · Ali ibn Ahmad Mulla",
+  "creator": "Ali ibn Ahmad Mulla · علي بن أحمد ملا",
+  "sourceUrl": "https://github.com/Kiwifu/adhan-mp3/blob/b9180a2bb769f74cff8e378ef2cc7aaf8db5cd5b/Ali_Ibn_Ahmad_Mala_HQ.mp3",
+  "license": "Source availability",
+  "licenseUrl": "https://github.com/Kiwifu/adhan-mp3",
+  "changes_ar": "الملف كما أتاحه المصدر دون تعديل الصوت أو سرعته. توقيتات إبراز العبارات تقريبية.",
+  "changes_en": "The audio file is unchanged from its source, including its speed. Phrase highlight timings are approximate.",
+  "originalSha256": "2eeda3f5d3677d53ed8fae7ec3d51e066d0be60a6e0f4d4bdd7aa739afb9ac0e",
+  "mp3Sha256": "2eeda3f5d3677d53ed8fae7ec3d51e066d0be60a6e0f4d4bdd7aa739afb9ac0e",
+  "cues": [
+    {
+      "claimId": "adhan-line-1",
+      "repetition": 1,
+      "start": 0,
+      "end": 6.72
+    },
+    {
+      "claimId": "adhan-line-1",
+      "repetition": 2,
+      "start": 6.72,
+      "end": 17.52
+    },
+    {
+      "claimId": "adhan-line-1",
+      "repetition": 3,
+      "start": 17.52,
+      "end": 24.28
+    },
+    {
+      "claimId": "adhan-line-1",
+      "repetition": 4,
+      "start": 24.28,
+      "end": 35.34
+    },
+    {
+      "claimId": "adhan-line-2",
+      "repetition": 1,
+      "start": 35.34,
+      "end": 49.86
+    },
+    {
+      "claimId": "adhan-line-2",
+      "repetition": 2,
+      "start": 49.86,
+      "end": 69.8
+    },
+    {
+      "claimId": "adhan-line-3",
+      "repetition": 1,
+      "start": 69.8,
+      "end": 86.92
+    },
+    {
+      "claimId": "adhan-line-3",
+      "repetition": 2,
+      "start": 86.92,
+      "end": 105.28
+    },
+    {
+      "claimId": "adhan-line-4",
+      "repetition": 1,
+      "start": 105.28,
+      "end": 122.69
+    },
+    {
+      "claimId": "adhan-line-4",
+      "repetition": 2,
+      "start": 122.69,
+      "end": 141.56
+    },
+    {
+      "claimId": "adhan-line-5",
+      "repetition": 1,
+      "start": 141.56,
+      "end": 157.87
+    },
+    {
+      "claimId": "adhan-line-5",
+      "repetition": 2,
+      "start": 157.87,
+      "end": 174.0
+    },
+    {
+      "claimId": "adhan-line-6",
+      "repetition": 1,
+      "start": 174.0,
+      "end": 176.46
+    },
+    {
+      "claimId": "adhan-line-6",
+      "repetition": 2,
+      "start": 176.46,
+      "end": 186.54
+    },
+    {
+      "claimId": "adhan-line-7",
+      "repetition": 1,
+      "start": 186.54,
+      "end": 198.164898
+    }
+  ],
+  "license_ar": "إتاحة المصدر للتطبيقات الإسلامية",
+  "license_en": "Source availability for Islamic apps",
+  "sourceCommit": "b9180a2bb769f74cff8e378ef2cc7aaf8db5cd5b"
+}

@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-06",
+  "city": "Riyadh",
+  "timezone": "Asia/Riyadh",
+  "coordinates": {
+    "latitude": 24.7136,
+    "longitude": 46.6753
+  },
+  "calculation": "adhan 4.4.3 / CalculationMethod.UmmAlQura",
+  "officialSource": "https://www.ummulqura.org.sa/ar/prayer-times/riyadh",
+  "verificationStatus": "official_values_unavailable",
+  "reason": "Official page returned HTTP 500; indexed content is dated 2026-09-15, not 2026-10-06.",
+  "rows": [
+    {
+      "prayer": "fajr",
+      "app": "04:29",
+      "official": null,
+      "differenceMinutes": null
+    },
+    {
+      "prayer": "dhuhr",
+      "app": "11:41",
+      "official": null,
+      "differenceMinutes": null
+    },
+    {
+      "prayer": "asr",
+      "app": "15:03",
+      "official": null,
+      "differenceMinutes": null
+    },
+    {
+      "prayer": "maghrib",
+      "app": "17:35",
+      "official": null,
+      "differenceMinutes": null
+    },
+    {
+      "prayer": "isha",
+      "app": "19:05",
+      "official": null,
+      "differenceMinutes": null
+    }
+  ]
+}

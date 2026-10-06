@@ -1,0 +1,295 @@
+{
+  "release": "0.6.3",
+  "checkedAt": "2026-10-06T10:23:52.564Z",
+  "checks": [
+    {
+      "name": "unchanged: app/api/chat/route.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: app/api/content/route.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: app/api/discovery/route.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: app/api/evaluation/route.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: app/api/health/route.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: app/api/journey/route.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: app/api/moments/route.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: data/moments-batch1.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: data/question-bank.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: data/recognition-patterns.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/agent.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/approved-content.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/approved-topics.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/connector-context.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/connector-contract.mts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/connector-errors.mts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/connector-preview.d.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/connectors.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/content-library.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/conversation-card.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/conversation-log.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/discovery-contract.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/discovery-guard.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/discovery.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/knowledge.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/language-preference.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/library-recognition.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/model-audit.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/moment-library.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/passport-image.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/prayer-clock.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/provider.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged: lib/utils.ts",
+      "passed": true
+    },
+    {
+      "name": "unchanged client async function discover",
+      "passed": true
+    },
+    {
+      "name": "unchanged client async function chat",
+      "passed": true
+    },
+    {
+      "name": "five distinct journey claims in requested order",
+      "passed": true
+    },
+    {
+      "name": "all journey claims are eligible",
+      "passed": true
+    },
+    {
+      "name": "quiz uses the second claim",
+      "passed": true
+    },
+    {
+      "name": "matching uses only the fifth claim",
+      "passed": true
+    },
+    {
+      "name": "seven lines, unchanged order and 15 repetitions",
+      "passed": true
+    },
+    {
+      "name": "three suggestions backed by eligible claims",
+      "passed": true,
+      "details": [
+        "adhan-what",
+        "jamaah-what",
+        "khutbah-what"
+      ]
+    },
+    {
+      "name": "real-time default and two-step entry",
+      "passed": true
+    },
+    {
+      "name": "preview selector follows the main scene",
+      "passed": true
+    },
+    {
+      "name": "booking and ticket views removed",
+      "passed": true
+    },
+    {
+      "name": "visit stamp removed from visible passport",
+      "passed": true
+    },
+    {
+      "name": "reader renders all seven claims",
+      "passed": true
+    },
+    {
+      "name": "exact description",
+      "passed": true
+    },
+    {
+      "name": "interest click persists card and opens it",
+      "passed": true
+    },
+    {
+      "name": "storage failure is visible and never reports success: card",
+      "passed": true
+    },
+    {
+      "name": "storage failure is visible and never reports success: interest",
+      "passed": true
+    },
+    {
+      "name": "sky capture fixture: dawn",
+      "passed": true
+    },
+    {
+      "name": "sky capture fixture: day",
+      "passed": true
+    },
+    {
+      "name": "sky capture fixture: afternoon",
+      "passed": true
+    },
+    {
+      "name": "sky capture fixture: sunset",
+      "passed": true
+    },
+    {
+      "name": "sky capture fixture: night",
+      "passed": true
+    },
+    {
+      "name": "call rings during fajr",
+      "passed": true
+    },
+    {
+      "name": "glow increases towards fajr",
+      "passed": true
+    },
+    {
+      "name": "call rings during dhuhr",
+      "passed": true
+    },
+    {
+      "name": "glow increases towards dhuhr",
+      "passed": true
+    },
+    {
+      "name": "call rings during asr",
+      "passed": true
+    },
+    {
+      "name": "glow increases towards asr",
+      "passed": true
+    },
+    {
+      "name": "call rings during maghrib",
+      "passed": true
+    },
+    {
+      "name": "glow increases towards maghrib",
+      "passed": true
+    },
+    {
+      "name": "call rings during isha",
+      "passed": true
+    },
+    {
+      "name": "glow increases towards isha",
+      "passed": true
+    },
+    {
+      "name": "no automatic reader hides the scene",
+      "passed": true
+    },
+    {
+      "name": "motion has reduced-motion override",
+      "passed": true
+    },
+    {
+      "name": "preview time remains pinned",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "passed": 68,
+    "total": 68
+  },
+  "browserQA": {
+    "status": "blocked",
+    "reason": "Native credential state could not safely resume; separate local renderer installation failed.",
+    "screenshotsCaptured": 0,
+    "measuredAt700px": false
+  },
+  "officialPrayerComparison": "pending: official values for 2026-10-06 unavailable",
+  "liveModelSuiteRerun": false
+}

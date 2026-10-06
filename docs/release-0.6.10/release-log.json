@@ -1,0 +1,171 @@
+{
+  "version": "0.6.10",
+  "at": "2026-10-06T15:34:07.820350+00:00",
+  "changes": [
+    "Curiosity entry points for sound and scene descriptions",
+    "Optional device-local before/after reflections",
+    "Approved meaning after listening with collapsed sources",
+    "PNG souvenir and passport retrieval",
+    "French, Chinese and Urdu visibly planned, not translated"
+  ],
+  "verification": {
+    "typecheck": "passed",
+    "localChecks": 28,
+    "passed": 28,
+    "failed": 0,
+    "browserVisualCheck": "not performed: required browser-control skill unavailable",
+    "freshLiveModelRun": "not performed; original model logic unchanged",
+    "humanListening": "not performed"
+  },
+  "religiousContentSha256": "dd042548837cf9f9afb93e02c7dbbd9555be57284ef81fd3b8532d1487e97664",
+  "reports": [
+    {
+      "version": "0.6.10",
+      "at": "2026-10-06T15:30:58.534Z",
+      "scope": "Controlled component interactions, native Canvas export with a substitute test font, and source invariants. Not a browser walkthrough, real audio output, or live-model run.",
+      "checks": [
+        {
+          "name": "Upcoming languages show a notice without switching language; Arabic and English remain selectable",
+          "pass": true
+        },
+        {
+          "name": "ar: optional before/after flow persists exact text, approved meaning, learning stamp, souvenir and reopened reflection",
+          "pass": true
+        },
+        {
+          "name": "en: optional before/after flow persists exact text, approved meaning, learning stamp, souvenir and reopened reflection",
+          "pass": true
+        },
+        {
+          "name": "Skipping before reflection still starts listening synchronously without saving an answer",
+          "pass": true
+        },
+        {
+          "name": "Storage failure retains visitor text and allows retry without a false save",
+          "pass": true
+        },
+        {
+          "name": "Missing approved meaning and review mode cannot award a learning stamp",
+          "pass": true
+        },
+        {
+          "name": "Reset closes reflection and clears draft from the rendered flow",
+          "pass": true
+        },
+        {
+          "name": "Malformed local records are ignored and updates preserve one card per moment/city",
+          "pass": true
+        },
+        {
+          "name": "ar: actual PNG exporter handles both reflections, long text and a learning stamp",
+          "pass": true
+        },
+        {
+          "name": "en: actual PNG exporter handles both reflections, long text and a learning stamp",
+          "pass": true
+        },
+        {
+          "name": "Religious data and model implementation remain unchanged",
+          "pass": true
+        },
+        {
+          "name": "App wires curiosity entries, reflection persistence, reset, direct judge and both language selectors",
+          "pass": true
+        }
+      ],
+      "summary": {
+        "checks": 12,
+        "passed": 12,
+        "failed": 0
+      }
+    },
+    {
+      "version": "0.6.10",
+      "at": "2026-10-06T15:31:36.843Z",
+      "kind": "Controlled component/media event integration and real MP3 decoding; not browser sound-output verification",
+      "checks": [
+        {
+          "name": "MP3 decodes and duration matches the timeline",
+          "pass": true
+        },
+        {
+          "name": "15 chronological cues preserve the seven approved phrases and all repetitions",
+          "pass": true
+        },
+        {
+          "name": "Starts real play operation synchronously from the user action; no autoplay on mount",
+          "pass": true
+        },
+        {
+          "name": "Media time drives highlights and repeat counter; tapping a line seeks the recording",
+          "pass": true
+        },
+        {
+          "name": "Pause, scrub, next/previous and replay use the audio clock",
+          "pass": true
+        },
+        {
+          "name": "Closing pauses audio and ignores completion of an older play promise",
+          "pass": true
+        },
+        {
+          "name": "Autoplay denial shows a recoverable message and retries on click",
+          "pass": true
+        },
+        {
+          "name": "Arabic words and supplied Arabic explanation remain verbatim; English translation accompanies each line",
+          "pass": true
+        },
+        {
+          "name": "Missing or rejected phrase blocks playback instead of inventing content",
+          "pass": true
+        },
+        {
+          "name": "Religious claim file remains byte-identical",
+          "pass": true
+        },
+        {
+          "name": "End-of-recording prompt opens the meaning flow and pauses audio",
+          "pass": true
+        }
+      ],
+      "summary": {
+        "checks": 11,
+        "passed": 11,
+        "failed": 0
+      }
+    },
+    {
+      "version": "0.6.10",
+      "at": "2026-10-06T15:32:48.844Z",
+      "scope": "Controlled parent-app event integration with child player/flow stubs, local storage and content fixture; not a browser or live model.",
+      "checks": [
+        {
+          "name": "Both curiosity buttons open the matching existing text-description discovery flow",
+          "pass": true
+        },
+        {
+          "name": "Listen entry opens optional reflection; its listen action starts the persistent audio controller",
+          "pass": true
+        },
+        {
+          "name": "Reflection save persists and reload restores exact before/after into the flow",
+          "pass": true
+        },
+        {
+          "name": "App propagates storage failure and clear-data removes reflection records and resets flow",
+          "pass": true
+        },
+        {
+          "name": "Fresh /judge still bypasses onboarding",
+          "pass": true
+        }
+      ],
+      "summary": {
+        "checks": 5,
+        "passed": 5,
+        "failed": 0
+      }
+    }
+  ]
+}

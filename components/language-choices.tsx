@@ -1,0 +1,7 @@
+'use client';
+import {useState} from 'react';
+import {Check} from 'lucide-react';
+export default function LanguageChoices({language,onChange}:{language:'ar'|'en';onChange:(v:'ar'|'en')=>void}){
+ const [notice,setNotice]=useState(false),ar=language==='ar';
+ return <div className="language-choices"><div className="available-languages">{([{id:'ar',name:'العربية',glyph:'ع',hint:'ابدأ بلغتك'},{id:'en',name:'English',glyph:'Aa',hint:'Make yourself at home'}] as const).map(l=><button type="button" key={l.id} className={'option language-option '+(language===l.id?'selected':'')} aria-pressed={language===l.id} onClick={()=>{setNotice(false);onChange(l.id);}}><span className="language-glyph">{l.glyph}</span><span><strong lang={l.id}>{l.name}</strong><small>{l.hint}</small></span>{language===l.id&&<Check size={20}/>}</button>)}</div><div className="planned-languages" aria-label={ar?'لغات قادمة':'Planned languages'}>{[{id:'fr',name:'Français'},{id:'zh',name:'中文'},{id:'ur',name:'اردو'}].map(l=><button type="button" key={l.id} onClick={()=>setNotice(true)}><strong lang={l.id} dir={l.id==='ur'?'rtl':'ltr'}>{l.name}</strong><span>{ar?'قريبًا':'Coming soon'}</span></button>)}</div>{notice&&<p className="language-notice" role="status">{ar?'هذه اللغة ضمن خطة تطوير لَحْظَة. يمكنك الآن متابعة التجربة بالعربية أو الإنجليزية.':'This language is planned for LAHZA. You can explore in Arabic or English now.'}</p>}</div>;
+}

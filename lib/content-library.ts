@@ -1,16 +1,36 @@
 import batch from '../data/moments-batch1.json';
 export type Language='ar'|'en';
-export type Claim={claimId:string;text_ar:string;text_en:string;sourceIds:string[];reviewStatus:string;momentId:string;branchId:string;order?:number;repeat?:number};
+export type Dimension='spiritual'|'value'|'educational';
+export type Claim={claimId:string;text_ar:string;text_en:string;sourceIds:string[];reviewStatus:string;momentId:string;branchId:string;order?:number;repeat?:number;dimension?:Dimension;interpretiveLink?:boolean};
 export const approved=(s:string)=>s==='approved'||s==='approved_with_edits';
-export const claims:Claim[]=batch.moments.flatMap(m=>m.explanation.branches.flatMap(b=>b.claims.map(c=>({claimId:c.claimId,text_ar:c.text_ar,text_en:c.text_en,sourceIds:c.sourceIds,reviewStatus:c.reviewStatus,momentId:m.id,branchId:b.id,...("order" in c?{order:c.order,repeat:c.repeat}:{})}))));
-export const validClaim=(c:Claim)=>approved(c.reviewStatus)&&c.sourceIds.length>0&&c.sourceIds.every(id=>batch.sources.some(s=>s.id===id&&/^https:\/\//.test(s.url)));
-export function visibleClaims(review=false){return claims.filter(c=>validClaim(c)||(review&&c.reviewStatus==='pending'));}
-export function contentPayload(review=false){return {review,version:batch.schemaVersion,moments:batch.moments.map(m=>({id:m.id,name_ar:m.name_ar,name_en:m.name_en,modality:m.modality,branches:m.explanation.branches.map(b=>({id:b.id,title_ar:b.title_ar,title_en:b.title_en,claimIds:b.claims.filter(c=>validClaim({...c,momentId:m.id,branchId:b.id})||(review&&c.reviewStatus==='pending')).map(c=>c.claimId)}))})),claims:visibleClaims(review),sources:batch.sources.map(s=>({id:s.id,title_ar:s.title_ar,title_en:s.title_en,url:s.url})),approvedCount:claims.filter(validClaim).length,pendingCount:claims.filter(c=>c.reviewStatus==='pending').length};}
+export const claims:Claim[]=batch.moments.flatMap(m=>m.explanation.branches.flatMap(b=>b.claims.map(c=>({claimId:c.claimId,text_ar:c.text_ar,text_en:c.text_en,sourceIds:c.sourceIds,reviewStatus:c.reviewStatus,momentId:m.id,branchId:b.id,...("dimension" in c?{dimension:c.dimension as Dimension,interpretiveLink:c.interpretiveLink}:{}),...("order" in c?{order:c.order,repeat:c.repeat}:{})}))));
+export const validClaim=<T extends Pick<Claim,'reviewStatus'|'sourceIds'>>(c:T)=>approved(c.reviewStatus)&&c.sourceIds.length>0&&c.sourceIds.every(id=>batch.sources.some(s=>s.id===id&&/^https:\/\//.test(s.url)));
+export function visibleClaims(review=false){return claims.filter(c=>validClaim(c));}
+export function contentPayload(review=false){return {review,version:batch.schemaVersion,displayGuidance:batch.displayGuidance,moments:batch.moments.map(m=>({id:m.id,name_ar:m.name_ar,name_en:m.name_en,modality:m.modality,branches:m.explanation.branches.map(b=>({id:b.id,title_ar:b.title_ar,title_en:b.title_en,display:"display" in b?b.display:undefined,claimIds:b.claims.filter(c=>validClaim({...c,momentId:m.id,branchId:b.id})).map(c=>c.claimId)}))})),claims:visibleClaims(review),sources:batch.sources.map(s=>({id:s.id,title_ar:s.title_ar,title_en:s.title_en,url:s.url})),approvedCount:claims.filter(validClaim).length,pendingCount:claims.filter(c=>c.reviewStatus==='pending').length};}
 const norm=(s:string)=>s.normalize('NFKD').replace(/[\u064b-\u065f\u0670]/g,'').replace(/[أإآ]/g,'ا').toLowerCase();
 const stopWords=new Set(['what','is','the','why','how','a','of','do','does','to','about','in','ما','هو','هي','في','من','عن','كيف','لماذا','هذا','هذه','هل','ماذا','ان']);
+// Retrieval only: the model still selects IDs and the existing citation gate returns exact supplied text.
+const meaningTerms=/معن|اثر|روح|قيم|ترب|يهم|اهمي|سكين|طمان|راح[ةه]|mean|matter|spiritual|value|character|benefit|impact|peace|comfort|significance/i;
+const momentTerms:Record<string,RegExp>={
+ 'adhan':/اذان|النداء|نداء|\badhan\b|\bazaan\b|call to prayer/i,
+ 'iqamah':/اقام[ةه]|\biqamah\b|\biqama\b/i,
+ 'congregational-prayer':/جماع[ةه]|المصلين|المصلون|congregational|pray(?:ing)? together|rows/i,
+ 'wudu':/وضوء|وضو|\bwudu\b|ablution/i,
+ 'khutbah':/خطب[ةه]|الجمع[ةه]|\bkhutbah\b|sermon|friday/i
+};
 export function retrieveClaims(question:string,branchId?:string,sourceClaims:Claim[]=claims){
- const words=norm(question).split(/[^a-z\u0600-\u06ff]+/).filter(x=>x.length>1&&!stopWords.has(x));
- return sourceClaims.filter(validClaim).map(c=>{const m=batch.moments.find(m=>m.id===c.momentId);const b=m?.explanation.branches.find(b=>b.id===c.branchId);const text=norm([c.text_ar,c.text_en,m?.name_ar,m?.name_en,b?.title_ar,b?.title_en].join(' '));return {c,score:words.filter(w=>text.includes(w)).length+(branchId&&c.branchId===branchId?4:0)};}).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,12).map(x=>x.c);
+ const normalized=norm(question);
+ const words=normalized.split(/[^a-z\u0600-\u06ff]+/).filter(x=>x.length>1&&!stopWords.has(x));
+ const meaningQuestion=branchId?.endsWith('-meaning')||(!branchId&&meaningTerms.test(normalized));
+ const namedMoments=Object.entries(momentTerms).filter(([,pattern])=>pattern.test(normalized)).map(([id])=>id);
+ return sourceClaims.filter(validClaim).map(c=>{
+  const m=batch.moments.find(m=>m.id===c.momentId);
+  const b=m?.explanation.branches.find(b=>b.id===c.branchId);
+  const text=norm([c.text_ar,c.text_en,m?.name_ar,m?.name_en,b?.title_ar,b?.title_en].join(' '));
+  const lexical=words.filter(w=>text.includes(w)).length;
+  const matchingMeaning=meaningQuestion&&c.branchId.endsWith('-meaning')&&(branchId===c.branchId||namedMoments.includes(c.momentId));
+  return {c,score:lexical+(branchId&&c.branchId===branchId?4:0)+(matchingMeaning?12:0)};
+ }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,12).map(x=>x.c);
 }
 export function verifySelected(ids:unknown,retrieved:Claim[],language:Language){
  if(!Array.isArray(ids)||ids.length>4||ids.some(id=>typeof id!=='string'||!retrieved.some(c=>c.claimId===id&&validClaim(c))))throw Error('citation_gate');
